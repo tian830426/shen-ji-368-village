@@ -7,32 +7,17 @@
 body {
     margin: 0;
     padding: 0;
-    /* background-image: url(./img/背景圖.svg); */
+ 
 }
 
 #location {
-    background-image: url(/img/地理位置背景.svg);
+    background-image: url(/img/地理位置/地理位置背景.svg);
     background-position: right;
     background-size: cover;
 }
 
-.bg-nav {
-    background-color: rgba(206, 122, 86, 1);
-}
 
-nav {
-    height: 60px;
-}
 
-#logo {
-    height: 55px;
-    width: 110px;
-}
-
-.px-10 {
-    padding-left: 10px;
-    padding-right: 10px;
-}
 
 /* nav至標題的間距 */
 .mt-45 {
@@ -44,9 +29,9 @@ h2 {
 }
 
 /* nav至內容的間距 */
-.mb-138 {
-    margin-bottom: 138px;
-}
+.pt-198 {
+    padding-top: 198px;
+ }
 
 /* 地圖寬度 */
 .map {
@@ -81,7 +66,7 @@ h2 {
 
 /* 交通資訊背景 */
 #traffic {
-    background-image: url(/img/交通資訊背景.svg);
+    background-image: url(/img/交通資訊/交通資訊背景.svg);
     background-size: cover;
 }
 
@@ -89,7 +74,9 @@ h2 {
 .h-100vh {
     height: 100vh;
 }
-
+.pt-60{
+    padding-top: 60px;
+}
 /* 標題至內文的間距 */
 .mb-35 {
     margin-bottom: 35px;
