@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 把icon當作字體使用 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!--top css-->
+    <link rel="stylesheet" href="./css/top/top.css">
+    <link rel="stylesheet" href="./css/top/top_fb_ig.css">
+    <!--nav_bar css-->
+    <link rel="stylesheet" href="./css/nav_bar/nav_bar.css">
+    <!--審計由來css-->
+    <link rel="stylesheet" href="./css/story/swiper.min.css">
+    <link rel="stylesheet" href="./css/story/story_style.css">
+    <!--審計由來Js-->
+    <script src="https://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script src="./js/story/swiper.min.js"></script>
+    <script src="./js/story/story.js"></script>
+    <!-- 最新活動css -->
+    <link rel="stylesheet" href="./css/news/swiper.min.css">
+    <link rel="stylesheet" href="./css/news/swiperStyle.css">
+    <!-- 最新活動JS -->
+    <script src="./js/news/swiper.min.js"></script>
+    <script src="./js/news/swiperScript.js"></script>
+    <!-- 媒體報導css -->
+    <!-- <link href="https://cdn.bootcss.com/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/media/swiperStyle.css"> -->
+    <!-- 媒體報導JS -->
+    <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="./js/media/swiperScript.js"></script>
+    <!-- 地理位置 -->
+    <link rel="short-cut icon" href="./img/地理位置/審計LOGO.svg">
+    <!-- 地理位置bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/location/審計新村.css">
+    <!-- 地理位置fontawesome -->
+    <link rel="stylesheet" href="/css/all.css">
+</head>
+
+<body>
+    <!--top-->
+    <div class="actGotop"><a href="javascript:;" title="回到頂部"></a></div>
+    <ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
+        <li class="mfb-component__wrap">
+            <a href="#" class="mfb-component__button--main">
+                <img src="./img/懸浮視窗/top_icon.png" width="50" height="50">
+            </a>
+            <ul class="mfb-component__list">
+                <li>
+                    <a href="#" data-mfb-label="View on jq22" class="mfb-component__button--child">
+                        <img src="./img/懸浮視窗/FB_ICON.png" width="50" height="50">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-mfb-label="View on jq22" class="mfb-component__button--child">
+                        <img src="./img/懸浮視窗/IG_ICON.png" width="50" height="50">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-mfb-label="View on jq22" class="mfb-component__button--child">
+                        <img src="./img/懸浮視窗/LINE_ICON.png" width="50" height="50">
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!--end-->
+
+
+
+
+    <section class="story_bg" style="background-image: url(./img/審計由來/background.svg);">
+        <div class="container-fluid  nav_height_r ">
+            <!--nav_height_width 設定寬高-->
+            <!--d-flex並排顯示-->
+            <!--有navbar-dark才能顯示漢堡條-->
+            <nav class="navbar  navbar-dark  justify-content_r pl-2 bg_navbar fixed-top">
+                <!-- navbar- 文字顏色-->
+                <!--bg背景色-->
+
+                <div class="nav_height_r pt-2 pr-2 burger">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="nav_height_r">
+                    <a class="navbar-brand" href="#"><img src="./img/navBar/logo.svg" width="115" height="55">
+                    </a>
+                    <!--navbar-brand LOGO-->
+                </div>
+
+                <div class="text-black-50 burger_center"> 審計368新創聚落</div>
+                <!--主題-->
+
+                <div class="ml-auto pr-5 burger_padding_disappear">
+                    <!--ml-auto 空出左邊位置-->
+                    <a class="text-black-50" href="#">審計由來</a>
+                    <a class="text-black-50 pl-2" href="#">最新活動</a>
+                    <a class="text-black-50 pl-2" href="#">媒體報導</a>
+                    <a class="text-black-50 pl-2" href="#">店家介紹</a>
+                    <a class="text-black-50 pl-2" href="#">暮暮市集</a>
+                    <a class="text-black-50 pl-2" href="#">地理位置</a>
+                    <a class="text-black-50 pl-2" href="#">周邊環境</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#">審計由來 <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">最新活動</a>
+                        <a class="nav-link" href="#">媒體報導</a>
+                        <a class="nav-link" href="#">店家介紹</a>
+                        <a class="nav-link" href="#">暮暮市集</a>
+                        <a class="nav-link" href="#">地理位置</a>
+                        <a class="nav-link" href="#">周邊環境</a>
+
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+
+        <div class="main m-auto">
+            <!--星星-->
+
+            <div class="title ">
+                <img src="./img/審計由來/icon_story.svg" />審計由來<p>看看那裡的老房子，就知道有過一段歷史</p>
+                <hr>
+            </div>
+            <div class="w-imgText " id="imgText">
+                <div class="swiperBox">
+                    <ul class="swiper-wrapper" >
+                        <li class="swiper-slide" data-title="審計原為員工眷舍">
+                            <div class="item" style="width:100% ;">
+                                <div class="imTB">
+                                    <div class="img">
+                                        <a href="https://travel.taichung.gov.tw/zh-tw/Attractions/Intro/1139"> <img
+                                                src="./img/審計由來/story_1.jpg" /></a>
+                                    </div>
+                                    <div class="textB">
+                                        <div class="bg_x"></div>
+                                        <div class="text_x">
+                                            <div class="tt_h">審計原為員工眷舍</div>
+                                            <p>前身為臺灣省政府審計處的員工宿舍
+                                                於1969年興建完成，具有50年之歷史，1998年臺灣凍省後該區逐漸閒置荒廢。
+                                                近年來由於勤美綠園道成為臺中新商圈，座落在民生路上的審計新村更凸顯了它的獨特性。
+                                                如今配合市府的〈摘星青年、築夢臺中〉計劃，審計新村成了文青發光發熱的區域。
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide" data-title="具有相同經營理念">
+                            <div class="item"  style="width:100% ;">
+                                <div class="imTB">
+                                    <div class="img">
+                                        <a href="#"> <img src="./img/審計由來/story_2.jfif" /></a>
+                                    </div>
+                                    <div class="textB">
+                                        <div class="bg_x"></div>
+                                        <div class="text_x">
+                                            <div class="tt_h">具有相同經營理念</div>
+                                            <p>
+                                                進駐的店家有花店、獨立書店、餐廳、咖啡店、還有許多風格不同的文創商店
+                                                不會有特別突兀的商店出現，以免影響整體之風格，
+                                                也適時展現了審計新村的低調與沉穩。
+                                                現在這裡每天都有暮暮市集，現場的小攤販擺滿自家的創作商品，
+                                                相信審計新村可以成為最閃亮的文創之星。
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide" data-title="建築風格獨特">
+                            <div class="item"  style="width:100% ;">
+                                <div class="imTB">
+                                    <div class="img">
+                                        <a href="#"><img src="./img/審計由來/story_3.jfif" /></a>
+                                    </div>
+                                    <div class="textB">
+                                        <div class="bg_x"></div>
+                                        <div class="text_x">
+                                            <div class="tt_h">建築風格獨特</div>
+                                            <p>
+                                                與一般眷村的紅磚牆和窄長巷的典型形象不同。
+                                                它是二層樓的矮建築，牆身的顏色是溫柔的鵝黃色，建築內部格局小而精緻，
+                                                剛開始走進審計新村時，會覺得這裡好像沒什麼了不起的。然而回過頭想一想，
+                                                就發現其實「沒什麼了不起」，才是這裡最了不起的地方。拜訪過許許多多的文創聚落，
+                                                審計新村最樸實無華。似乎也只有審計新村不會為了迎合客人，而大肆改造老建築原來的樣貌。
+                                                而每一家店的店主，都很自在與專注地做著自己正在做的事，做著自己想做的事。
+                                                。
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="igt_page"></div>
+            </div>
+            <div class="igt_page_text">
+                <ul class="clearfix">
+                </ul>
+            </div>
+
+
+
+        </div>
+        <!-- <div class="star_bg">
+            <img src="/img/star_4.svg" style="width: 150px;height: 150px;" />
+        </div>  -->
+    </section>
+
+    <!-- 以上為審計由來(東郁) -->
+
+    <!-- 以下為最新活動(玲君) -->
+    <section class="news" style="background-image: url(./img/最新活動/最新活動背景.svg);">
+        <!-- Swiper -->
+        <section>
+            <nav></nav>
+        </section>
+        <section class="newsContent">
+            <div class="newsTitle" style="background-image: url(./img/最新活動/標題文字.svg) ;">
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card 05/20" style="background-color: unset;" >
+                            <div class="photo" style="background-image: url(./img/最新活動/0520.jpg) ;"></div>
+                            <div class="text" style="background-image: url(./img/最新活動/文字區塊.svg);">
+                                <div class="date">2022/05/20</div>
+                                <div class="article-contain">
+                                    <div class="topic">審計園區內的新秀店家｜阿米秀廚房｜</div>
+                                    <div class="contain">🔥林美秀🔥本人今天就在阿米秀審計店擔任一日店長哦！<br>
+                                        今天的太陽很給力哦🌞<br>
+                                        大家下午可以來園區內，逛逛市集，看看明星，聽聽歌唱大賽<br>
+                                        在審計新村Chill一個下午<br>
+                                        <a
+                                            href="https://www.facebook.com/shenji368/photos/a.1170950112978181/7482667681806361/?type=3&theater">Learn
+                                            more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card 05/18" style="background-color: unset;" >
+                            <div class="photo may" style="background-image: url(./img/最新活動/0518.jpg) ;"></div>
+                            <div class="text" style="background-image: url(./img/最新活動/文字區塊.svg);">
+                                <div class="date">2022/05/18</div>
+                                <div class="article-contain">
+                                    <div class="topic">6月｜審計新村立體廣場表演日程</div>
+                                    <div class="contain">6月份即將來臨<br>
+                                        讓我們一起集氣，希望天氣快放晴☀️<br>
+                                        謝謝願意前來且喜愛審計的每個表演者。<br>
+                                        每一次的表演，讓更多人知道審計也能認識優秀的你們！<br>
+                                        <a
+                                            href="https://www.facebook.com/shenji368/photos/a.1156406081099251/7468053993267730/?type=3&theater">Learn
+                                            more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card 05/15" style="background-color: unset;" >
+                            <div class="photo" style="background-image: url(./img/最新活動/0515.jpg) ;"></div>
+
+                            <div class="text" style="background-image: url(./img/最新活動/文字區塊.svg);">
+                                <div class="date">2022/05/15</div>
+                                <div class="article-contain">
+                                    <div class="topic">【浴室歌唱大賽第二屆 總決賽】</div>
+                                    <div class="contain">
+                                        由貳柒No.27舉辦的＂浴室歌唱大賽２＂<br>
+                                        總決賽要來審計啦🧑‍🎤<br>
+                                        當天在貳柒No.27販售區完成指定任務即可獲得活動禮包。限量500份，送完為止喔🎁<br>
+                                        <a
+                                            href="https://www.facebook.com/shenji368/photos/a.1156406081099251/7457328941006902/?type=3&theater">Learn
+                                            more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card 05/12" style="background-color: unset;" >
+                            <div class="photo" style="background-image: url(./img/最新活動/暮暮市集.jpg) ;"></div>
+                            <div class="text" style="background-image: url(./img/最新活動/文字區塊.svg);">
+                                <div class="date">2022/05/12</div>
+                                <div class="article-contain">
+                                    <div class="topic">【重磅資訊!!｜暮暮市集月租攤商募集開跑】</div>
+                                    <div class="contain">最新一期躋身「暮暮固定班底」的機會，在這邊！<br>
+                                        暮暮的新攤友、老攤友通通卡緊看過來！<br>
+                                        點入下方連接👇👇👇<br>
+                                        解鎖更多有關月租攤商的優勢資訊吧！！<br>
+                                        <a href="https://forms.gle/6QkdFt26q7p33vvz5">Learn more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card 04/30" style="background-color: unset;" >
+                            <div class="photo" style="background-image: url(./img/最新活動/0430.jpg) ;"></div>
+                            <div class="text" style="background-image: url(./img/最新活動/文字區塊.svg);">
+                                <div class="date">2022/04/30</div>
+                                <div class="article-contain">
+                                    <div class="topic">『 LONGCHAMP & ANDRÉ藝術聯名系列』4/29 到5/15 在台中審計368新創聚落</div>
+                                    <div class="contain">屢次的聯名創作皆成功帶動時尚話題的法國精品品牌Longchamp，今年特別與當代塗鴉藝術大師André
+                                        Saraiva攜手合作推出聯名系列<br>
+                                        將審計新村點綴的霓虹繽紛，有如戶外策展！<br>
+                                        <a href="https://www.facebook.com/1144735125599680/posts/7383464915059972/?d=n">Learn
+                                            more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card 04/27" style="background-color: unset;" >
+                            <div class="photo" style="background-image: url(./img/最新活動/0427.jpg) ;"></div>
+                            <div class="text" style="background-image: url(./img/最新活動/文字區塊.svg);">
+                                <div class="date">2022/04/27</div>
+                                <div class="article-contain">
+                                    <div class="topic">『勞動節假期』我們同在一起🧍‍♀️🧍‍♂️</div>
+                                    <div class="contain">
+                                        審計想對大家說聲『辛苦了』🥂<br>
+                                        市集時間：<br>
+                                        平日：13:30-18:00<br>
+                                        假日：11:00-18:00<br>
+                                        <a
+                                            href="https://zh-tw.facebook.com/shenji368/photos/a.1156406081099251/7369655783107552/?type=3&theater">Learn
+                                            more</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+    </section>
+
+    <!-- 以上為最新活動(玲君) -->
+    <!-- 以下為媒體報導(玲君) -->
+
+    <!-- <section class="media" style="background-image: url(./img/媒體報導/媒體報導背景.svg);">
+        <section class="mediaContent" style="width: 100vw;">
+            <div class="title" style="background-image:url(./img/媒體報導/標題文字.svg);"></div>
+            <div class="swiper-container" id="banner" style="width: 100vw;">
+                <div class="swiper-wrapper" style="width: 100vw;">
+                    <div class="swiper-slide" style="width: 600px;">
+                        <img src="./img/媒體報導/影片圖.png" alt="轮播图">
+                    </div>
+                    <div class="swiper-slide" style="width: 600px;">
+                        <img src="./img/媒體報導/大玩臺中.png" alt="轮播图">
+                    </div>
+                    <div class="swiper-slide" style="width: 600px;">
+                        <img src="./img/媒體報導/小布少爺.png" alt="轮播图">
+                    </div>
+                    <div class="swiper-slide" style="width: 600px;">
+                        <img src="./img/媒體報導/老宅.png" alt="轮播图">
+                    </div>
+                </div>
+                <div class="swiper-pagination banner_page"></div>
+        </section>
+    </section> -->
+
+    <!-- 以上為媒體報導(玲君) -->
+    <!-- 以下為地理位置(佳彣) -->
+
+    <section>
+        <div id="location" class="h-100vh" style="background-image: url(./img/地理位置/地理位置背景.svg);padding-top: 105px;">
+            <!-- <header>
+                <nav class="w-100 bg-nav mb-138">
+                    <img id="logo" class="px-10" src="./img/地理位置/審計LOGO.svg" alt="logo">
+                    <span>審計368新創聚落</span>
+                </nav>
+            </header> -->
+            <!-- 地理位置 -->
+            <section class="mx-170">
+                <div class="d-flex justify-content-around mb-110">
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.7728134280374!2d120.66074351523491!3d24.14461537951846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693da1ca018bd3%3A0xdf6594a4c18d0e9f!2z5a-p6KiIMzY45paw5Ym16IGa6JC9!5e0!3m2!1szh-TW!2stw!4v1652948748516!5m2!1szh-TW!2stw"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div>
+                        <div id="local-title">
+                            <div class="d-flex align-items-center mb-17">
+                                <img class="w-57" src="./img/地理位置/地理位置裝飾.svg" alt="">
+                                <h2 class="ml-3 mb-0 font-weight-bold">地理位置</h2>
+                            </div>
+                            <h5 class="m-0 font-weight-bold">您好，請搜尋以下地址就不會迷路囉，我們不見不散 ！</h5>
+                        </div>
+                        <div class="mt-60">
+                            <h2>審計368新創聚落</h2>
+                            <h2 class="align-self-end">40358台中市西區民生路368巷2弄12號</h2>
+
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- 以上為地理位置(佳彣) -->
+    <!-- 以下為交通資訊(佳彣) -->
+    <!-- 交通資訊 -->
+    <div id="traffic" class="h-100vh position-relative" style="background-image:url(./img/交通資訊/交通資訊背景.svg) ;padding-top: 105px;">
+        <!-- <header>
+            <nav class="w-100 bg-nav">
+                <img id="logo" class="px-10" src="/img/審計LOGO.svg" alt="logo">
+                <span>審計368新創聚落</span>
+            </nav>
+        </header> -->
+        <!-- 交通資訊 -->
+        <section class="mx-170">
+            <div class="d-flex align-items-center flex-column mb-35">
+                <div class="mt-45 d-flex align-items-center mb-17">
+                    <img class="w-57" src="./img/交通資訊/交通資訊裝飾.svg" alt="">
+                    <h2 class="ml-3 mb-0 font-weight-bolder">交通資訊</h2>
+                </div>
+                <h5 class="m-0 font-weight-bold">條條大路通審計! 沒錯就是這麼酷炫 ！</h5>
+            </div>
+            <div class="d-flex flex-column justify-content-around h-550  mx-auto font-weight-bold">
+                <!-- 大眾運輸 -->
+                <div class="d-flex align-items-center">
+                    <i class="fa-solid fa-train-subway"></i>
+                    <div class="ml-5 ">
+                        <h3 class="">大眾運輸</h3>
+                        <h5>從高鐵台中站六號出口出站→→搭乘【159號公車(統聯客運)】往【臺中公園(雙十路)】→→於【忠明南向上路口】下車→→步行約750公尺(約9分鐘)即可抵達。
+                            從臺中火車站出站→→搭乘【51號公車(豐原客運)】往【莒光新城】→→於【英才郵局】下車→→步行約350公尺(約4分鐘)即可抵達。</h5>
+                    </div>
+                </div>
+                <!-- 自行前往 -->
+                <div class="d-flex align-items-center ">
+                    <i class="fa-solid fa-car"></i>
+                    <div class="ml-5">
+                        <h3>自行開車</h3>
+                        <h5>由國道一號，於178-台中交流道出口(台12線
+                            出口)下交流道→→循著台12線/台中的路標走，朝台灣大道三段/台12前進→→右轉進入忠明南路→→左轉進入向上路一段→→右轉進入中興街→→右轉進入民生路368巷2弄→→前行20公尺即可抵達審計368新創聚落。
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer-size bg-footer position-absolute bottom">
+        </footer>
+    </div>
+    <!-- <footer class="footer-size bg-footer position-absolute bottom">
+    </footer> -->
+
+    <!-- 以上為交通資訊(佳彣) -->
+
+
+
+    <!--jquery-->
+    <script src=" https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+    <!--top-->
+    <script type="text/javascript" src="./js/story/jquery-1.11.3.min.js"></script>
+    <script src="./js/top/top.js"></script>
+    <script src="http://www.jq22.com/js/jq.js"></script>
+    <script src="./dist/top_fb_ig.js"></script>
+
+    <!-- news -->
+    <script src="./js/news/swiper.min.js"></script>
+    <script src="./js/news/swiperScript.js"></script>
+
+    <!-- 媒體報導JS -->
+    <!-- <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="./js/media/swiperScript.js"></script> -->
+
+
+</body>
+
+</html>

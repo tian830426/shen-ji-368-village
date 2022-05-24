@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+.media{
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+.content {
+    padding-top: 105px;
+}
+.title {
+    width: 400px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+}
+
+#banner {
+    width: 1920px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.swiper-slide {
+    width: 600px;
+    height: 600px;
+}
+
+.banner_page {
+    margin: 20px auto;
+    left: 0;
+    right: 0;
+}
+
+.banner_page span {
+    margin: 0 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.swiper-pagination-bullet-active {
+    width: 16px;
+    border-radius: 8px;
+}

@@ -1,0 +1,147 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    color: rgba(56, 30, 0, 1);
+}
+body{
+    margin: 0;
+    padding: 0;
+    /* background-image: url(./img/背景圖.svg); */
+}
+#location{
+    /* background-image: url(/img/地理位置背景.svg); */
+    background-position:right;
+    background-size: cover;
+}
+.bg-nav{
+    background-color: rgba(206, 122, 86, 1);
+}
+
+nav{
+    height: 60px;
+}
+#logo{
+    height: 55px;
+    width: 110px;
+}
+.px-10{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/* nav至標題的間距 */
+.mt-45{
+    margin-top: 45px;
+}
+h2{
+    font-size: 36px;
+}
+/* nav至內容的間距 */
+.mb-138{
+    margin-bottom: 138px;
+}
+/* 地圖寬度 */
+.map{
+    width: 40%;
+    height:550px;
+}
+/* 左右邊界 */
+.mx-170{
+    margin: 0px 170px;
+}
+/* 標題跟副標間距 */
+.mb-17{
+    margin-bottom: 17px;
+}
+/* 標題裝飾大小 */
+.w-57{
+    width: 57px;
+    height: 56px;
+}
+/* 地理位置標題跟內容的距離 */
+.mt-60{
+    margin-top: 60px;
+}
+.mb-110{
+    margin-bottom: 110px;
+}
+/* 交通資訊背景 */
+#traffic{
+    background-image: url(/img/交通資訊背景.svg);
+    background-size: cover;
+}
+/* 內容的高度 */
+.h-100vh{
+    height: 100vh;
+}
+/* 標題至內文的間距 */
+.mb-35{
+    margin-bottom: 35px;
+}
+.fa-solid{
+    font-size: 80px;
+}
+.h-550{
+    height: 550px;
+    width: 750px;
+}
+.bg-CA{
+    background-color: rgba(202, 141, 141, 0.58);
+}
+/* footer高度 */
+.footer-size{
+width: 100%;    
+height: 50px;
+bottom: 0px;
+}
+.bg-footer{
+    background-color: rgba(249, 209, 149, 1) ; 
+}
+.mt-70{
+    margin-top: 70px;
+}
+#surround{
+    /* background-image: url(/img/周邊環境背景.svg); */
+    background-size: cover;
+}
+.h-300{
+    width: 370px;
+    height: 250px;
+}
+p{
+    font-size: 18px;
+}
+/* swiper */
+/* .swiper .swiper-wrapper .swiper-slide{
+    width: 400px;
+    height: 500px;
+} */
+.mx-170 .swiper-button-next {
+    right: 100px;
+}
+.mx-170 .swiper-button-prev {
+    left: 100px;
+}
+.mx-170 .swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: 180px;
+}
+@media (max-width:768px) {
+    #location{
+        background-image: url(/img/地理位置背景\ 平板.svg);
+        position: relative;
+    }
+    #location>.mx-170>.d-flex{
+        flex-direction: column;
+    }
+    .map{
+        width: 600px;
+        height: 433px;
+    }
+    .mx-170{
+        margin: 0 84px;
+       
+    }
+    #local-title{
+        position: absolute;
+        top: 100px;
+    }
+}
