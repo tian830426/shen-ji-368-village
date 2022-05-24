@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>審計368新創聚落</title>
-    <link rel="short-cut icon" href="/img/佳彣/審計LOGO.svg">
+
     <!-- 把icon當作字體使用 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <!-- Bootstrap core CSS -->
@@ -40,8 +40,7 @@
     <script src="./js/media/swiperScript.js"></script>
     <!-- 地理位置 -->
     <link rel="short-cut icon" href="./img/地理位置/審計LOGO.svg">
-    <!-- 地理位置bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+ 
     <link rel="stylesheet" href="./css/location/審計新村.css">
     <!-- 地理位置fontawesome -->
     <link rel="stylesheet" href="/css/all.css">
@@ -420,37 +419,75 @@
     <!-- 以上為地理位置(佳彣) -->
     <!-- 以下為交通資訊(佳彣) -->
     <!-- 交通資訊 -->
-    <div id="traffic" class="h-100vh position-relative" style="background-image:url(./img/交通資訊/交通資訊背景.svg) ;padding-top: 105px;">
-        <!-- <header>
+    <!-- 地理位置 -->
+    <div id="location" class="h-100vh">
+        <header>
+            <nav class="w-100 bg-nav mb-138">
+                <img id="logo" class="px-10" src="/img/審計LOGO.svg" alt="logo">
+                <span>審計368新創聚落</span>
+            </nav>
+        </header>
+        <!-- 地理位置 -->
+        <section class="mx-170">
+            <div class="d-flex justify-content-around mb-110">
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.7728134280374!2d120.66074351523491!3d24.14461537951846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693da1ca018bd3%3A0xdf6594a4c18d0e9f!2z5a-p6KiIMzY45paw5Ym16IGa6JC9!5e0!3m2!1szh-TW!2stw!4v1652948748516!5m2!1szh-TW!2stw"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="text-md-left text-center">
+                    <div id="local-title">
+                        <div class="d-flex align-items-center mb-17 justify-content-md-start justify-content-center">
+                            <img class="w-57" src="/img/地理位置裝飾.svg" alt="">
+                            <h2 class="ml-3 mb-0 font-weight-bold">地理位置</h2>
+                        </div>
+                        <h5 class="m-0 font-weight-bold">請搜尋以下地址就不會迷路囉，我們不見不散 ！</h5>
+                    </div>
+                    <div class="mt-60">
+                        <h2>審計368新創聚落</h2>
+                        <h2 class="">台中市西區民生路368巷2弄12號</h2>
+                    </div>
+                </div>
+        </section>
+    </div>
+
+    <!-- 交通資訊 -->
+    <div id="traffic" class="h-100vh position-relative">
+        <header>
             <nav class="w-100 bg-nav">
                 <img id="logo" class="px-10" src="/img/審計LOGO.svg" alt="logo">
                 <span>審計368新創聚落</span>
             </nav>
-        </header> -->
+        </header>
         <!-- 交通資訊 -->
         <section class="mx-170">
             <div class="d-flex align-items-center flex-column mb-35">
                 <div class="mt-45 d-flex align-items-center mb-17">
-                    <img class="w-57" src="./img/交通資訊/交通資訊裝飾.svg" alt="">
+                    <img class="w-57" src="/img/交通資訊裝飾.svg" alt="">
                     <h2 class="ml-3 mb-0 font-weight-bolder">交通資訊</h2>
                 </div>
                 <h5 class="m-0 font-weight-bold">條條大路通審計! 沒錯就是這麼酷炫 ！</h5>
             </div>
-            <div class="d-flex flex-column justify-content-around h-550  mx-auto font-weight-bold">
+            <div class="d-flex flex-column justify-content-around h-550  mx-sm-auto mx-0 font-weight-bold">
                 <!-- 大眾運輸 -->
                 <div class="d-flex align-items-center">
-                    <i class="fa-solid fa-train-subway"></i>
-                    <div class="ml-5 ">
-                        <h3 class="">大眾運輸</h3>
+                    <i class="d-md-block d-none fa-solid fa-train-subway"></i>
+                    <div class="ml-md-5">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <i class="d-block d-md-none fa-solid fa-train-subway"></i>
+                            <h3 class="ml-3 ml-md-0">大眾運輸</h3>
+                        </div>
                         <h5>從高鐵台中站六號出口出站→→搭乘【159號公車(統聯客運)】往【臺中公園(雙十路)】→→於【忠明南向上路口】下車→→步行約750公尺(約9分鐘)即可抵達。
                             從臺中火車站出站→→搭乘【51號公車(豐原客運)】往【莒光新城】→→於【英才郵局】下車→→步行約350公尺(約4分鐘)即可抵達。</h5>
                     </div>
                 </div>
                 <!-- 自行前往 -->
                 <div class="d-flex align-items-center ">
-                    <i class="fa-solid fa-car"></i>
-                    <div class="ml-5">
-                        <h3>自行開車</h3>
+                    <i class="d-md-block d-none fa-solid fa-car"></i>
+                    <div class="ml-md-5">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <h3 class="mr-3 mr-md-0">自行開車</h3>
+                            <i class="d-block d-md-none fa-solid fa-car"></i>
+                        </div>
                         <h5>由國道一號，於178-台中交流道出口(台12線
                             出口)下交流道→→循著台12線/台中的路標走，朝台灣大道三段/台12前進→→右轉進入忠明南路→→左轉進入向上路一段→→右轉進入中興街→→右轉進入民生路368巷2弄→→前行20公尺即可抵達審計368新創聚落。
                         </h5>
@@ -460,9 +497,7 @@
         </section>
         <footer class="footer-size bg-footer position-absolute bottom">
         </footer>
-    </div>
-    <!-- <footer class="footer-size bg-footer position-absolute bottom">
-    </footer> -->
+ 
 
     <!-- 以上為交通資訊(佳彣) -->
 
