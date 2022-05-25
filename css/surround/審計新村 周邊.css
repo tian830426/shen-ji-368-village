@@ -76,9 +76,6 @@ h2 {
     height: 550px;
     width: 750px;
 }
-.bg-CA {
-    background-color: rgba(202, 141, 141, 0.58);
-}
 /* footer高度 */
 .footer-size {
     width: 100%;
@@ -98,8 +95,11 @@ h2 {
     margin-bottom: 45px;
 }
 #surround {
-    background-image: url(/img/周邊環境背景.svg);
+    background-image: url(/img/周邊環境/周邊環境背景.svg);
     background-size: cover;
+}
+.pt-60{
+    padding-top: 60px;;
 }
 
 .h-300 {
@@ -186,7 +186,7 @@ p {
     }
 
     #surround {
-        background-image: url(/img/周邊環境背景平板.svg);
+        background-image: url(/img/周邊環境/周邊環境背景平板.svg);
 
     }
     .mb-45 {
@@ -207,22 +207,11 @@ p {
 }
 
 @media(max-width:375px) {
-    #location {
-        background-image: url(/img/地理位置背景手機.svg);
-    }
-
-    .map {
-        width: 300px;
-        height: 300px;
-    }
 
     .mx-170 {
         margin: 0 38px;
     }
 
-    #local-title {
-        top: 80px;
-    }
 
     .w-57 {
         width: 30px;
@@ -265,7 +254,8 @@ p {
         height: 405px;
     }
     #surround {
-        background-image: url(/img/周邊環境背景手機.svg);
+        background-image: url(/img/周邊環境/周邊環境背景手機.svg
+        );
 
     }
     .mx-170 .swiper-button-next {
