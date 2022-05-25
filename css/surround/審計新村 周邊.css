@@ -1,0 +1,294 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    color: rgba(56, 30, 0, 1);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  
+}
+
+.bg-nav {
+    background-color: rgba(206, 122, 86, 1);
+}
+
+nav {
+    height: 60px;
+}
+
+#logo {
+    height: 55px;
+    width: 110px;
+}
+
+.px-10 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* nav至標題的間距 */
+.mt-45 {
+    margin-top: 45px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+/* nav至內容的間距 */
+/* 地圖寬度 */
+
+/* 左右邊界 */
+.mx-170 {
+    margin: 0px 170px;
+}
+
+/* 標題跟副標間距 */
+.mb-17 {
+    margin-bottom: 17px;
+}
+
+/* 標題裝飾大小 */
+.w-57 {
+    width: 57px;
+    height: 56px;
+}
+
+/* 地理位置標題跟內容的距離 */
+
+
+.mb-110 {
+    margin-bottom: 110px;
+}
+
+/* 內容的高度 */
+.h-100vh {
+    height: 100vh;
+}
+
+/* 標題至內文的間距 */
+.mb-35 {
+    margin-bottom: 35px;
+}
+.h-550 {
+    height: 550px;
+    width: 750px;
+}
+.bg-CA {
+    background-color: rgba(202, 141, 141, 0.58);
+}
+/* footer高度 */
+.footer-size {
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+}
+
+.bg-footer {
+    background-color: rgba(249, 209, 149, 1);
+}
+
+.mt-70 {
+    margin-top: 70px;
+
+}
+.mb-45{
+    margin-bottom: 45px;
+}
+#surround {
+    background-image: url(/img/周邊環境背景.svg);
+    background-size: cover;
+}
+
+.h-300 {
+    width: 370px;
+    height: 250px;
+}
+.text-area{
+    margin-top: 25px;
+}
+p {
+    font-size: 18px;
+}
+
+/* swiper */
+/* .swiper .swiper-wrapper .swiper-slide{
+    width: 400px;
+    height: 500px;
+} */
+.mx-170 .swiper-button-next {
+    right: 100px;
+}
+
+.mx-170 .swiper-button-prev {
+    left: 100px;
+}
+
+.mx-170 .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 160px;
+
+}
+
+@media (max-width:768px) {
+    #location {
+        background-image: url(/img/地理位置背景平板.svg);
+        position: relative;
+    }
+
+    #location>.mx-170>.d-flex {
+        flex-direction: column;
+    }
+
+    .map {
+        width: 600px;
+        height: 433px;
+    }
+
+    .mx-170 {
+        margin: 0 84px;
+    }
+
+    #local-title {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .mb-138 {
+        margin-bottom: 181px;
+    }
+
+    .mt-60>h2 {
+        font-size: 28px;
+    }
+
+    .w-57 {
+        width: 45px;
+        height: 45px;
+    }
+
+    #traffic {
+        background-image: url(/img/交通資訊背景平板.svg);
+    }
+    .pt-198 {
+        padding-top: 230px;
+    }
+    .h-550 {
+        width: 500px;
+        height: 615px;
+    }
+
+    .fa-solid {
+        font-size: 40px;
+    }
+
+    #surround {
+        background-image: url(/img/周邊環境背景平板.svg);
+
+    }
+    .mb-45 {
+        margin-bottom: 60px;
+    }
+    .h-300 {
+        width: 290px;
+        height: 195px;
+    }
+
+    .mx-170 .swiper-button-next {
+        right: 30px;
+    }
+
+    .mx-170 .swiper-button-prev {
+        left: 30px;
+    }
+}
+
+@media(max-width:375px) {
+    #location {
+        background-image: url(/img/地理位置背景手機.svg);
+    }
+
+    .map {
+        width: 300px;
+        height: 300px;
+    }
+
+    .mx-170 {
+        margin: 0 38px;
+    }
+
+    #local-title {
+        top: 80px;
+    }
+
+    .w-57 {
+        width: 30px;
+        height: 30px;
+    }
+
+    .mb-138 {
+        margin-bottom: 105px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+    .mb-17 {
+        margin-bottom: 8px;
+    }
+
+    .mt-60 {
+        margin-top: 30px;
+    }
+
+    .mt-60>h2 {
+        font-size: 20px;
+    }
+
+    .mt-45 {
+        margin-top: 20px;
+    }
+
+    #traffic {
+        background-image: url(/img/交通資訊背景手機.svg);
+    }
+    .h-550 {
+        width: 300px;
+        height: 405px;
+    }
+    #surround {
+        background-image: url(/img/周邊環境背景手機.svg);
+
+    }
+    .mx-170 .swiper-button-next {
+        right: 5px;
+    }
+    .mx-170 .swiper-button-prev {
+        left: 5px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 12px;
+    }
+    .mb-100{
+        margin-bottom: 50px;
+    }
+    .mx-170 .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 100px;
+    }
+    .mx-170 .swiper-button-next:after,.mx-170 .swiper-button-prev:after {
+        font-size: 35px;
+    }
+    
+
+}
