@@ -5,6 +5,10 @@ html{
   /* cursor: url("/pen.png"), auto; */
 }
 
+.banner{
+  position: relative;
+  z-index: 3;
+}
 
 html {
   font-family: 'Open Sans', Helvetica, arial, sans-serif;
@@ -694,7 +698,7 @@ a {
 }
 
 .jq22-container{
-  background-image: url(/img/東郁/banner/1920x1080.png);
+  background-image: url(../../img/東郁/banner/1920x1080.png);
   background-repeat:no-repeat;
   background-position: center;
   background-size: cover;
@@ -762,7 +766,7 @@ a {
 @media(max-width:768px){
   
 .jq22-container{
-  background-image: url(/img/東郁/banner/768x1024.png);
+  background-image: url(../../img/東郁/banner/768x1024.png);
   background-repeat:no-repeat;
   background-position: center;
   background-size: cover;
@@ -773,7 +777,7 @@ a {
 @media(max-width:375px){
   
   .jq22-container{
-    background-image: url(/img/東郁/banner/375x667.png);
+    background-image: url(../../img/東郁/banner/375x667.png);
     background-repeat:no-repeat;
     background-position: center;
     background-size: cover;
