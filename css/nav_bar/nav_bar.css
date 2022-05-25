@@ -1,6 +1,8 @@
 body {
-    height: 5000px;
-
+    /* height: 5000px; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 

@@ -349,9 +349,7 @@ hr {
 
 .story_bg { /*背景色*/
     background-image: url(/img/background.svg);
-    width: 100vw;
     height: 100vh;
-
 }
 
 .star_bg{/*星星隱藏*/
