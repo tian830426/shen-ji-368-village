@@ -223,7 +223,7 @@ p {
 
 @media(max-width:375px) {
     #location {
-        background-image: url(/img/地理位置背景手機.svg);
+        background-image: url(/img/地理位置/地理位置背景手機.svg);
     }
 
     .map {
@@ -273,7 +273,10 @@ p {
     }
 
     #traffic {
-        background-image: url(/img/交通資訊背景手機.svg);
+        background-image: url(/img/交通資訊/交通資訊背景手機.svg);
+    }
+    .pt-198 {
+        padding-top: 160px;
     }
     .h-550 {
         width: 300px;
