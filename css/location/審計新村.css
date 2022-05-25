@@ -190,7 +190,9 @@ p {
     #traffic {
         background-image: url(/img/交通資訊/交通資訊背景平板.svg);
     }
-
+    .pt-198 {
+        padding-top: 230px;
+    }
     .h-550 {
         width: 500px;
         height: 615px;
