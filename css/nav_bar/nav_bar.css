@@ -18,7 +18,16 @@ body {
 .navbar {
     padding: 0 !important;
     z-index: 2;
+  
 }
+
+.navbar-nav a{
+    background-color:   #ce7a56;
+    border: 1px solid ;
+
+}
+
+
 
 .nav_height_r {
     height: 60px !important;
@@ -37,6 +46,10 @@ body {
 .bg_navbar {
     background-color: #CE7A56 !important;
 }
+
+
+
+
 
 @media(max-width:855px) {
     .nav_height_r a {
