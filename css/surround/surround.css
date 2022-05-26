@@ -1,4 +1,3 @@
-
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
@@ -8,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-  
+
 }
 
 .bg-nav {
@@ -73,10 +72,12 @@ h2 {
 .mb-35 {
     margin-bottom: 35px;
 }
+
 .h-550 {
     height: 550px;
     width: 750px;
 }
+
 /* footer高度 */
 .footer-size {
     width: 100%;
@@ -92,23 +93,29 @@ h2 {
     margin-top: 70px;
 
 }
-.mb-45{
+
+.mb-45 {
     margin-bottom: 45px;
 }
+
 #surround {
     background-image: url(/img/周邊環境/周邊環境背景.svg);
 }
-.pt-60{
-    padding-top: 60px;;
+
+.pt-60 {
+    padding-top: 60px;
+    ;
 }
 
 .h-300 {
     width: 370px;
     height: 250px;
 }
-.text-area{
+
+.text-area {
     margin-top: 25px;
 }
+
 p {
     font-size: 18px;
 }
@@ -125,10 +132,25 @@ p {
     bottom: 160px;
 
 }
-.girl{
+
+@keyframes go {
+
+    100% {
+        right: 100%;
+        bottom: 5.2%;
+    }
+}
+
+.girl {
     background-image: url(/img/周邊環境/單車女.svg);
     width: 180px;
     height: 120px;
+    position: absolute;
+    right: 0%;
+    bottom: 5.2%;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: go 7s ease-in-out 0s infinite normal forwards;
+    /* transform: rotateY(180deg); */
 }
 
 @media (max-width:768px) {
@@ -157,9 +179,11 @@ p {
         width: 45px;
         height: 45px;
     }
+
     .pt-198 {
         padding-top: 230px;
     }
+
     .h-550 {
         width: 500px;
         height: 615px;
@@ -173,9 +197,11 @@ p {
         background-image: url(/img/周邊環境/周邊環境背景平板.svg);
 
     }
+
     .mb-45 {
         margin-bottom: 60px;
     }
+
     .h-300 {
         width: 290px;
         height: 195px;
@@ -195,6 +221,7 @@ p {
     .mx-170 {
         margin: 0 38px;
     }
+
     .w-57 {
         width: 30px;
         height: 30px;
@@ -232,35 +259,45 @@ p {
         width: 300px;
         height: 405px;
     }
+
     #surround {
         background-image: url(/img/周邊環境/周邊環境背景手機.svg
-        );
+);
 
     }
+
     .mb-45 {
         margin-bottom: 20px;
     }
+
     .mx-170 .swiper-button-next {
         right: 5px;
     }
+
     .mx-170 .swiper-button-prev {
         left: 5px;
     }
-    h3{
+
+    h3 {
         font-size: 18px;
     }
-    p{
+
+    p {
         font-size: 12px;
     }
-    .mb-100{
+
+    .mb-100 {
         margin-bottom: 50px;
     }
+
     .mx-170 .swiper-pagination-bullets.swiper-pagination-horizontal {
         bottom: 100px;
     }
-    .mx-170 .swiper-button-next:after,.mx-170 .swiper-button-prev:after {
+
+    .mx-170 .swiper-button-next:after,
+    .mx-170 .swiper-button-prev:after {
         font-size: 35px;
     }
-    
+
 
 }
