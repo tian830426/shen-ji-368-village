@@ -560,6 +560,10 @@ h4 {
   height: 100px;
 }
 
+.right img{
+  padding-right: 10px;
+}
+
 
 .right_top,
 .right_bottom {
