@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSS3带视觉差的3d图片翻转效果</title>
+	<!-- 把icon當作字體使用 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+	<!--top css-->
+	<!-- <link rel="stylesheet" href="./cssMarket/top.css"> -->
+	<link rel="stylesheet" href="./cssMarket/top_fb_ig.css">
+	<!--nav_bar css-->
+	<link rel="stylesheet" href="./cssMarket/nav_bar.css">
+
+	<link rel="stylesheet" href="./cssMarket/style.css">
+</head>
+
+<body style="background-image:url(./imgMarket/暮暮市集背景.svg) ;">
+	<section>
+		<ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
+			<li class="mfb-component__wrap">
+				<a href="#" class="mfb-component__button--main">
+					<img src="./imgMarket/懸浮視窗/top_icon.png" width="50" height="50">
+				</a>
+				<ul class="mfb-component__list">
+					<li>
+						<a href="#" data-mfb-label="View on jq22" class="mfb-component__button--child">
+							<img src="./imgMarket/懸浮視窗/FB_ICON.png" width="50" height="50">
+						</a>
+					</li>
+					<li>
+						<a href="#" data-mfb-label="View on jq22" class="mfb-component__button--child">
+							<img src="./imgMarket/懸浮視窗/IG_ICON.png" width="50" height="50">
+						</a>
+					</li>
+					<li>
+						<a href="#" data-mfb-label="View on jq22" class="mfb-component__button--child">
+							<img src="./imgMarket/懸浮視窗/LINE_ICON.png" width="50" height="50">
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<!--end-->
+		<div class="container-fluid  nav_height_r ">
+			<!--nav_height_width 設定寬高-->
+			<!--d-flex並排顯示-->
+			<!--有navbar-dark才能顯示漢堡條-->
+			<nav class="navbar  navbar-dark  justify-content_r pl-2 bg_navbar fixed-top">
+				<!-- navbar- 文字顏色-->
+				<!--bg背景色-->
+
+				<div class="nav_height_r pt-2 pr-2 burger">
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+				<div class="nav_height_r">
+					<a class="navbar-brand" href="#"><img src="./imgMarket/logo.svg" width="115" height="55">
+					</a>
+					<!--navbar-brand LOGO-->
+				</div>
+				<div class="text-black-50 burger_center">審計368新創聚落 / 暮暮市集</div>
+				<!--主題-->
+				<div class="ml-auto pr-5 burger_padding_disappear">
+					<!--ml-auto 空出左邊位置-->
+					<a class="text-black-50" href="#">審計由來</a>
+					<a class="text-black-50 pl-2" href="#">最新活動</a>
+					<a class="text-black-50 pl-2" href="#">媒體報導</a>
+					<a class="text-black-50 pl-2" href="#">店家介紹</a>
+					<a class="text-black-50 pl-2" href="#">暮暮市集</a>
+					<a class="text-black-50 pl-2" href="#">地理位置</a>
+					<a class="text-black-50 pl-2" href="#">周邊環境</a>
+				</div>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<div class="navbar-nav">
+						<a class="nav-link" href="#">審計由來 <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#">最新活動</a>
+						<a class="nav-link" href="#">媒體報導</a>
+						<a class="nav-link" href="#">店家介紹</a>
+						<a class="nav-link" href="#">暮暮市集</a>
+						<a class="nav-link" href="#">地理位置</a>
+						<a class="nav-link" href="#">周邊環境</a>
+
+					</div>
+				</div>
+			</nav>
+		</div>
+	</section>
+	<section>
+		<div class="wrapper">
+			<div class="cols">
+				<div class="col" ontouchstart="this.classList.toggle('hover');">
+					<div class="container">
+						<div class="front" style="background-image: url(./imgMarket/黑欄.svg)">
+							<div class="inner">
+								<p>Diligord</p>
+								<span>Lorem ipsum</span>
+							</div>
+						</div>
+						<div class="back">
+							<div class="inner">
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit
+									quae
+									suscipit c.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col" ontouchstart="this.classList.toggle('hover');">
+					<div class="container right">
+						<div class="front " style="background-image:url(./imgMarket/黑欄.svg)">
+							<div class="inner">
+								<p>Rocogged</p>
+								<span>Lorem ipsum</span>
+							</div>
+						</div>
+						<div class="back">
+							<div class="inner">
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit
+									quae
+									suscipit c.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cols">
+				<div class="col" ontouchstart="this.classList.toggle('hover');">
+					<div class="container">
+						<div class="front" style="background-image: url(./imgMarket/黃欄.svg)">
+							<div class="inner">
+								<p>Diligord</p>
+								<span>Lorem ipsum</span>
+							</div>
+						</div>
+						<div class="back">
+							<div class="inner">
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit
+									quae
+									suscipit c.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col" ontouchstart="this.classList.toggle('hover');">
+					<div class="container right">
+						<div class="front" style="background-image:url(./imgMarket/黃欄.svg)">
+							<div class="inner">
+								<p>Rocogged</p>
+								<span>Lorem ipsum</span>
+							</div>
+						</div>
+						<div class="back">
+							<div class="inner">
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit
+									quae
+									suscipit c.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cols">
+				<div class="col right" ontouchstart="this.classList.toggle('hover');">
+					<div class="container">
+						<div class="front" style="background-image: url(./imgMarket/黑欄.svg)">
+							<div class="inner">
+								<p>Diligord</p>
+								<span>Lorem ipsum</span>
+							</div>
+						</div>
+						<div class="back">
+							<div class="inner">
+								<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit
+									quae
+									suscipit c.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+	
+
+	<!--jquery-->
+	<script src=" https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+		</script>
+	<!--bootstrap-->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+		crossorigin="anonymous"></script>
+	<!--top-->
+	<script type="text/javascript" src="./js/story/jquery-1.11.3.min.js"></script>
+	<script src="./js/top/top.js"></script>
+	<script src="http://www.jq22.com/js/jq.js"></script>
+	<script src="./dist/top_fb_ig.js"></script>
+
+</body>
+
+
+</html>

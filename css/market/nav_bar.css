@@ -1,0 +1,70 @@
+/*初始化設定*/
+.container-fluid,
+.container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.navbar {
+    padding: 0 !important;
+}
+
+.nav_height_r {
+    height: 60px !important;
+    padding-left: 10px;
+}
+
+.nav_height_r a {
+    font-size: 16px;
+}
+
+.justify-content_r {
+    justify-content: start !important;
+
+}
+
+.bg_navbar {
+    background-color: #CE7A56 !important;
+}
+
+@media(max-width:855px) {
+    .nav_height_r a {
+        font-size: 13px;
+        /* font-size: 5vw; */
+
+    }
+
+    .nav_height_r .burger_padding_disappear {
+        padding-right: 4px !important;
+    }
+
+    .burger_padding_disappear {
+        display: none;
+    }
+
+    .burger_center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+}
+
+/*平板*/
+@media(max-width:768px) {
+    .burger {
+        display: block !important;
+    }
+
+    .nav_height_r img {
+        padding-left: 20px;
+    }
+
+}
+
+/*手機*/
+@media(max-width:375px) {}
+
+.burger {
+    display: none;
+}
