@@ -32,7 +32,7 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img class="h-300"
+                        <img class="h-300 a"
                             src="https://tluxe-aws.hmgcdn.com/public/article/2017/atl_20190905105406_480.jpg" alt="">
                         <div class="text-area">
                             <h3>勤美誠品綠園道</h3>
@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img class="h-300" src="https://c8.staticflickr.com/9/8664/28464285783_2887445cae_b.jpg" alt="">
+                        <img class="h-300 a" src="https://c8.staticflickr.com/9/8664/28464285783_2887445cae_b.jpg" alt="">
                         <div class="text-area">
                             <h3>國立臺灣美術館</h3>
                             <p>又簡稱為國美館,是中華民國唯一的國家級美術館，位於臺灣臺中市西區。為引介國際藝術思潮與藝術創作，並展現國內藝術創作與研究成果，本館結合館內研究人員及館外傑出的策展人，每年策劃多樣類型的展覽。展覽搭配專業的導覽解說員，引導民眾從學習與聆賞中得到多元的藝術知識。
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img class="h-300"
+                        <img class="h-300 a"
                             src="https://beri.tw/wp-content/uploads/%E5%8F%B0%E4%B8%AD%E8%8C%83%E7%89%B9%E5%96%9C%E7%B6%A0%E5%85%89%E8%A8%88%E7%95%AB.jpg"
                             alt="">
                         <div class="text-area">
@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img class="h-300"
+                        <img class="h-300 a"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%A4%A7%E5%A2%A9%E6%96%87%E5%8C%96%E4%B8%AD%E5%BF%83.jpg/1200px-%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%A4%A7%E5%A2%A9%E6%96%87%E5%8C%96%E4%B8%AD%E5%BF%83.jpg"
                             alt="">
                         <div class="text-area">
@@ -69,15 +69,16 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <img class="h-300"
-                            src="https://8.share.photo.xuite.net/stuart_lin/18804cf/5078229/1221041402_o.jpg" alt="">
+                        <img class="h-300 a"
+                            src="https://photo.travelking.com.tw/scenery/A89C4769-3E83-4150-A3EB-640600662601_e.jpg" alt="">
                         <div class="text-area">
                             <h3>柳川水岸步道</h3>
                             <p>白天的柳川呈現悠閒的氣息，水質清澈，可近距離欣賞水中的錦鯉，十分適合親子出遊踏青；而晚上的柳川充滿浪漫的氛圍，走在璀璨的燈火下，看著閃閃亮光的柳樹和裝置藝術天鵝，不僅是拍夜景的好地方，也適合情侶夜晚來此散步。
                             </p>
                         </div>
                     </div>
-                    <div class="swiper-slide"><img class="h-300"
+                    <div class="swiper-slide">
+                        <img class="h-300 a"
                             src="https://farm8.staticflickr.com/7893/46593635802_b3253ee6f0_b.jpg" alt="">
                         <div class="text-area">
                             <h3>咖波屋</h3>
@@ -127,6 +128,94 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+
+        const a_All= document.querySelectorAll('.a');
+        a_All.forEach(function(item,index){
+            item.addEventListener("mouseover", function () {
+                switch (index){
+                    case 0: 
+                        item.src='https://www.newland.tw/images/case_display/1562554479965.jpg';
+                    break;
+                }
+                switch (index){
+                    case 1: 
+                        item.src='https://www.cam.org.tw/wp-content/uploads/20200720%E5%9C%8B%E7%BE%8E%E9%A4%A8%E7%89%88%E7%95%AB.jpg';
+                    break;
+                }
+                switch (index){
+                    case 2: 
+                        item.src='https://www.bring-you.info/wp-content/uploads/2020/12/calligraphy-greenway-20.jpg';
+                    break;
+                }
+                switch (index){
+                    case 3: 
+                        item.src='https://travel.taichung.gov.tw/image/12464?r=637837893159506697';
+                    break;
+                }
+                switch (index){
+                    case 4: 
+                        item.src='https://i0.wp.com/img.journey.tw/20200314212851_78.jpg?resize=1600%2C1066&quality=100&ssl=1';
+                    break;
+                }
+                switch (index){
+                    case 5: 
+                        item.src='https://i0.wp.com/fishstray.com/wp-content/uploads/%E5%8F%B0%E4%B8%AD%E5%92%96%E6%B3%A2%E5%B1%8B/IMG_2796-Copy.jpg?resize=800%2C600&ssl=1';
+                    break;
+                }
+                
+               
+            });
+
+            item.addEventListener("mouseout", function () {
+                switch (index){
+                    case 0: 
+                        item.src='https://tluxe-aws.hmgcdn.com/public/article/2017/atl_20190905105406_480.jpg';
+                    break;
+                }
+                switch (index){
+                    case 1: 
+                        item.src='https://c8.staticflickr.com/9/8664/28464285783_2887445cae_b.jpg';
+                    break;
+                }
+                switch (index){
+                    case 2: 
+                        item.src='https://beri.tw/wp-content/uploads/%E5%8F%B0%E4%B8%AD%E8%8C%83%E7%89%B9%E5%96%9C%E7%B6%A0%E5%85%89%E8%A8%88%E7%95%AB.jpg';
+                    break;
+                }
+                switch (index){
+                    case 3: 
+                        item.src=' https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%A4%A7%E5%A2%A9%E6%96%87%E5%8C%96%E4%B8%AD%E5%BF%83.jpg/1200px-%E8%87%BA%E4%B8%AD%E5%B8%82%E7%AB%8B%E5%A4%A7%E5%A2%A9%E6%96%87%E5%8C%96%E4%B8%AD%E5%BF%83.jpg';
+                    break;
+                }
+                switch (index){
+                    case 4: 
+                        item.src='https://photo.travelking.com.tw/scenery/A89C4769-3E83-4150-A3EB-640600662601_e.jpg';
+                    break;
+                }
+                switch (index){
+                    case 5: 
+                        item.src='https://farm8.staticflickr.com/7893/46593635802_b3253ee6f0_b.jpg';
+                    break;
+                }
+                
+            });
+
+        });
+
+
+
+
+
+        //      a.addEventListener("mouseover", function () {
+        //     a.src='https://www.newland.tw/images/case_display/1562554479965.jpg';
+
+        // });
+        // a.addEventListener("mouseout", function () {
+        //     a.src='https://tluxe-aws.hmgcdn.com/public/article/2017/atl_20190905105406_480.jpg';
+
+        // });
+
+       
     </script>
 
 </body>
