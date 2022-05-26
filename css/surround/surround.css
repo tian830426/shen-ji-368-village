@@ -1,6 +1,4 @@
-html{
-    cursor: url(/img/東郁/banner/pen.png),auto;
-    }
+
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
@@ -249,6 +247,9 @@ p {
         background-image: url(/img/周邊環境/周邊環境背景手機.svg
         );
 
+    }
+    .mb-45 {
+        margin-bottom: 20px;
     }
     .mx-170 .swiper-button-next {
         right: 5px;
