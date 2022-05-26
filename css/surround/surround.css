@@ -134,7 +134,6 @@ p {
 }
 
 @keyframes go {
-
     100% {
         right: 100%;
         bottom: 5.2%;
@@ -146,23 +145,24 @@ p {
     width: 180px;
     height: 120px;
     position: absolute;
-    right: 0%;
+    right: -1%;
     bottom: 5.2%;
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
     animation: go 7s ease-in-out 0s infinite normal forwards;
     /* transform: rotateY(180deg); */
 }
 
 @media (max-width:768px) {
-    #location>.mx-170>.d-flex {
-        flex-direction: column;
-    }
-
-    .map {
-        width: 600px;
-        height: 433px;
-    }
-
+   .girl{
+       transform: scale(.7);
+       bottom: 3.1%;
+   }
+   @keyframes go {
+       100%{
+        right: 100%;   
+        bottom: 3.1%;
+       }
+   }
+   
     .mx-170 {
         margin: 0 84px;
     }
