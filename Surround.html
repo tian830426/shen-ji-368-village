@@ -14,11 +14,61 @@
     <link rel="stylesheet" href="/css/all.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!--nav_bar css-->
+    <link rel="stylesheet" href="./css/nav_bar/nav_bar.css">
+
 </head>
 
 <body>
+
+
     <!-- 周邊環境 -->
     <div id="surround" class="h-100vh position-relative">
+
+        <nav class="navbar  navbar-dark  justify-content_r pl-2 bg_navbar">
+
+
+            <div class="nav_height_r pt-2 pr-2 burger">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="nav_height_r">
+                <a class="navbar-brand" href="#"><img src="./img/navBar/logo.svg" width="115" height="55">
+                </a>
+                <!--navbar-brand LOGO-->
+            </div>
+
+            <div class="text-black-50 burger_center"> 審計368新創聚落</div>
+            <!--主題-->
+
+            <div class="ml-auto pr-5 burger_padding_disappear">
+                <!--ml-auto 空出左邊位置-->
+                <a class="text-black-50" href="#">審計由來</a>
+                <a class="text-black-50 pl-2" href="#">最新活動</a>
+                <a class="text-black-50 pl-2" href="#">媒體報導</a>
+                <a class="text-black-50 pl-2" href="#">店家介紹</a>
+                <a class="text-black-50 pl-2" href="#">暮暮市集</a>
+                <a class="text-black-50 pl-2" href="#location">地理位置</a>
+                <a class="text-black-50 pl-2" href="#">周邊環境</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#">審計由來 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">最新活動</a>
+                    <a class="nav-link" href="#">媒體報導</a>
+                    <a class="nav-link" href="#">店家介紹</a>
+                    <a class="nav-link" href="#">暮暮市集</a>
+                    <a class="nav-link" href="#">地理位置</a>
+                    <a class="nav-link" href="#">周邊環境</a>
+
+                </div>
+            </div>
+
+        </nav>
+
         <!-- 周邊環境 -->
         <section class="mx-170 pt-60">
             <div class="d-flex align-items-center flex-column mb-45">
@@ -95,7 +145,24 @@
             <!-- 點點 -->
 
         </section>
+
+
+
+
+
+
+
+        
     </div>
+
+
+
+
+
+
+
+
+
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
