@@ -34,6 +34,7 @@
                 case 0: 
                     item.src='https://www.newland.tw/images/case_display/1562554479965.jpg';
                 break;
+                
             }
             switch (index){
                 case 1: 
