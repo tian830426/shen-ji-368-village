@@ -129,7 +129,10 @@ p {
     background-image: url(/img/周邊環境/單車女.svg);
     width: 180px;
     height: 120px;
+    position: absolute;
+    right: 0px;
 }
+
 
 @media (max-width:768px) {
     #location>.mx-170>.d-flex {
