@@ -20,11 +20,13 @@ body {
     z-index: 2;
   
 }
+.navbar-nav{
+    position: relative;
+}
 
 .navbar-nav a{
     background-color:   #ce7a56;
     border: 1px solid ;
-
 }
 
 
@@ -47,9 +49,9 @@ body {
     background-color: #CE7A56 !important;
 }
 
-
-
-
+.navbar-nav .nav-link{
+    padding-left: 25px;
+}
 
 @media(max-width:855px) {
     .nav_height_r a {
