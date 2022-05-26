@@ -14,7 +14,7 @@ body {
 }
 
 #location {
-    background-image: url(https://tian830426.github.io/shen-ji-368-village/img/location.bg-1920-1080.svg);
+    background-image: url('https://tian830426.github.io/shen-ji-368-village/img/location/bg-1920-1080.svg');
     background-position: right;
     background-size: cover;
 }
@@ -66,7 +66,7 @@ h2 {
 
 /* 交通資訊背景 */
 #traffic {
-    background-image: url(https://tian830426.github.io/shen-ji-368-village/img/%E4%BA%A4%E9%80%9A%E8%B3%87%E8%A8%8A/%E4%BA%A4%E9%80%9A%E8%B3%87%E8%A8%8A%E8%83%8C%E6%99%AF.svg);
+    background-image: url('https://tian830426.github.io/shen-ji-368-village/img/traffic/bg-1920-1080.svg');
     background-size: cover;
 }
 
@@ -127,11 +127,6 @@ p {
     font-size: 18px;
 }
 
-/* swiper */
-/* .swiper .swiper-wrapper .swiper-slide{
-    width: 400px;
-    height: 500px;
-} */
 .mx-170 .swiper-button-next {
     right: 100px;
 }
@@ -147,7 +142,7 @@ p {
 
 @media (max-width:768px) {
     #location {
-        background-image: url(./img/地理位置/地理位置背景平板.svg);
+        background-image: url('https://tian830426.github.io/shen-ji-368-village/img/location/bg-768-1024.svg');
         position: relative;
     }
 
@@ -186,7 +181,7 @@ p {
     }
 
     #traffic {
-        background-image: url(./img/交通資訊/交通資訊背景平板.svg);
+        background-image: url('https://tian830426.github.io/shen-ji-368-village/img/traffic/bg-768-1024.svg');
     }
 
     .pt-198 {
@@ -202,10 +197,6 @@ p {
         font-size: 40px;
     }
 
-    #surround {
-        background-image: url(./img/周邊環境背景平板.svg);
-
-    }
 
     .h-300 {
         width: 290px;
@@ -223,7 +214,7 @@ p {
 
 @media(max-width:375px) {
     #location {
-        background-image: url(./img/地理位置/地理位置背景手機.svg);
+        background-image: url('https://tian830426.github.io/shen-ji-368-village/img/location/bg-375-667.svg');
     }
 
     .map {
@@ -273,7 +264,7 @@ p {
     }
 
     #traffic {
-        background-image: url(./img/交通資訊/交通資訊背景手機.svg);
+        background-image: url('https://tian830426.github.io/shen-ji-368-village/img/traffic/bg-375-667.svg');
     }
 
     .pt-198 {
@@ -285,10 +276,7 @@ p {
         height: 405px;
     }
 
-    #surround {
-        background-image: url(./img/周邊環境背景手機.svg);
 
-    }
 
     .mx-170 .swiper-button-next {
         right: 5px;

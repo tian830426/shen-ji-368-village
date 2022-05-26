@@ -6,52 +6,56 @@
 body{
     padding: 0px;
     margin: 0px;
-    background-image:url(../04-素材/大家都有/背景圖.svg);
+    background-image:url(/img/周邊環境/周邊環境背景.svg);
     background-size:cover;
 }
+
  /* 將ul,li預設的padding margin拿掉 */
 ul , li{
     padding: 0;
     margin: 0;
 }
-nav{
-    /* 設定在視窗同個位置，滾動時跟著移動 */
+/* 設定在視窗同個位置，滾動時跟著移動 */
+/* nav{
     position:fixed;
     width: 100vw;
     height: 60px;
     background-color: orange;
-}
+}  */
 
 /* section */
-.container {
+ .container-one {
     display: flex;
     /* 預設邊界距離 */
     width: 90%;
-    /* 扣掉底部footer高度，nav因懸浮所以不要扣除其高度 */
-    height:calc(100vh - 50px);
-    margin:auto;   
+    /* 扣掉底部footer高度，nav因懸浮所以不要扣除其高度 */ 
+    height:calc(100vh - 110px);
+    margin:auto; 
+    
 }
 
-.container .box-left{
+.container-one .box-left{
     position: relative;
-    width: 50%;
-    height: 75%;
+    width: 65%;
+    height: 70%;
     background-color: rgba(240, 236, 224, 1);
-     margin: auto; 
+    margin: auto;  
+    margin-right: 100px;
      
 }
 
-.container .box-right{
+.container-one .box-right{
     position: relative;
-    width: 45%;
-    height: 65%;
-    margin: auto;
+    width: 50%;
+    height: 70%;
+    margin: auto;  
    
 }
 
-.container .box-right .box-title img {
+.container-one .box-right .box-title img {
     width: 100%;
     height: 100%;
+    /* background-position: center; */
 }
  /* 左側照片輪播 css */
 Time for the CSS*/ * {
@@ -139,71 +143,75 @@ On click the images will be displayed at normal size to complete the effect
     width: 35%;   
 } */
 
-.container .box-right .box-title span {
+.container-one .box-right .box-title {
     display: flex;
-    margin-top: 45px;
+  
 
 }
 
-.container .box-right .box-title img {
+.container-one .box-right .box-title img {
     width: 65px;
     height: 65px;
+    margin-right: 0.5rem;
 }
 
-.container .box-right .box-title span h3 {
-    font-size: 36px;
-    line-height: 2px;
+.container-one .box-right .box-title h3 {
+    font-size: 2.25rem;
     color: rgba(69, 21, 21, 1);
-}
-.container .box-right .box-title p {
-    font-size: 20px;
-    line-height: 15px;
-    color: rgba(69, 21, 21, 1);
+    margin: 0;
+    letter-spacing:2px;
+
 }
 
+.container-one .box-right .box-title p {
+    font-size: 1.25rem; 
+    letter-spacing:4px;
+    color: rgba(69, 21, 21, 1);
+    margin: 0;
+}
+/* 左右間距 */
 .box-list-up{
-    margin-right:24px;;
-}
-.container .box-right .box-list{
+    margin-right:1.5rem;
+    letter-spacing:2px;
+} 
+.container-one .box-right .box-list{
      display: flex; 
      position: relative;  
      z-index: 2; 
      font-weight: 800; 
 }
-.container .box-right .box-list li{
+.container-one .box-right .box-list li{
     list-style: none; 
 }
 
 .box-list-text{
-    width: 180px;
+    width: 150%;
     height: auto;
     background-color: rgb(59, 45, 24);
     opacity: 0.85;
     display: none; 
     list-style: none;
-    text-align: center;   
+    text-align: center;
+    letter-spacing:2px;   
 }
 .box-list-text li{
-    margin-top: 22px;
+    margin-top: 1.375rem;
     text-align: center; 
 
 }
 
 .box-list-food:hover{
    color:rgba(240, 236, 224, 1);
-   width: 100px;
-   height: 30px;
-   font-size: 20px;
    background-color: rgb(80, 50, 50);
-   margin-top: 10px;
+   margin-top: 20px;
    text-align: center;
 }
 .box-list-food{
     width: 100px;
-    height: 30px;
-    font-size: 20px;
+    height: 30px; 
+    font-size: 1.25rem;
     background-color: rgb(200, 197, 163);
-    margin-top: 20px;
+    margin-top: 30px;
    text-align: center;
    color:rgb(156, 91, 0);
    box-shadow: 0 10px 20px -5px rgba(3, 2, 2, 0.5);
@@ -216,8 +224,8 @@ On click the images will be displayed at normal size to complete the effect
     
 } 
 
-.container .box-right .box-shop {
-    margin-top: 70px;
+.container-one .box-right .box-shop {
+    margin-top: 40px;
     width: 95%;
     height: 60%;
     position:relative;
@@ -226,11 +234,11 @@ On click the images will be displayed at normal size to complete the effect
     color: rgba(96, 94, 90, 1);
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
 }
-.container .box-right .box-shop .shop-pageOne{
+.container-one .box-right .box-shop .shop-pageOne{
     position: relative;
 }
 
-.container .box-right .box-shop .shop-pageOne h3{
+.container-one .box-right .box-shop .shop-pageOne h3{
     width: 100%;
     height: 80%;
     font-size: 2rem;
@@ -239,39 +247,60 @@ On click the images will be displayed at normal size to complete the effect
     padding: 40px 0;
 }
 
-.container .box-right .box-shop .shop-pageOne p {
-    font-size: 20px;
+.container-one .box-right .box-shop .shop-pageOne p {
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    letter-spacing: 4px;
     color: rgba(96, 94, 90, 1);
     margin: auto;
 }
 
-.container .box-right .box-shop .shop-pageOne .shop-light img {
+.container-one .box-right .box-shop .shop-pageOne .shop-light img {
     width: 100%;
     height: 100%; 
     position:absolute;
     top: -8%;
-    left: 40%;
+    left: 45%;
     
 }
 
-.container .box-right .box-shop .shop-pageOne .shop-flower img {
+.container-one .box-right .box-shop .shop-pageOne .shop-woman img {
+    width: 50%;
+    height: 50%; 
+    position:absolute;
+    top: 155%;
+    left: -16%;
+    margin-right: 15px;
+    
+}
+
+.container-one .box-right .box-shop .shop-pageOne .shop-man img {
+    width: 50%;
+    height: 50%; 
+    position:absolute;
+    top: 155%;
+    left: -6%;
+    
+}
+
+/* .container-one .box-right .box-shop .shop-pageOne .shop-flower img {
     width: 160px;
     height: 100px;
     position: absolute;
     top: 80%;
     left: -5%;
-} 
+}  */
 
 /* shop-pageTwo 翻頁頁面 */
- .container .box-right .box-shop .shop-pageTwo.none {
+ .container-one .box-right .box-shop .shop-pageTwo.none {
     display: none; 
 } 
 
-  .container .box-right .box-shop .shop-pageTwo{
+  .container-one .box-right .box-shop .shop-pageTwo{
 position: relative;
 } 
 
-.container .box-right .box-shop .shop-pageTwo p{
+.container-one .box-right .box-shop .shop-pageTwo p{
     font-size: 1.8rem;
     text-align: center;
     line-height: 40px;
@@ -279,7 +308,8 @@ position: relative;
     margin: auto;
     font-weight: 900;
     font-size: 16px;
-    color: black; 
+    color: rgba(96, 94, 90, 1);
+    letter-spacing: 4px;
     padding:0 60px;
 }
 
@@ -292,7 +322,7 @@ position: relative;
     margin:0 5px;
 }
 
- .container .box-right .box-shop .shop-pageTwo >.shop-cat{
+ .container-one .box-right .box-shop .shop-pageTwo >.shop-cat{
     position: absolute;
     top:85%;
     left:4%;
@@ -300,8 +330,8 @@ position: relative;
 
 .button{
     position: absolute;
-    top: 150%;
-    left:80%;
+    top: 170%;
+    left:75%;
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -412,69 +442,138 @@ position: relative;
 
 /*平板*/
 @media(max-width:768px) {
-    .container {
+    .container-one {
         position: relative;
         display: block;
         width: 100%;
-        height: 100%
-    }
-
-    .container {
-        width: 100%;
         height: 100vh;
+        padding: 0; 
     }
-
+    .container-one .box-left{
+        position: relative;
+        width: 100vw;
+    }
+    .container-one .box-right{
+        position: relative;
+        width: 100vw;
+        
+    }
     .box-title {
         position: absolute;
-        top: 0%;
-        left: 5%; 
+        top: -125%;
+        left: 35%; 
         width: 100%;
+        margin: 0 auto;
     }
-    .container .box-right .box-shop {
+
+    .box-right>p{
         position: absolute;
-         top: 110%;
-        left: 10%;
-        width: 100%;
-        height: 100%;
+        top: -115%;
+        left: 30%; 
+    }
+
+    .box-list{
+        position: absolute; 
+        top: -115%;
+        left: 10%; 
+        z-index: 2;
+    }
+
+    .container-one .box-right .box-shop {
+        width: 100vw;
+        height: 60%;
+    }
+    .shop-pageOne>p{
+
     }
 
     .slider {
-        width: 720px;
-        height: 720px;
-
+        width: 100vw;
+        height: 100%;
+        margin-top: 30%;
     }
-
     .slider img {
-        width: 600px;
-        height: 500px;
-
+        width: 90%;
+        height: 60%;
+        margin: auto;
     }
-
     .slider label {
-        margin-top: 70px;
+        margin-top: 70px ;
     }
-
     .slider label img {
-        width: 100px;
-        height: 100px;
-
-    }
-
-    footer {
         width: 100%;
-    }
+        height: 100%;
+        margin: auto;
+
+    }   
 }
 
 /*手機*/
-@media(max-width:375px) {}
+@media(max-width:375px) {
 
+    .container-one {
+        position: relative;
+        display: block;
+        width: 80%;
+        height: 100vh;
+        
+    }
+    .container-one .box-left{
+        position: relative;
+        width: 100vw;
+    }
+    .container-one .box-right{
+        position: relative;
+        width: 100vw;
+        
+    }
+    .box-title {
+        position: absolute;
+        top: -50%;
+        left: 35%; 
+        width: 100%;
+        margin: 0 auto;
+    }
 
-footer {
-    width: 100%;
-    height: 50px;
-    background-color: rgba(249, 209, 149, 1);
-    font-size: 14px;
-    text-align: center;
-    padding-top: 3px;
+    .box-right>p{
+        position: absolute;
+        top: -115%;
+        left: 30%; 
+    }
 
+    .box-list{
+        position: absolute; 
+        top: -120%;
+        left: 10%; 
+        z-index: 2;
+    }
+
+    .container-one .box-right .box-shop {
+        width: 100vw;
+        height: 60%;
+    }
+    .shop-pageOne>p{
+
+    }
+
+    .slider {
+        width: 100vw;
+        height: 100%;
+        margin-top: 30%;
+    }
+    .slider img {
+        width: 90%;
+        height: 60%;
+        margin: auto;
+    }
+    .slider label {
+        margin-top: 70px ;
+    }
+    .slider label img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+
+    }   
 }
+
