@@ -1,3 +1,6 @@
+html{
+    cursor: url(/img/東郁/banner/pen.png),auto;
+    }
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
@@ -112,11 +115,6 @@ p {
     font-size: 18px;
 }
 
-/* swiper */
-/* .swiper .swiper-wrapper .swiper-slide{
-    width: 400px;
-    height: 500px;
-} */
 .mx-170 .swiper-button-next {
     right: 100px;
 }
@@ -131,11 +129,6 @@ p {
 }
 
 @media (max-width:768px) {
-    #location {
-        background-image: url(/img/地理位置背景平板.svg);
-        position: relative;
-    }
-
     #location>.mx-170>.d-flex {
         flex-direction: column;
     }
