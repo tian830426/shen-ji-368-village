@@ -1,0 +1,480 @@
+/* 初始化設定 */
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image:url(../04-素材/大家都有/背景圖.svg);
+    background-size:cover;
+}
+ /* 將ul,li預設的padding margin拿掉 */
+ul , li{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    /* 設定在視窗同個位置，滾動時跟著移動 */
+    position:fixed;
+    width: 100vw;
+    height: 60px;
+    background-color: orange;
+}
+
+/* section */
+.container {
+    display: flex;
+    /* 預設邊界距離 */
+    width: 90%;
+    /* 扣掉底部footer高度，nav因懸浮所以不要扣除其高度 */
+    height:calc(100vh - 50px);
+    margin:auto;   
+}
+
+.container .box-left{
+    position: relative;
+    width: 50%;
+    height: 75%;
+    background-color: rgba(240, 236, 224, 1);
+     margin: auto; 
+     
+}
+
+.container .box-right{
+    position: relative;
+    width: 45%;
+    height: 65%;
+    margin: auto;
+   
+}
+
+.container .box-right .box-title img {
+    width: 100%;
+    height: 100%;
+}
+ /* 左側照片輪播 css */
+Time for the CSS*/ * {
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    /*Same as width of the large image*/
+    position: relative;
+    /*Instead of height we will use padding*/
+
+    padding-top: 480px;
+
+    /*That helps bring the labels down*/
+
+     /* margin: 50px 100px 50px 100px;  */
+
+    /*Lets add a shadow*/
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+/*Last thing remaining is to add transitions*/
+
+.slider>img {
+    position: absolute;
+    width: 90%;
+    height: 60%;
+    left: 5%;
+    top: 7%;
+    transition: all 0.5s;
+    margin:  auto;
+}
+
+.slider input[name='slide_switch'] {
+    display: none;
+}
+
+.slider label {
+    /*Lets add some spacing for the thumbnails*/
+    width: 16%;
+    height: 55%;
+     margin: 30px 0 0 30px;  
+    border: 3px solid #999;
+    float: left;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    /*Default style = low opacity*/
+    opacity: 0.6;
+}
+
+.slider label img {
+    display: block;
+}
+
+/*Time to add the click effects*/
+.slider input[name='slide_switch']:checked+label {
+    border-color: #666;
+    opacity: 1;
+}
+
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+.slider input[name='slide_switch']~img {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked+label+img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*Clicking on any thumbnail now should activate the image related to it*/
+
+/*We are done :)*/
+
+/* .container .box-right{
+    width: 35%;   
+} */
+
+.container .box-right .box-title span {
+    display: flex;
+    margin-top: 45px;
+
+}
+
+.container .box-right .box-title img {
+    width: 65px;
+    height: 65px;
+}
+
+.container .box-right .box-title span h3 {
+    font-size: 36px;
+    line-height: 2px;
+    color: rgba(69, 21, 21, 1);
+}
+.container .box-right .box-title p {
+    font-size: 20px;
+    line-height: 15px;
+    color: rgba(69, 21, 21, 1);
+}
+
+.box-list-up{
+    margin-right:24px;;
+}
+.container .box-right .box-list{
+     display: flex; 
+     position: relative;  
+     z-index: 2; 
+     font-weight: 800; 
+}
+.container .box-right .box-list li{
+    list-style: none; 
+}
+
+.box-list-text{
+    width: 180px;
+    height: auto;
+    background-color: rgb(59, 45, 24);
+    opacity: 0.85;
+    display: none; 
+    list-style: none;
+    text-align: center;   
+}
+.box-list-text li{
+    margin-top: 22px;
+    text-align: center; 
+
+}
+
+.box-list-food:hover{
+   color:rgba(240, 236, 224, 1);
+   width: 100px;
+   height: 30px;
+   font-size: 20px;
+   background-color: rgb(80, 50, 50);
+   margin-top: 10px;
+   text-align: center;
+}
+.box-list-food{
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    background-color: rgb(200, 197, 163);
+    margin-top: 20px;
+   text-align: center;
+   color:rgb(156, 91, 0);
+   box-shadow: 0 10px 20px -5px rgba(3, 2, 2, 0.5);
+   opacity: 0.9;
+
+}
+
+.box-list-food:hover .box-list-text {
+    display: block;
+    
+} 
+
+.container .box-right .box-shop {
+    margin-top: 70px;
+    width: 95%;
+    height: 60%;
+    position:relative;
+    background-color: rgba(240, 236, 224, 1);
+    text-align: center;
+    color: rgba(96, 94, 90, 1);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+.container .box-right .box-shop .shop-pageOne{
+    position: relative;
+}
+
+.container .box-right .box-shop .shop-pageOne h3{
+    width: 100%;
+    height: 80%;
+    font-size: 2rem;
+    color: rgba(96, 94, 90, 1);
+    margin: auto;
+    padding: 40px 0;
+}
+
+.container .box-right .box-shop .shop-pageOne p {
+    font-size: 20px;
+    color: rgba(96, 94, 90, 1);
+    margin: auto;
+}
+
+.container .box-right .box-shop .shop-pageOne .shop-light img {
+    width: 100%;
+    height: 100%; 
+    position:absolute;
+    top: -8%;
+    left: 40%;
+    
+}
+
+.container .box-right .box-shop .shop-pageOne .shop-flower img {
+    width: 160px;
+    height: 100px;
+    position: absolute;
+    top: 80%;
+    left: -5%;
+} 
+
+/* shop-pageTwo 翻頁頁面 */
+ .container .box-right .box-shop .shop-pageTwo.none {
+    display: none; 
+} 
+
+  .container .box-right .box-shop .shop-pageTwo{
+position: relative;
+} 
+
+.container .box-right .box-shop .shop-pageTwo p{
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 40px;
+    text-indent: 32px;
+    margin: auto;
+    font-weight: 900;
+    font-size: 16px;
+    color: black; 
+    padding:0 60px;
+}
+
+.box-shop .shop-pageTwo  {
+    position: relative;
+    
+}
+
+.box-shop .shop-pageTwo a img{
+    margin:0 5px;
+}
+
+ .container .box-right .box-shop .shop-pageTwo >.shop-cat{
+    position: absolute;
+    top:85%;
+    left:4%;
+} 
+
+.button{
+    position: absolute;
+    top: 150%;
+    left:80%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 10px;
+    border: 0px solid #927f53;
+    border-radius: 100px;
+    background: #efd089;
+    background: -webkit-gradient(linear, left top, left bottom, from(#efd089), to(#927f53));
+    background: -moz-linear-gradient(top, #efd089, #927f53);
+    background: linear-gradient(to bottom, #efd089, #927f53);
+    -webkit-box-shadow: #fad98f 0px 0px 40px 0px;
+    -moz-box-shadow: #fad98f 0px 0px 40px 0px;
+    box-shadow: #fad98f 0px 0px 40px 0px;
+    text-shadow: #685b3c 2px 4px 0px;
+    font: normal normal bold 10px courier new;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+    border: 0px solid ##d0b577;
+    background: #fffaa4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fffaa4), to(#af9864));
+    background: -moz-linear-gradient(top, #fffaa4, #af9864);
+    background: linear-gradient(to bottom, #fffaa4, #af9864);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:active {
+    background: #927f53;
+    background: -webkit-gradient(linear, left top, left bottom, from(#927f53), to(#927f53));
+    background: -moz-linear-gradient(top, #927f53, #927f53);
+    background: linear-gradient(to bottom, #927f53, #927f53);
+}
+
+.button:after {
+    content: "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 -4px -6px 4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABiElEQVRIibXWv2sUURAH8E/OrSRFOMIFO4sjVQqLlJJSCEr+EUvhiiBC7C3FPyOeMYJVSCEihEPEUmyOEM5CrNLYpHiz5ITdt28x+cIu7Jsf33mz82beim7cxTa2sBFrC3zHGS5zxisZ2RjP8AQ/McNFyO7hQei8xyv8KAgWVHiOOSYYZXRHoTMPm6rL+SqOMMV6aUShexi2q21KVSi8bohkUEBShe1Rgz3SFg9bhBO8KCSZhq9/MJby2JaWNXzGQQHJevgaLy++iShzGAZJyU4m4ROpzufy1VJjDV8KSEY4D992cFLgfJmkJF2n2BlIJ/RrD4I/eIxH8juZYauSjv9FRrEJv7GLj/H9skHnHBsl9d2GLttB/VpIvaUPhjiOpyl64XNB/59cl2vJT35IvzId6lmmd/AXm7iPTx3Oj/FBe1pqPMUvvK0XulpFaVpoaRWkBjV1S82uFt5qu+b/Bs5Ux8BZjmTfDY3MkqG/Jw30mVR6A9dDfxPvZIZ+jqBG27XlW5Bmry1XIt5YMDuvaiMAAAAASUVORK5CYII=") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
+
+.button-two{
+    position: absolute;
+    top: 100%;
+    left: 85%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 10px;
+    border: 0px solid #927f53;
+    border-radius: 100px;
+    background: #efd089;
+    background: -webkit-gradient(linear, left top, left bottom, from(#efd089), to(#927f53));
+    background: -moz-linear-gradient(top, #efd089, #927f53);
+    background: linear-gradient(to bottom, #efd089, #927f53);
+    -webkit-box-shadow: #fad98f 0px 0px 40px 0px;
+    -moz-box-shadow: #fad98f 0px 0px 40px 0px;
+    box-shadow: #fad98f 0px 0px 40px 0px;
+    text-shadow: #685b3c 2px 4px 0px;
+    font: normal normal bold 10px courier new;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button-two,
+.button-two:focus{
+    border: 0px solid ##d0b577;
+    background: #fffaa4;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fffaa4), to(#af9864));
+    background: -moz-linear-gradient(top, #fffaa4, #af9864);
+    background: linear-gradient(to bottom, #fffaa4, #af9864);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button-two:active {
+    background: #927f53;
+    background: -webkit-gradient(linear, left top, left bottom, from(#927f53), to(#927f53));
+    background: -moz-linear-gradient(top, #927f53, #927f53);
+    background: linear-gradient(to bottom, #927f53, #927f53);
+}
+
+.button-two:after {
+    content: "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 -4px -6px 4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABiElEQVRIibXWv2sUURAH8E/OrSRFOMIFO4sjVQqLlJJSCEr+EUvhiiBC7C3FPyOeMYJVSCEihEPEUmyOEM5CrNLYpHiz5ITdt28x+cIu7Jsf33mz82beim7cxTa2sBFrC3zHGS5zxisZ2RjP8AQ/McNFyO7hQei8xyv8KAgWVHiOOSYYZXRHoTMPm6rL+SqOMMV6aUShexi2q21KVSi8bohkUEBShe1Rgz3SFg9bhBO8KCSZhq9/MJby2JaWNXzGQQHJevgaLy++iShzGAZJyU4m4ROpzufy1VJjDV8KSEY4D992cFLgfJmkJF2n2BlIJ/RrD4I/eIxH8juZYauSjv9FRrEJv7GLj/H9skHnHBsl9d2GLttB/VpIvaUPhjiOpyl64XNB/59cl2vJT35IvzId6lmmd/AXm7iPTx3Oj/FBe1pqPMUvvK0XulpFaVpoaRWkBjV1S82uFt5qu+b/Bs5Ux8BZjmTfDY3MkqG/Jw30mVR6A9dDfxPvZIZ+jqBG27XlW5Bmry1XIt5YMDuvaiMAAAAASUVORK5CYII=") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
+
+/* 店家介紹變版 */
+
+/*平板*/
+@media(max-width:768px) {
+    .container {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .box-title {
+        position: absolute;
+        top: 0%;
+        left: 5%; 
+        width: 100%;
+    }
+    .container .box-right .box-shop {
+        position: absolute;
+         top: 110%;
+        left: 10%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .slider {
+        width: 720px;
+        height: 720px;
+
+    }
+
+    .slider img {
+        width: 600px;
+        height: 500px;
+
+    }
+
+    .slider label {
+        margin-top: 70px;
+    }
+
+    .slider label img {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    footer {
+        width: 100%;
+    }
+}
+
+/*手機*/
+@media(max-width:375px) {}
+
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(249, 209, 149, 1);
+    font-size: 14px;
+    text-align: center;
+    padding-top: 3px;
+
+}
