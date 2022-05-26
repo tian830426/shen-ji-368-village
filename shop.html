@@ -4,13 +4,61 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>審計368新創部落</title>
-  <link rel="stylesheet" href="./shop.css" />
+  <title>審計368新創部落 店家介紹</title>
+
+  <link rel="stylesheet" href="./css/shop/shop.css" />
+  <link rel="stylesheet" href="./css/nav_bar/nav_bar.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/footer/footer.css">
 </head>
 <body>
 
   <!-- nav-bar -->
-  <nav></nav>
+  <nav class="navbar  navbar-dark  justify-content_r pl-2 bg_navbar">
+
+
+    <div class="nav_height_r pt-2 pr-2 burger">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+
+    <div class="nav_height_r">
+        <a class="navbar-brand" href="#"><img src="./img/navBar/logo.svg" width="115" height="55">
+        </a>
+        <!--navbar-brand LOGO-->
+    </div>
+
+    <div class="text-black-50 burger_center"> 審計368新創聚落</div>
+    <!--主題-->
+
+    <div class="ml-auto pr-5 burger_padding_disappear">
+        <!--ml-auto 空出左邊位置-->
+        <a class="text-black-50" href="#">審計由來</a>
+        <a class="text-black-50 pl-2" href="#">最新活動</a>
+        <a class="text-black-50 pl-2" href="#">媒體報導</a>
+        <a class="text-black-50 pl-2" href="#">店家介紹</a>
+        <a class="text-black-50 pl-2" href="#">暮暮市集</a>
+        <a class="text-black-50 pl-2" href="#location">地理位置</a>
+        <a class="text-black-50 pl-2" href="#">周邊環境</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="navbar-nav">
+            <a class="nav-link" href="#">審計由來 <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">最新活動</a>
+            <a class="nav-link" href="#">媒體報導</a>
+            <a class="nav-link" href="#">店家介紹</a>
+            <a class="nav-link" href="#">暮暮市集</a>
+            <a class="nav-link" href="#">地理位置</a>
+            <a class="nav-link" href="#">周邊環境</a>
+
+        </div>
+    </div>
+
+</nav>
+
 
   <!-- 中間區塊 -->
   <section>
@@ -130,7 +178,9 @@
       </div>
     </section>
     <footer>
-      <p>Copyright © 2022 一路向東直到 368</p>
+      <nav class="fixed-bottom text-center footer" >
+        <p>Copyright © 2022 一路向東直到 368</p>
+      </nav>
     </footer>
   </div>
   <script>
