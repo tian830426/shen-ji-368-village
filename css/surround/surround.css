@@ -145,7 +145,7 @@ p {
     width: 180px;
     height: 120px;
     position: absolute;
-    right: -1%;
+    right: 0%;
     bottom: 5.2%;
     animation: go 7s ease-in-out 0s infinite normal forwards;
     /* transform: rotateY(180deg); */
