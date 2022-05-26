@@ -256,21 +256,40 @@ On click the images will be displayed at normal size to complete the effect
 }
 
 .container-one .box-right .box-shop .shop-pageOne .shop-light img {
-    width: 100%;
-    height: 100%; 
+    width: 35%;
+    height: 35%; 
     position:absolute;
-    top: -8%;
-    left: 40%;
+    top: -4%;
+    left: 75%;
     
 }
 
-.container-one .box-right .box-shop .shop-pageOne .shop-flower img {
+.container-one .box-right .box-shop .shop-pageOne .shop-woman img {
+    width: 50%;
+    height: 50%; 
+    position:absolute;
+    top: 155%;
+    left: -16%;
+    margin-right: 15px;
+    
+}
+
+.container-one .box-right .box-shop .shop-pageOne .shop-man img {
+    width: 50%;
+    height: 50%; 
+    position:absolute;
+    top: 155%;
+    left: -6%;
+    
+}
+
+/* .container-one .box-right .box-shop .shop-pageOne .shop-flower img {
     width: 160px;
     height: 100px;
     position: absolute;
     top: 80%;
     left: -5%;
-} 
+}  */
 
 /* shop-pageTwo 翻頁頁面 */
  .container-one .box-right .box-shop .shop-pageTwo.none {
@@ -289,7 +308,8 @@ position: relative;
     margin: auto;
     font-weight: 900;
     font-size: 16px;
-    color: black; 
+    color: rgba(96, 94, 90, 1);
+    letter-spacing: 4px;
     padding:0 60px;
 }
 
@@ -310,8 +330,8 @@ position: relative;
 
 .button{
     position: absolute;
-    top: 150%;
-    left:80%;
+    top: 170%;
+    left:75%;
     display: inline-block;
     text-align: center;
     vertical-align: middle;
