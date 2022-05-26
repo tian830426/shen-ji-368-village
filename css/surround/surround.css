@@ -125,6 +125,11 @@ p {
     bottom: 160px;
 
 }
+.girl{
+    background-image: url(/img/周邊環境/單車女.svg);
+    width: 180px;
+    height: 120px;
+}
 
 @media (max-width:768px) {
     #location>.mx-170>.d-flex {
@@ -140,13 +145,6 @@ p {
         margin: 0 84px;
     }
 
-    #local-title {
-        position: absolute;
-        top: 100px;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-
     .mb-138 {
         margin-bottom: 181px;
     }
@@ -158,10 +156,6 @@ p {
     .w-57 {
         width: 45px;
         height: 45px;
-    }
-
-    #traffic {
-        background-image: url(/img/交通資訊背景平板.svg);
     }
     .pt-198 {
         padding-top: 230px;
@@ -201,8 +195,6 @@ p {
     .mx-170 {
         margin: 0 38px;
     }
-
-
     .w-57 {
         width: 30px;
         height: 30px;
@@ -236,9 +228,6 @@ p {
         margin-top: 20px;
     }
 
-    #traffic {
-        background-image: url(/img/交通資訊背景手機.svg);
-    }
     .h-550 {
         width: 300px;
         height: 405px;
