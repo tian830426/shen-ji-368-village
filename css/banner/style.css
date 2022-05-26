@@ -79,7 +79,7 @@ h4 {
 }
 
 .btn-0 {
-  color: #9a3789;
+  box-shadow: 10px 5px 5px black;
 }
 
 .btn-0:before {
@@ -89,144 +89,16 @@ h4 {
   left: 0;
   width: 0;
   height: 80px;
-  background: #520c46;
-}
-
-.btn-0:hover {
-  color: #e1c4dc;
+  background: #F2842A;
 }
 
 .btn-0:hover:before {
   width: 250px;
 }
 
-.btn-0:active {
-  background: #881474;
-}
-
-.btn-1 {
-  color: #be876e;
-}
-
-.btn-1:after {
-  content: '';
-  width: 0;
-  height: 0;
-  -webkit-transform: rotate(360deg);
-  border-style: solid;
-  border-width: 0 0 0 0;
-  border-color: #6b4432 transparent transparent transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.btn-1:hover {
-  color: #ecdcd4;
-}
-
-.btn-1:hover:after {
-  border-width: 330px 330px 0 0;
-}
-
-.btn-1:active {
-  background: #b27254;
-}
-
-.btn-1-2 {
-  color: #bc4b41;
-}
-
-.btn-1-2:before {
-  content: '';
-  width: 0;
-  height: 0;
-  -webkit-transform: rotate(360deg);
-  border-style: solid;
-  border-width: 0 0 0 0;
-  border-color: transparent transparent transparent #6a1a13;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.btn-1-2:after {
-  content: '';
-  width: 0;
-  height: 0;
-  -webkit-transform: rotate(360deg);
-  border-style: solid;
-  border-width: 0 0 0 0;
-  border-color: transparent transparent #6a1a13 transparent;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.btn-1-2:hover {
-  color: #ebcac7;
-}
-
-.btn-1-2:hover:before {
-  border-width: 206.25px 0 0 206.25px;
-}
-
-.btn-1-2:hover:after {
-  border-width: 0 0 206.25px 206.25px;
-}
-
-.btn-1-2:active {
-  background: #b02b20;
-}
-
-.btn-2 {
-  color: #48a6b1;
-}
-
-.btn-2:before {
-  content: '';
-  width: 0;
-  height: 0;
-  -webkit-transform: rotate(360deg);
-  border-style: solid;
-  border-width: 0 0 0 0;
-  border-color: transparent transparent transparent #185a62;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.btn-2:after {
-  content: '';
-  width: 0;
-  height: 0;
-  -webkit-transform: rotate(360deg);
-  border-style: solid;
-  border-width: 0 0 0 0;
-  border-color: transparent #185a62 transparent transparent;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.btn-2:hover {
-  color: #c9e5e8;
-}
-
-.btn-2:hover:before {
-  border-width: 165px 0 0 165px;
-}
-
-.btn-2:hover:after {
-  border-width: 0 165px 165px 0;
-}
-
-.btn-2:active {
-  background: #2896a3;
-}
-
 .btn-3 {
-  color: #ad96a0;
+  color: #DD5101;
+  box-shadow: 10px 5px 5px black;
 }
 
 .btn-3:before {
@@ -236,7 +108,7 @@ h4 {
   -webkit-transform: rotate(360deg);
   border-style: solid;
   border-width: 0 0 0 0;
-  border-color: transparent transparent transparent #5f4f56;
+  border-color: transparent transparent transparent #DD5101;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -249,7 +121,7 @@ h4 {
   -webkit-transform: rotate(360deg);
   border-style: solid;
   border-width: 0 0 0 0;
-  border-color: transparent #5f4f56 transparent transparent;
+  border-color: transparent #DD5101 transparent transparent;
   position: absolute;
   top: 0;
   right: 0;
@@ -262,7 +134,7 @@ h4 {
   -webkit-transform: rotate(360deg);
   border-style: solid;
   border-width: 0 0 0 0;
-  border-color: transparent transparent #5f4f56 transparent;
+  border-color: transparent transparent #DD5101 transparent;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -275,14 +147,14 @@ h4 {
   -webkit-transform: rotate(360deg);
   border-style: solid;
   border-width: 0 0 0 0;
-  border-color: #5f4f56 transparent transparent transparent;
+  border-color: #DD5101 transparent transparent transparent;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .btn-3:hover {
-  color: #e7e0e3;
+  color: #DD5101;
 }
 
 .btn-3:hover:before {
@@ -305,8 +177,11 @@ h4 {
   background: #9e838f;
 }
 
+
+
 .btn-4 {
   color: #8d53b3;
+  box-shadow: 10px 5px 5px black;
 }
 
 .btn-4:after {
@@ -316,7 +191,7 @@ h4 {
   -webkit-transform: rotate(360deg);
   border-style: solid;
   border-width: 0 0 0 0;
-  border-color: transparent #492064 transparent transparent;
+  border-color: transparent #F2842A; transparent transparent;
   position: absolute;
   top: 0;
   right: 0;
@@ -329,7 +204,7 @@ h4 {
   -webkit-transform: rotate(360deg);
   border-style: solid;
   border-width: 0 0 0 0;
-  border-color: transparent transparent transparent #492064;
+  border-color: transparent transparent transparent #F2842A;;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -337,7 +212,7 @@ h4 {
 
 .btn-4:before,
 .btn-4:after {
-  border-color: #492064;
+  border-color: #F2842A;;
 }
 
 .btn-4 span:after {
@@ -347,7 +222,7 @@ h4 {
   -webkit-transform: rotate(360deg);
   border-style: solid;
   border-width: 0 0 0 0;
-  border-color: #492064 transparent transparent transparent;
+  border-color: #F2842A; transparent transparent transparent;
   position: absolute;
   top: 0;
   left: 0;
@@ -360,7 +235,7 @@ h4 {
   -webkit-transform: rotate(360deg);
   border-style: solid;
   border-width: 0 0 0 0;
-  border-color: transparent transparent #492064 transparent;
+  border-color: transparent transparent #F2842A; transparent;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -368,11 +243,11 @@ h4 {
 
 .btn-4 span:before,
 .btn-4 span:after {
-  border-color: #492064;
+  border-color: #F2842A;;
 }
 
 .btn-4:hover {
-  color: #decde9;
+  color: #F2842A;
 }
 
 .btn-4:hover:before {
@@ -392,138 +267,13 @@ h4 {
 }
 
 .btn-4:active {
-  background: #7935a6;
+  background: #F2842A;;
 }
 
-.btn-5 {
-  color: #808695;
-}
-
-.btn-5:after {
-  content: '';
-  width: 0;
-  height: 0;
-  -webkit-transform: rotate(360deg);
-  border-style: solid;
-  border-width: 0 0 0 0;
-  border-color: transparent #3f444e transparent transparent;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.btn-5:before {
-  content: '';
-  width: 0;
-  height: 0;
-  -webkit-transform: rotate(360deg);
-  border-style: solid;
-  border-width: 0 0 0 0;
-  border-color: transparent transparent transparent #3f444e;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.btn-5:hover {
-  color: #dadce0;
-}
-
-.btn-5:hover:before,
-.btn-5:hover:after {
-  border-width: 80px 262.5px;
-}
-
-.btn-5:active {
-  background: #697182;
-}
-
-.btn-6 {
-  color: #80629f;
-}
-
-.btn-6 span {
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: #402a55;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  -webkit-transition: width 0.4s, height 0.4s;
-  transition: width 0.4s, height 0.4s;
-  z-index: -1;
-}
-
-.btn-6:hover {
-  color: #dad1e3;
-}
-
-.btn-6:hover span {
-  width: 562.5px;
-  height: 562.5px;
-}
-
-.btn-6:active {
-  background: #6a468e;
-}
-
-.btn-7 {
-  color: #27692b;
-}
-
-.btn-7:before,
-.btn-7:after,
-.btn-7 span:before,
-.btn-7 span:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 63.5px;
-  height: 0;
-  background: #012f04;
-}
-
-.btn-7:before {
-  left: 0;
-}
-
-.btn-7:after {
-  left: 125px;
-}
-
-.btn-7 span:before,
-.btn-7 span:after {
-  top: auto;
-  bottom: 0;
-}
-
-.btn-7 span:before {
-  left: 62.5px;
-}
-
-.btn-7 span:after {
-  left: 187.5px;
-}
-
-.btn-7:hover {
-  color: #c0d3c1;
-}
-
-.btn-7:hover:before,
-.btn-7:hover:after,
-.btn-7:hover span:before,
-.btn-7:hover span:after {
-  height: 80px;
-}
-
-.btn-7:active {
-  background: #014f06;
-}
 
 .btn-8 {
   color: #5177a7;
+  box-shadow: 10px 5px 5px black;
 }
 
 .btn-8:before,
@@ -534,7 +284,7 @@ h4 {
   left: 0;
   width: 250px;
   height: 0;
-  background: #1e395b;
+  background: #F2842A;
 }
 
 .btn-8:after {
@@ -543,7 +293,7 @@ h4 {
 }
 
 .btn-8:hover {
-  color: #ccd7e5;
+  color: #F2842A;
 }
 
 .btn-8:hover:before,
@@ -552,7 +302,7 @@ h4 {
 }
 
 .btn-8:active {
-  background: #325f98;
+  background: #F2842A;
 }
 
 .btn-9 {
