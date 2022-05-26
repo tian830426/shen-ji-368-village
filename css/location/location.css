@@ -127,11 +127,6 @@ p {
     font-size: 18px;
 }
 
-/* swiper */
-/* .swiper .swiper-wrapper .swiper-slide{
-    width: 400px;
-    height: 500px;
-} */
 .mx-170 .swiper-button-next {
     right: 100px;
 }
@@ -147,7 +142,7 @@ p {
 
 @media (max-width:768px) {
     #location {
-        background-image: url(./img/location/地理位置背景平板.svg);
+        background-image: url('https://tian830426.github.io/shen-ji-368-village/img/location/bg-768-1024.svg');
         position: relative;
     }
 
@@ -186,7 +181,7 @@ p {
     }
 
     #traffic {
-        background-image: url(./img/交通資訊/交通資訊背景平板.svg);
+        background-image: url('https://tian830426.github.io/shen-ji-368-village/img/traffic/bg-768-1024.svg');
     }
 
     .pt-198 {
@@ -219,7 +214,7 @@ p {
 
 @media(max-width:375px) {
     #location {
-        background-image: url(./img/location/地理位置背景手機.svg);
+        background-image: url('https://tian830426.github.io/shen-ji-368-village/img/location/bg-375-667.svg');
     }
 
     .map {
@@ -269,7 +264,7 @@ p {
     }
 
     #traffic {
-        background-image: url(./img/交通資訊/交通資訊背景手機.svg);
+        background-image: url('https://tian830426.github.io/shen-ji-368-village/img/traffic/bg-375-667.svg');
     }
 
     .pt-198 {
