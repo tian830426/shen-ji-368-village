@@ -546,7 +546,7 @@ h4 {
 
 
 .foter {
-  height: 200px;
+  height: auto;
   display: flex;
 }
 

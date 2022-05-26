@@ -138,11 +138,12 @@ hr {
 }
 
 .title {
-
+    width: 100%;
+    display: flex;
+    justify-content: center;
     font-size: 36px;
     text-align: center;
-    padding-top: 45px;    /*自訂*/
-
+    padding-bottom: 15px;
 }
 
 .title p {
