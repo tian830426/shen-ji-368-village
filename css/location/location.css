@@ -14,7 +14,7 @@ body {
 }
 
 #location {
-    background-image: url(./img/location/地理位置背景.svg);
+    background-image: url(https://tian830426.github.io/shen-ji-368-village/img/location/%E5%9C%B0%E7%90%86%E4%BD%8D%E7%BD%AE%E8%83%8C%E6%99%AF.svg);
     background-position: right;
     background-size: cover;
 }
@@ -112,10 +112,7 @@ h2 {
     margin-bottom: 100px;
 }
 
-#surround {
-    background-image: url(./img/周邊環境背景.svg);
-    background-size: cover;
-}
+
 
 .h-300 {
     width: 370px;
