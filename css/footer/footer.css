@@ -4,3 +4,6 @@
     height: 50px;
     padding-top: 15px;
 }
+.fixed-bottom{
+    position: absolute;
+}
