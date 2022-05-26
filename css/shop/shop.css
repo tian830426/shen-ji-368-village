@@ -256,11 +256,11 @@ On click the images will be displayed at normal size to complete the effect
 }
 
 .container-one .box-right .box-shop .shop-pageOne .shop-light img {
-    width: 35%;
-    height: 35%; 
+    width: 100%;
+    height: 100%; 
     position:absolute;
-    top: -4%;
-    left: 75%;
+    top: -8%;
+    left: 45%;
     
 }
 
@@ -446,53 +446,134 @@ position: relative;
         position: relative;
         display: block;
         width: 100%;
-        height: 100%
-    }
-
-    .container-one {
-        width: 100%;
         height: 100vh;
+        padding: 0; 
     }
-
+    .container-one .box-left{
+        position: relative;
+        width: 100vw;
+    }
+    .container-one .box-right{
+        position: relative;
+        width: 100vw;
+        
+    }
     .box-title {
         position: absolute;
-        top: 0%;
-        left: 5%; 
+        top: -125%;
+        left: 35%; 
         width: 100%;
+        margin: 0 auto;
     }
-    .container-one .box-right .box-shop {
+
+    .box-right>p{
         position: absolute;
-         top: 110%;
-        left: 10%;
-        width: 100%;
-        height: 100%;
+        top: -115%;
+        left: 30%; 
+    }
+
+    .box-list{
+        position: absolute; 
+        top: -115%;
+        left: 10%; 
+        z-index: 2;
+    }
+
+    .container-one .box-right .box-shop {
+        width: 100vw;
+        height: 60%;
+    }
+    .shop-pageOne>p{
+
     }
 
     .slider {
-        width: 720px;
-        height: 720px;
-
+        width: 100vw;
+        height: 100%;
+        margin-top: 30%;
     }
-
     .slider img {
-        width: 600px;
-        height: 500px;
-
+        width: 90%;
+        height: 60%;
+        margin: auto;
     }
-
     .slider label {
-        margin-top: 70px;
+        margin-top: 70px ;
     }
-
     .slider label img {
-        width: 100px;
-        height: 100px;
+        width: 100%;
+        height: 100%;
+        margin: auto;
 
-    }
-
-    
+    }   
 }
 
 /*手機*/
-@media(max-width:375px) {}
+@media(max-width:375px) {
+
+    .container-one {
+        position: relative;
+        display: block;
+        width: 80%;
+        height: 100vh;
+        
+    }
+    .container-one .box-left{
+        position: relative;
+        width: 100vw;
+    }
+    .container-one .box-right{
+        position: relative;
+        width: 100vw;
+        
+    }
+    .box-title {
+        position: absolute;
+        top: -50%;
+        left: 35%; 
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .box-right>p{
+        position: absolute;
+        top: -115%;
+        left: 30%; 
+    }
+
+    .box-list{
+        position: absolute; 
+        top: -120%;
+        left: 10%; 
+        z-index: 2;
+    }
+
+    .container-one .box-right .box-shop {
+        width: 100vw;
+        height: 60%;
+    }
+    .shop-pageOne>p{
+
+    }
+
+    .slider {
+        width: 100vw;
+        height: 100%;
+        margin-top: 30%;
+    }
+    .slider img {
+        width: 90%;
+        height: 60%;
+        margin: auto;
+    }
+    .slider label {
+        margin-top: 70px ;
+    }
+    .slider label img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+
+    }   
+}
 
