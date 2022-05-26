@@ -1,3 +1,8 @@
+html{
+
+cursor: url(/img/東郁/banner/pen.png),auto;
+
+}
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
@@ -15,9 +20,6 @@ body {
     background-position: right;
     background-size: cover;
 }
-
-
-
 
 /* nav至標題的間距 */
 .mt-45 {
