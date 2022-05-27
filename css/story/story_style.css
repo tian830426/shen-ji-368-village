@@ -138,12 +138,13 @@ hr {
 }
 
 .title {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     font-size: 36px;
     text-align: center;
     padding-bottom: 15px;
+    padding-top: 62px;  
 }
 
 .title p {
@@ -349,7 +350,8 @@ hr {
 
 
 .story_bg { /*背景色*/
-    background-image: url(/img/background.svg);
+    background-image: url(./img/background.svg);
+    height: 100vh;
 }
 
 .star_bg{/*星星隱藏*/

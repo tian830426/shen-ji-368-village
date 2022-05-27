@@ -158,7 +158,7 @@ p {
     top: 20%;
     left: -10%;
     /* transform: scale(.7); */
-    animation: fly 5s ease-in 2s 1 normal forwards;
+    animation: fly 5s ease-in 12s 1 normal forwards;
 }
 
 @keyframes couple {
@@ -176,7 +176,7 @@ p {
     position: absolute;
     top: 49%;
     left: -10%;
-    animation: couple 7s ease-out 0s  1 normal forwards;
+    animation: couple 7s ease-out 10s 1 normal forwards;
 }
 
 @keyframes son {
@@ -194,7 +194,7 @@ p {
     position: absolute;
     bottom: 15%;
     right: -10%;
-    animation: son 7s ease-in-out 0s 1 normal forwards;
+    animation: son 7s ease-in-out 10s 1 normal forwards;
 }
 
 @media (max-width:768px) {
@@ -211,16 +211,18 @@ p {
 
     .couple {
         top: 16.5%;
-        left:-25%;
+        left: -25%;
         transform: scale(.6);
     }
+
     @keyframes son {
-        100%{
+        100% {
             bottom: 3.5%;
             right: 81%;
         }
     }
-    .son{
+
+    .son {
         bottom: 3.5%;
         right: -20%;
         transform: scale(.7);
@@ -238,6 +240,7 @@ p {
     .map {
         width: 600px;
         height: 433px;
+        max-width: 100%;
     }
 
     .mx-170 {
@@ -246,6 +249,7 @@ p {
 
     #local-title {
         width: 450px;
+        max-width: 100%;
         position: absolute;
         top: 100px;
         left: 50%;
@@ -298,6 +302,23 @@ p {
 }
 
 @media(max-width:375px) {
+    .couple {
+        display: none;
+    }
+
+    @keyframes son {
+        100% {
+            bottom: 36.5%;
+            right: 52%;
+        }
+    }
+
+    .son {
+        bottom: 36.5%;
+        right: -30%;
+        transform: scale(.45);
+    }
+
     #location {
         background-image: url(../../img/location/bg-375-667.svg);
     }
@@ -305,10 +326,11 @@ p {
     .map {
         width: 300px;
         height: 300px;
+        max-width:100%;
     }
 
     .mx-170 {
-        margin: 0 38px;
+        margin: 0 10%;
     }
 
     #local-title {
@@ -357,7 +379,7 @@ p {
     }
 
     .h-550 {
-        width: 300px;
+        width: 100%;
         height: 405px;
     }
 
