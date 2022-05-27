@@ -198,7 +198,7 @@ p {
     }
 
     #traffic {
-        background-image: url('https://tian830426.github.io/shen-ji-368-village/img/traffic/bg-768-1024.svg');
+        background-image: url(../../img/traffic/bg-768-1024.svg);
     }
 
     .pt-198 {
@@ -231,7 +231,7 @@ p {
 
 @media(max-width:375px) {
     #location {
-        background-image: url('https://tian830426.github.io/shen-ji-368-village/img/location/bg-375-667.svg');
+        background-image: url(../../img/location/bg-375-667.svg);
     }
 
     .map {
@@ -281,7 +281,7 @@ p {
     }
 
     #traffic {
-        background-image: url('https://tian830426.github.io/shen-ji-368-village/img/traffic/bg-375-667.svg');
+        background-image: url(../../img/traffic/bg-375-667.svg);
     }
 
     .pt-198 {
