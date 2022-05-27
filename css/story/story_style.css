@@ -239,7 +239,7 @@ hr {
 
 .w-imgText .igt_page {
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     left: auto;
     width: auto;
     right: 20px;
