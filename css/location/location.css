@@ -204,7 +204,7 @@ p {
 
     @keyframes couple {
         100% {
-            top: 14%;
+            top: 16.5%;
             left: 70%;
         }
     }
@@ -213,6 +213,17 @@ p {
         top: 16.5%;
         left:-25%;
         transform: scale(.6);
+    }
+    @keyframes son {
+        100%{
+            bottom: 3.5%;
+            right: 81%;
+        }
+    }
+    .son{
+        bottom: 3.5%;
+        right: -20%;
+        transform: scale(.7);
     }
 
     #location {
