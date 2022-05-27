@@ -298,10 +298,12 @@ p {
 }
 
 @media(max-width:375px) {
+    .couple{
+        display: none;
+    }
     #location {
         background-image: url(../../img/location/bg-375-667.svg);
     }
-
     .map {
         width: 300px;
         height: 300px;
