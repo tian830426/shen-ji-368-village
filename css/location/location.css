@@ -158,7 +158,7 @@ p {
     top: 20%;
     left: -10%;
     /* transform: scale(.7); */
-    animation: fly 5s ease-in 2s 1 normal forwards;
+    animation: fly 5s ease-in 12s 1 normal forwards;
 }
 
 @keyframes couple {
@@ -176,7 +176,7 @@ p {
     position: absolute;
     top: 49%;
     left: -10%;
-    animation: couple 7s ease-out 0s 1 normal forwards;
+    animation: couple 7s ease-out 10s 1 normal forwards;
 }
 
 @keyframes son {
@@ -194,7 +194,7 @@ p {
     position: absolute;
     bottom: 15%;
     right: -10%;
-    animation: son 7s ease-in-out 0s 1 normal forwards;
+    animation: son 7s ease-in-out 10s 1 normal forwards;
 }
 
 @media (max-width:768px) {
