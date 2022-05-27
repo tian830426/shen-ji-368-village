@@ -72,7 +72,7 @@ h4 {
 .wrap {
   width: 100%;
   float: left;
-  cursor: url("/img/東郁/banner/pen.png"), auto;
+  cursor: url("/img/29/banner/pen.png"), auto;
 }
 
 [class^="btn-"] {
@@ -530,7 +530,7 @@ h4 {
 .point_1 {
   width: 350px;
   height: 90px;
-  background-image: url(/img/東郁/banner/point_1.png);
+  background-image: url(/img/29/banner/point_1.png);
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
@@ -544,7 +544,7 @@ h4 {
 .point_2 {
   width: 319px;
   height: 77px;
-  background-image: url(/img/東郁/banner/point_2.png);
+  background-image: url(/img/29/banner/point_2.png);
   margin-left: auto;
   margin-right: auto;
   padding-top: 10px;
@@ -584,7 +584,7 @@ h4 {
 }
 
 .jq22-container {
-  background-image: url(../../img/東郁/banner/1920x1080.png);
+  background-image: url(../../img/29/banner/1920x1080.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -658,7 +658,7 @@ h4 {
 @media(max-width:768px) {
 
   .jq22-container {
-    background-image: url(../../img/東郁/banner/768x1024.png);
+    background-image: url(../../img/29/banner/768x1024.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -669,7 +669,7 @@ h4 {
 @media(max-width:375px) {
 
   .jq22-container {
-    background-image: url(../../img/東郁/banner/375x667.png);
+    background-image: url(../../img/29/banner/375x667.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
