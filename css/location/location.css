@@ -148,13 +148,14 @@ p {
 }
 .fly{
     background-image: url(../../img/traffic/fly.svg);
+    background-size:cover;
     width: 130px;
     height: 100px;
     position: absolute;
     top: 20%;
     left: -10%;
     /* transform: scale(.7); */
-    animation: fly 5s ease-in-out 3s  1 normal forwards;
+    animation: fly 5s ease-in-out 2s  1 normal forwards;
 }
 @keyframes couple{
     100%{
@@ -164,12 +165,29 @@ p {
 }
 .couple{
     background-image: url(../../img/traffic/couple.svg);
+    background-size:cover;
     width: 208px;
     height: 127px;
     position: absolute;
     top: 49%;
     left: -10%;
-    animation: couple 8s ease-in-out 0s  1 normal forwards;
+    animation: couple 7s ease-in-out 0s  1 normal forwards;
+}
+@keyframes son{
+    100%{
+        bottom: 15%;
+        right: 78.5%;
+    }
+}
+.son{
+    background-image: url(../../img/traffic/son.svg);
+    background-size:cover;
+    width: 156px;
+    height: 108px;
+    position: absolute;
+    bottom: 15%;
+    right: -10%;
+    animation: son 7s ease-in-out 0s  1 normal forwards;
 }
 @media (max-width:768px) {
     .fly{
