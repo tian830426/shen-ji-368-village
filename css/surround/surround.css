@@ -135,21 +135,40 @@ p {
 }
 
 @keyframes go {
-    100% {
+    100%{
         right: 100%;
         bottom: 5.2%;
     }
 }
-
+@keyframes fly{
+    100%{
+    right: 100%;
+    bottom: 4.8%;
+    }
+}
 .girl {
     background-image: url(../../img/surround/單車女.svg);
     width: 180px;
     height: 120px;
     position: absolute;
-    right: 0%;
+    right: -10%;
     bottom: 5.2%;
-    animation: go 7s ease-in-out 0s infinite normal forwards;
+    animation: go 10s ease-in-out 5s infinite normal forwards;
+
+}
+.man{
+    background-image: url(../../img/surround/單車阿杯.svg);
+    width: 200px;
+    height: 130px;
+    position: absolute;
+    right: -10%;
+    bottom: 4.8%;
     /* transform: rotateY(180deg); */
+    animation: fly 10s ease-in-out 0s infinite normal forwards;
+}
+
+html{
+    overflow: hidden;
 }
 
 @media (max-width:768px) {
