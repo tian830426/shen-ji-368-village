@@ -193,6 +193,10 @@ p {
     .fly{
         display: none;
     }
+    .couple{
+        top: 0%;
+        left:0%;
+    }
     #location {
         background-image: url(../../img/location/bg-768-1024.svg);
         position: relative;
