@@ -58,6 +58,11 @@ body{
   display: block;
 }
 
+.container:hover .front .inner{
+  transition-delay: 2s;
+  opacity: 0;
+}
+
 .container:hover .front,
 .container:hover .back {
   transition: transform 2s cubic-bezier(0.4, 0.2, 0.2, 1);
