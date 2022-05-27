@@ -135,16 +135,16 @@ p {
 
 }
 
-@keyframes go {
+@keyframes girl {
     100% {
-        right: 100%;
+        right: 25%;
         bottom: 5.2%;
     }
 }
 
-@keyframes fly {
+@keyframes man {
     100% {
-        right: 100%;
+        right: 82%;
         bottom: 4.8%;
     }
 }
@@ -156,7 +156,7 @@ p {
     position: absolute;
     right: -10%;
     bottom: 5.2%;
-    animation: go 10s ease-in-out 5s infinite normal forwards;
+    animation: girl 5s ease-in-out 5s 1 normal forwards;
 
 }
 
@@ -167,7 +167,7 @@ p {
     position: absolute;
     right: -10%;
     bottom: 4.8%;
-    animation: fly 10s ease-in-out 0s infinite normal forwards;
+    animation: man 10s ease-in 0s 1 normal forwards;
 }
 
 
