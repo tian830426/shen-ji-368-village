@@ -142,7 +142,7 @@ p {
 }
 
 .girl {
-    background-image: url(/img/周邊環境/單車女.svg);
+    background-image: url(../../img/surround/單車女.svg);
     width: 180px;
     height: 120px;
     position: absolute;
@@ -153,17 +153,18 @@ p {
 }
 
 @media (max-width:768px) {
-   .girl{
-       transform: scale(.7);
-       bottom: 3.1%;
-   }
-   @keyframes go {
-       100%{
-        right: 100%;   
+    .girl {
+        transform: scale(.7);
         bottom: 3.1%;
-       }
-   }
-   
+    }
+
+    @keyframes go {
+        100% {
+            right: 100%;
+            bottom: 3.1%;
+        }
+    }
+
     .mx-170 {
         margin: 0 84px;
     }
@@ -195,7 +196,7 @@ p {
     }
 
     #surround {
-        background-image: url(/img/周邊環境/周邊環境背景平板.svg);
+        background-image: url(../../img/surround/bg-768-1024.svg);
 
     }
 
@@ -262,8 +263,7 @@ p {
     }
 
     #surround {
-        background-image: url(/img/周邊環境/周邊環境背景手機.svg
-);
+        background-image: url(../../img/surround/bg-375-667.svg);
 
     }
 
