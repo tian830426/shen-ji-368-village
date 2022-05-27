@@ -138,12 +138,13 @@ hr {
 }
 
 .title {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     font-size: 36px;
     text-align: center;
     padding-bottom: 15px;
+    padding-top: 10px;  
 }
 
 .title p {
