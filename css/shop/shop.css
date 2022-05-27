@@ -323,15 +323,15 @@ position: relative;
     position: relative;    
 }
 .follow-box{
-    display: flex;
+    display: flex; 
 }
 
-/* .box-shop .shop-pageTwo a img{
+.box-shop .shop-pageTwo a img{
     position: absolute;
     top: 0;
     left:0;
     margin:0 6px;
-} */
+} 
 
  .container-one .box-right .box-shop .shop-pageTwo .shop-cat{
     position: absolute;
