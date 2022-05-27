@@ -66,8 +66,10 @@ h2 {
 
 /* 交通資訊背景 */
 #traffic {
-    background-image: url('https://tian830426.github.io/shen-ji-368-village/img/traffic/bg-1920-1080.svg');
+    background-image: url(../../img/traffic/bg-1920-1080.svg);
     background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
 
 /* 內容的高度 */
@@ -113,7 +115,6 @@ h2 {
 }
 
 
-
 .h-300 {
     width: 370px;
     height: 250px;
@@ -139,10 +140,26 @@ p {
     bottom: 180px;
 
 }
-
+@keyframes fly{
+100%{
+    top: 20%;
+    left: 100%;
+}
+}
+.fly{
+    background-image: url(../../img/location/fly.svg);
+    width: 130px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    left: -10%;
+    /* transform: scale(.7); */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: fly 10S ease-in-out 0s  infinite normal forwards;
+}
 @media (max-width:768px) {
     #location {
-        background-image: url('https://tian830426.github.io/shen-ji-368-village/img/location/bg-768-1024.svg');
+        background-image: url(../../img/location/bg-768-1024.svg);
         position: relative;
     }
 
@@ -181,7 +198,7 @@ p {
     }
 
     #traffic {
-        background-image: url('https://tian830426.github.io/shen-ji-368-village/img/traffic/bg-768-1024.svg');
+        background-image: url(../../img/traffic/bg-768-1024.svg);
     }
 
     .pt-198 {
@@ -214,7 +231,7 @@ p {
 
 @media(max-width:375px) {
     #location {
-        background-image: url('https://tian830426.github.io/shen-ji-368-village/img/location/bg-375-667.svg');
+        background-image: url(../../img/location/bg-375-667.svg);
     }
 
     .map {
@@ -264,7 +281,7 @@ p {
     }
 
     #traffic {
-        background-image: url('https://tian830426.github.io/shen-ji-368-village/img/traffic/bg-375-667.svg');
+        background-image: url(../../img/traffic/bg-375-667.svg);
     }
 
     .pt-198 {
