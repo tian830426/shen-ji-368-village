@@ -101,6 +101,7 @@ h2 {
 #surround {
     background-image: url("../../img/surround/bg-1920-1080.svg");
     /* background-size: cover; */
+    overflow: hidden;
 }
 
 .pt-60 {
@@ -135,17 +136,19 @@ p {
 }
 
 @keyframes go {
-    100%{
+    100% {
         right: 100%;
         bottom: 5.2%;
     }
 }
-@keyframes fly{
-    100%{
-    right: 100%;
-    bottom: 4.8%;
+
+@keyframes fly {
+    100% {
+        right: 100%;
+        bottom: 4.8%;
     }
 }
+
 .girl {
     background-image: url(../../img/surround/單車女.svg);
     width: 180px;
@@ -156,25 +159,29 @@ p {
     animation: go 10s ease-in-out 5s infinite normal forwards;
 
 }
-.man{
+
+.man {
     background-image: url(../../img/surround/單車阿杯.svg);
     width: 200px;
     height: 130px;
     position: absolute;
     right: -10%;
     bottom: 4.8%;
-    /* transform: rotateY(180deg); */
     animation: fly 10s ease-in-out 0s infinite normal forwards;
 }
 
-html{
-    overflow: hidden;
-}
 
 @media (max-width:768px) {
     .girl {
         transform: scale(.7);
+        right: -20%;
         bottom: 3.1%;
+        animation: go 5s ease-in-out 0s infinite normal forwards;
+
+    }
+
+    .man {
+        display: none;
     }
 
     @keyframes go {
@@ -238,6 +245,22 @@ html{
 }
 
 @media(max-width:375px) {
+    .girl {
+        display: none;
+    }
+    .man{
+    display: block;
+    transform: scale(.4);
+    bottom: 1.3%;
+    right: -35%;
+    animation: fly 5s ease-in-out 0s infinite normal forwards;
+    }
+    @keyframes fly {
+        100% {
+            right: 100%;
+            bottom: 1.3%;
+        }
+    }
 
     .mx-170 {
         margin: 0 38px;
