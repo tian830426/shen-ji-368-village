@@ -143,30 +143,63 @@ p {
 @keyframes fly{
 100%{
     top: 20%;
-    left: 100%;
+    left: 25%;
 }
 }
 .fly{
-    background-image: url(../../img/location/fly.svg);
+    background-image: url(../../img/traffic/fly.svg);
+    background-size:cover;
     width: 130px;
     height: 100px;
     position: absolute;
     top: 20%;
     left: -10%;
     /* transform: scale(.7); */
-    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
-    animation: fly 10S ease-in-out 0s  infinite normal forwards;
+    animation: fly 5s ease-in-out 2s  1 normal forwards;
+}
+@keyframes couple{
+    100%{
+        top: 49%;
+        left:81%;
+    }
+}
+.couple{
+    background-image: url(../../img/traffic/couple.svg);
+    background-size:cover;
+    width: 208px;
+    height: 127px;
+    position: absolute;
+    top: 49%;
+    left: -10%;
+    animation: couple 7s ease-in-out 0s  1 normal forwards;
+}
+@keyframes son{
+    100%{
+        bottom: 15%;
+        right: 78.5%;
+    }
+}
+.son{
+    background-image: url(../../img/traffic/son.svg);
+    background-size:cover;
+    width: 156px;
+    height: 108px;
+    position: absolute;
+    bottom: 15%;
+    right: -10%;
+    animation: son 7s ease-in-out 0s  1 normal forwards;
 }
 @media (max-width:768px) {
+    .fly{
+        display: none;
+    }
     #location {
         background-image: url(../../img/location/bg-768-1024.svg);
         position: relative;
     }
-
     #location>.mx-170>.d-flex {
         flex-direction: column;
     }
-
     .map {
         width: 600px;
         height: 433px;
@@ -233,68 +266,51 @@ p {
     #location {
         background-image: url(../../img/location/bg-375-667.svg);
     }
-
     .map {
         width: 300px;
         height: 300px;
     }
-
     .mx-170 {
         margin: 0 38px;
     }
-
     #local-title {
         top: 80px;
     }
-
     .w-57 {
         width: 30px;
         height: 30px;
     }
-
     .mb-138 {
         margin-bottom: 105px;
     }
-
     h2 {
         font-size: 20px;
     }
-
     h5 {
         font-size: 12px;
     }
-
     .mb-17 {
         margin-bottom: 8px;
     }
-
     .mt-60 {
         margin-top: 30px;
     }
-
     .mt-60>h2 {
         font-size: 20px;
     }
-
     .mt-45 {
         margin-top: 20px;
     }
-
     #traffic {
         background-image: url(../../img/traffic/bg-375-667.svg);
     }
-
     .pt-198 {
         padding-top: 160px;
     }
-
     .h-550 {
         width: 300px;
         height: 405px;
     }
-
-
-
     .mx-170 .swiper-button-next {
         right: 5px;
     }
