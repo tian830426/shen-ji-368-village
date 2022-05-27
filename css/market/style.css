@@ -7,6 +7,7 @@
 
 body{
   height: 100vh;
+  color:black ;
 }
 
 .wrapper {
@@ -38,6 +39,11 @@ body{
   backface-visibility: hidden;
   text-align: center;
   color: black;
+  /* font-size: 30px; */
+}
+
+/* 小卡正面標題大小 */
+.moTitle{
   font-size: 30px;
 }
 
@@ -46,7 +52,7 @@ body{
   width: 768px;
   height: 50vh;
   background: linear-gradient(45deg, #cedce7 0%, #e2b221de 100%);
-  font-size: 16px;
+  font-size: 20px;
   backface-visibility: hidden;
   transition: transform 2s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
@@ -70,17 +76,19 @@ body{
 }
 
 
-.inner {
+.inner{
   transform: translateY(-50%) translateZ(60px) scale(0.94);
-  top: 50%;
   position: absolute;
+  top: 50%;
   left: 0;
   width: 100%;
   padding: 2rem;
-  font-size: .7em;
   box-sizing: border-box;
-  outline: 1px solid transparent;
   z-index: 2;
+}
+
+.inner span{
+  font-size: 20px;
 }
 
 .container .back {
@@ -104,28 +112,21 @@ body{
 }
 
 .front .inner p {
-  font-size: 2rem;
-  margin-bottom: 2rem;
   position: relative;
+  margin-bottom: 1.5rem;
 }
 
 .front .inner p:after {
   content: '';
-  width: 4rem;
+  width: 6rem;
   height: 2px;
   position: absolute;
-  background: black;
+  background: rgb(255, 136, 1);
   display: block;
   left: 0;
   right: 0;
   margin: 0 auto;
   bottom: -.75rem;
-}
-
-.front .inner span {
-  color:black ;
-  font-family: 'Montserrat';
-  font-weight: 300;
 }
 
 .news{
