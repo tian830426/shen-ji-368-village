@@ -6,4 +6,5 @@
 }
 .fixed-bottom{
     position: absolute;
+    z-index: 0;
 }
