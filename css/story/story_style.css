@@ -180,6 +180,8 @@ hr {
 .w-imgText .swiperBox {
     overflow: hidden;
     padding-right: 4%;
+    padding-top: 5vh;
+
 }
 
 .w-imgText .imTB {
