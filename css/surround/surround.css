@@ -297,7 +297,9 @@ p {
         width: 290px;
         height: 195px;
     }
-
+    .mx-170 .swiper-pagination-bullets.swiper-pagination-horizontal {
+        display: block;
+    }
     .mx-170 .swiper-button-next {
         right: 30px;
     }
