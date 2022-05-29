@@ -71,7 +71,7 @@ h4 {
 .wrap {
   width: 100%;
   float: left;
-  cursor: url("./img/29/banner/pen.png"), auto;
+  cursor: url("../../img/29/banner/pen.png"), auto;
 }
 
 [class^="btn-"] {
