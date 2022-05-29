@@ -45,11 +45,6 @@
     background-repeat: no-repeat;
 }
 
-.may {
-    background-repeat: repeat;
-    background-position: center;
-}
-
 .text {
     display: flex;
     height: 235px;
@@ -90,14 +85,31 @@
 
 @media (max-width:1510px) {
     .swiper-slide {
+        width:100% ;
         display: block;
+        padding: 0 10%;
     }
 
     .card {
-        margin: 0%;
+        margin: 0px;
+        padding: 20px;
         display: flex;
         flex-direction: row;
         width: 100%;
         height: 50%
+    }
+    .photo{
+        width: 50%;
+        height: auto;
+        /* height: 330px; */
+    }
+    .text{
+        width: 50%;
+    }
+    
+}
+@media (max-width:1200px){
+    .swiper-slide {
+        padding: 0;
     }
 }
