@@ -19,3 +19,8 @@
     left: 50%;
     top: 50%;
 }
+
+#status img{
+    max-width:100%;
+    height: auto;
+}
