@@ -6,16 +6,16 @@ var swiper = new Swiper(".mySwiper", {
     // slidesPerGroup: 4,
     breakpoints: {
         // when window width is >= 320px
-        376: {
+        500: {
             slidesPerView: 2,
             spaceBetween: 20,
         },
         // when window width is >= 480px
-        769: {
+        1200: {
             slidesPerView: 3,
             spaceBetween: 30,
         },
-        1400: {
+        1800: {
             slidesPerView: 4,
             spaceBetween: 20,
         },

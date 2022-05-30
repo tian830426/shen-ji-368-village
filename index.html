@@ -475,7 +475,7 @@
     </div>
 
     <!-- 交通資訊 -->
-    <div id="traffic" class="h-100vh position-relative">
+    <div id="traffic" class="h-100vh">
         <section class="mx-170 pt-60">
             <div class="d-flex align-items-center flex-column mb-35">
                 <div class="mt-45 d-flex align-items-center mb-17">
@@ -531,7 +531,7 @@
         <script type="text/javascript" src="./js/story/jquery-1.11.3.min.js"></script>
         <script src="./js/top/top.js"></script>
         <script src="http://www.jq22.com/js/jq.js"></script>
-        <script src="./js/top/top_fb_ig.js"></script>
+        <!-- <script src="./js/top/top_fb_ig.js"></script> -->
 
         <!-- news -->
         <script src="./js/news/swiper.min.js"></script>
@@ -556,8 +556,6 @@
                 fly.style.left = "480px"
                 fly.style.top = 20 + '%';
                 fly.style.animation = "none";
-                //  console.log(fly)
-                // console.log('--------------------')
                 flyid = setInterval(frame, 5);
                 function frame() {
                     if (posx > -130) {
@@ -569,7 +567,6 @@
                     }
                     else {
                         posx++;
-                        // console.log(fly)
                         console.log(fly.style.left);
                         fly.style.left = posx + 'px';
                     }

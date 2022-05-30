@@ -7,11 +7,11 @@ var panel = document.getElementById('panel'),
     effect = 'mfb-zoomin',
     pos = 'mfb-component--br';
 
-showcode.addEventListener('click', _toggleCode);
+showcode.addEventListener('click', toggleCode);
 selectFx.addEventListener('change', switchEffect);
 selectPos.addEventListener('change', switchPos);
 
-function _toggleCode() {
+function toggleCode(e) {
     panel.classList.toggle('viewCode');
 }
 
@@ -24,6 +24,7 @@ function switchPos(e) {
     pos = this.options[this.selectedIndex].value;
     renderMenu();
 }
+
 
 function renderMenu() {
     menu.style.display = 'none';
