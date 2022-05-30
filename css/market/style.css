@@ -168,11 +168,24 @@ body{
   top: -215%;
   left: -6.5%;
 }
+.bg768{
+  width: 100%;
+  height: 320px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../../img/market/logo+bg.svg);
+  display: none;
+}
 @media (max-width: 855px) {
   body{
-    background-image: url();
+    background-image: url(../../img/market/marketBackground_768.svg);
   }
-  
+  .bg768{
+    display: block;
+  }
+  .wrapper{
+    display: none;
+  }
 }
 
 /* @media screen and (max-width: 64rem) {
