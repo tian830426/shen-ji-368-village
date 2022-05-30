@@ -6,8 +6,11 @@
 }
 
 body{
+  width: 100%;
   height: 100vh;
   color:black ;
+  background-image:url(../../img/market/marketBackground.svg) ;
+  background-position: center center;
 }
 
 .wrapper {
@@ -165,8 +168,14 @@ body{
   top: -215%;
   left: -6.5%;
 }
+@media (max-width: 855px) {
+  body{
+    background-image: url();
+  }
+  
+}
 
-@media screen and (max-width: 64rem) {
+/* @media screen and (max-width: 64rem) {
   .col {
     width: calc(33.333333% - 2rem);
   }
@@ -183,4 +192,4 @@ body{
     width: 100%;
     margin: 0 0 2rem 0;
   }
-}
+} */
