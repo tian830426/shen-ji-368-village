@@ -165,11 +165,6 @@ p {
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
    
 }
-.fly-replay{
-    /* left: -10%; */
-    animation: fly 8s ease-in 5s 1 normal forwards;
-    animation-play-state: running;
-}
 
 @keyframes couple {
     50%,
