@@ -70,8 +70,21 @@
     transform: rotateY(-180deg);
 }
 
-@media (max-width:1700px) {
-    .mediaContainer{
-        margin: 0.5%;
+@media (max-width:1510px) {
+    #banner{
+        max-width: 100%;
+    }
+    .media-slide{
+        display: flex;
     }
 }
+@media (max-width:1200px) {
+    .media-slide{
+        display: flex;
+    }
+    .mediaContainer{
+        margin: 1% 0.5%;
+    }
+}
+
+
