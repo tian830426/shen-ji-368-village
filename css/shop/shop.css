@@ -29,21 +29,19 @@ li {
   display: flex;
 
   /* 預設邊界距離 */
-  width: 90%;
+  width: 85%;
   /* 扣掉底部footer高度，nav因懸浮所以不要扣除其高度 */
   height: calc(100vh - 110px);
   margin: auto;
 }
-
 .container-one .box-left {
   position: relative;
-  width: 70%;
-  height: 75%;
+  width: 40vw;
+  height: 70vh;
   background-color: rgba(240, 236, 224, 1);
   margin: auto;
   margin-right: 100px;
 }
-
 .container-one .box-right {
   position: relative;
   width: 50%;
@@ -54,7 +52,6 @@ li {
 .box-title-none {
   display: none;
 }
-
 .container-one .box-right .box-title img {
   width: 100%;
   height: 100%;
@@ -62,18 +59,16 @@ li {
 }
 /* 左側照片輪播 css */
 Time for the CSS*/ * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
-
-.slider {
-  width: 100%;
-  height: 100%;
+.box-left .slider {
+  width: 40vw;
+  height: 70vh;
   /*Same as width of the large image*/
   position: relative;
   /*Instead of height we will use padding*/
-
-  padding-top: 420px;
+  padding-top:28rem;
 
   /*That helps bring the labels down*/
 
@@ -87,10 +82,10 @@ Time for the CSS*/ * {
 
 .slider >img {
   position: absolute;
-  width: 90%;
-  height: 55%;
+  width: 36vw;
+  height: 42vh;
   left: 5%;
-  top: 7%;
+  top: 5%;
   transition: all 0.5s;
   margin: auto;
 }
@@ -101,14 +96,13 @@ Time for the CSS*/ * {
 
 .slider label {
   /*Lets add some spacing for the thumbnails*/
-  width: 16%;
-  height: 70%;
-  margin: 30px 0 0 30px;
+  width: 160px;
+  height: 160px;
+  margin: 25px 0 0 25px;
   border: 3px solid #999;
-  float: left;
-  cursor: pointer;
+   float: left; 
+   cursor: pointer; 
   transition: all 0.5s;
-
   /*Default style = low opacity*/
   opacity: 0.6;
 }
@@ -227,7 +221,7 @@ On click the images will be displayed at normal size to complete the effect
 }
 .container-one .box-right .box-shop {
   margin-top: 40px;
-  width: 95%;
+  width: 100%;
   height: 60%;
   position: relative;
   background-color: rgba(240, 236, 224, 1);
@@ -502,6 +496,18 @@ On click the images will be displayed at normal size to complete the effect
   background-size: 100% 100%;
 }
 
+ /* footer */
+.footer{
+  background-color: #F9D195;
+  font-size: 14px;
+  height: 50px;
+  padding-top: 15px;
+}
+.fixed-bottom{
+  position: absolute;
+  z-index: 0;
+}
+
 
 /* 店家介紹變版 */
 /*平板*/
@@ -511,21 +517,27 @@ On click the images will be displayed at normal size to complete the effect
     position: relative;
     display: block;
     width: 100%;
-    /* height: 100vh; */
+    height: 100vh;
   }
   .container-one .box-left {
     position: relative;
-    width: 90%;
+    width: 100%;
   }
   .container-one .box-right {
     position: relative;
-    width: 100vw;
+    width: 100%;
     
+  }
+  .container-one .box-title {
+    justify-content: center;
   }
 
    /* 標題 副標  出現 */
   .box-title-none{
     display: block;
+    width: 100%;
+    height: 20vh;
+    flex-wrap: wrap;
   }
   .box-title-all{
       display: none;
@@ -560,7 +572,7 @@ On click the images will be displayed at normal size to complete the effect
     height: 80%;
     display: flex;
   }
-  .container-one  .box-list{
+  .container-one .box-list{
     display: flex;
     position: relative;
     z-index: 2;
@@ -568,6 +580,7 @@ On click the images will be displayed at normal size to complete the effect
   }
   .container-one .box-list li {
     list-style: none;
+    margin:10px 6px;
   }
 
   .box-list-text {
@@ -611,23 +624,60 @@ On click the images will be displayed at normal size to complete the effect
     height: 60%;
   }
 
-  .slider {
-    width: 90%;
-    height: 80%;
-  }
-  .slider img {
-    width: 80%;
-    height: 50%;
-    margin: auto;
-  }
-  .slider label {
+  .container-one .box-left .slider {
+    width: 100%;
+    height: 100%;
     
   }
+  .slider img {
+    width: 600px;
+    height: 400px;
+    margin-right: 50px;  
+  }
+  .slider label {
+    width: 135px;
+    height: 135px; 
+  }
   .slider label img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
+
+    margin-right: 20px; 
+  }
+
+  .slider >img {
+    position: absolute;
+    width: 88vw;
+    height: 46vh;
+    left: 5%;
+    top: 5%;
+    transition: all 0.5s;
     margin: auto;
   }
+
+  .shop-pageOne .button {
+    position: absolute;
+    top: 80%;
+    left: 75%;
+  }
+
+  .button-two{
+    position: absolute;
+    top: 80%;
+    left: 75%;
+
+  }
+  /* footer */
+  .footer{
+    background-color: #F9D195;
+    font-size: 14px;
+    height: 50px;
+    padding-top: 15px;
+}
+.fixed-bottom{
+    /* position: absolute; */
+    z-index: 0;
+}
 }
 
 /*手機*/
@@ -635,7 +685,7 @@ On click the images will be displayed at normal size to complete the effect
   .container-one {
     position: relative;
     display: block;
-    width: 80%;
+    width: 100%;
     height: 100vh;
   }
   .container-one .box-left {
@@ -646,12 +696,8 @@ On click the images will be displayed at normal size to complete the effect
     position: relative;
     width: 100vw;
   }
-  .box-title {
-    position: absolute;
-    top: -50%;
-    left: 35%;
-    width: 100%;
-    margin: 0 auto;
+  .container-one .box-title {
+    justify-content: center;
   }
 
   .box-right > p {
@@ -670,8 +716,6 @@ On click the images will be displayed at normal size to complete the effect
   .container-one .box-right .box-shop {
     width: 100vw;
     height: 60%;
-  }
-  .shop-pageOne > p {
   }
 
   .slider {
@@ -692,4 +736,16 @@ On click the images will be displayed at normal size to complete the effect
     height: 100%;
     margin: auto;
   }
+
+  /* footer */
+  .footer{
+    background-color: #F9D195;
+    font-size: 14px;
+    height: 50px;
+    padding-top: 15px;
+}
+.fixed-bottom{
+    /* position: absolute; */
+    z-index: 0;
+}
 }
