@@ -33,12 +33,8 @@
     <!-- <script src="./js/news/swiper.min.js"></script>
     <script src="./js/news/swiperScript.js"></script> -->
     <!-- 媒體報導css -->
-    <!-- <link href="https://cdn.bootcss.com/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="./css/media/swiperStyle.css">
-    <!-- 媒體報導JS -->
-    <!-- <script src="https://cdn.bootcss.com/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
-    <script src="./js/media/swiperScript.js"></script> -->
+
 
     <!-- 地理位置 -->
     <link rel="stylesheet" href="./css/location/location.css">
@@ -53,11 +49,11 @@
 
 <body>
 
-<!--loading-->
-<div id="preloader">
-    <div id="status"><img src="./img/loading/people.gif" /></div>
-</div>
-<!--end-->
+    <!--loading-->
+    <div id="preloader">
+        <div id="status"><img src="./img/loading/people.gif" /></div>
+    </div>
+    <!--end-->
     <!--navbar-->
     <nav class="navbar  navbar-dark  justify-content_r pl-2 bg_navbar fixed-top">
         <div class="nav_height_r pt-2 pr-2 burger">
@@ -144,7 +140,7 @@
     <div class="actGotop"><a href="javascript:;" title="回到頂部"></a></div>
     <ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
         <li class="mfb-component__wrap">
-            <a href="javascript:;" class="mfb-component__button--main" >
+            <a href="javascript:;" class="mfb-component__button--main">
                 <img src="./img/suspend/top_icon.png" width="50" height="50">
             </a>
             <ul class="mfb-component__list">
@@ -403,28 +399,52 @@
     <!-- 以上為最新活動(玲君) -->
     <!-- 以下為媒體報導(玲君) -->
 
-    <section class="media" style="background-image: url(./img/媒體報導/媒體報導背景.svg);">
-        <section class="mediaContent" style="width: 100vw;">
-            <div class="title" style="background-image:url(./img/媒體報導/標題文字.svg);"></div>
-            <div class="swiper-container" id="banner" style="width: 80vw;">
-                <div class="swiper-wrapper" style="width: 80vw;">
-                    <div class="swiper-slide">
-                        <iframe width="880" height="495" src="https://www.youtube.com/embed/0488FFMmfaU?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <!-- <img src="./img/媒體報導/影片圖.png" alt="轮播图"> -->
+    <section class="media" style="background-image: url(./img/media/mediaBackground.svg);"style="width: 100vw;">
+        <div class="title" style="background-image:url(./img/media/titleText.svg);"></div>
+        <div class="swiper-container media-wrapper" id="banner">
+            <div class="swiper-wrapper  ">
+                <div class="swiper-slide media-slide">
+                    <iframe width="880" height="495"src="https://www.youtube.com/embed/0488FFMmfaU?autoplay=1&mute=1"title="YouTube video player" frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <div class="swiper-slide media-slide">
+                    <div class="mediaContainer">
+                        <img src="./img/media/article1.png" alt="轮播图">
+                        <div class="back">標題標題標題</div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="./img/媒體報導/大玩臺中.png" alt="轮播图">
+                    <div class="mediaContainer">
+                        <img src="./img/media/article1.png" alt="轮播图">
+                        <div class="back">標題標題標題</div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="./img/媒體報導/小布少爺.png" alt="轮播图">
+                    <div class="mediaContainer">
+                        <img src="./img/media/article1.png" alt="轮播图">
+                        <div class="back">標題標題標題</div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="./img/媒體報導/老宅.png" alt="轮播图">
+                    <div class="mediaContainer">
+                        <img src="./img/media/article1.png" alt="轮播图">
+                        <div class="back">標題標題標題</div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <div class="swiper-slide media-slide">
+                    <div class="mediaContainer">
+                        <img src="./img/media/article1.png" alt="轮播图">
+                        <div class="back">標題標題標題</div>
+                    </div>
+                    <div class="mediaContainer">
+                        <img src="./img/media/article1.png" alt="轮播图">
+                        <div class="back">標題標題標題</div>
+                    </div>
+                    <div class="mediaContainer">
+                        <img src="./img/media/article1.png" alt="轮播图">
+                        <div class="back">標題標題標題</div>
+                    </div>
+                    <div class="mediaContainer">
+                        <img src="./img/media/article1.png" alt="轮播图">
+                        <div class="back">標題標題標題</div>
+                    </div>
+                </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </section>
     </section>
 
@@ -455,7 +475,7 @@
     </div>
 
     <!-- 交通資訊 -->
-    <div id="traffic" class="h-100vh position-relative">
+    <div id="traffic" class="h-100vh">
         <section class="mx-170 pt-60">
             <div class="d-flex align-items-center flex-column mb-35">
                 <div class="mt-45 d-flex align-items-center mb-17">
@@ -526,6 +546,38 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
         <script src="./js/loading/loading.js"></script>
 
+        <script>
+            let flyid = '';
+            let posx = 0;
+            const fly = document.querySelector('.fly');
+            fly.addEventListener('click', function () {
+                clearInterval(flyid);
+                posx = 480;
+                fly.style.left = "480px"
+                fly.style.top = 20 + '%';
+                fly.style.animation = "none";
+                flyid = setInterval(frame, 5);
+                function frame() {
+                    if (posx > -130) {
+                        fly.style.display = "block";
+                    }
+                    if (posx == 2100) {
+                        posx = -300;
+                        fly.style.display = "none";
+                    }
+                    else {
+                        posx++;
+                        console.log(fly.style.left);
+                        fly.style.left = posx + 'px';
+                    }
+                    if (posx == 479) {
+                        clearInterval(flyid);
+                    }
+                }
+            })
+
+
+        </script>
 
 </body>
 

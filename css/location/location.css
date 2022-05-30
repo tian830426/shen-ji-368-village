@@ -143,12 +143,15 @@ p {
 }
 
 @keyframes fly {
+    0%{
+        top: 20%;
+        left: -10%;
+    }
     100% {
         top: 20%;
         left: 25%;
     }
 }
-
 .fly {
     background-image: url(../../img/traffic/fly.svg);
     background-size: cover;
@@ -158,13 +161,17 @@ p {
     top: 20%;
     left: -10%;
     /* transform: scale(.7); */
-    animation: fly 5s ease-in 12s 1 normal forwards;
+    animation: fly 5s ease-in 0s 1 normal forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+   
 }
 
 @keyframes couple {
+    50%,
     100% {
         top: 49%;
         left: 81%;
+        opacity: 1;
     }
 }
 
@@ -175,8 +182,8 @@ p {
     height: 127px;
     position: absolute;
     top: 49%;
-    left: -10%;
-    animation: couple 7s ease-out 10s 1 normal forwards;
+    left: -15%;
+    animation: couple 10s ease-out 3s 1 normal forwards;
 }
 
 @keyframes son {
@@ -194,8 +201,9 @@ p {
     position: absolute;
     bottom: 15%;
     right: -10%;
-    animation: son 7s ease-in-out 10s 1 normal forwards;
+    animation: son 10s ease-in-out 3s 1 normal forwards;
 }
+
 
 @media (max-width:768px) {
     .fly {
@@ -326,7 +334,7 @@ p {
     .map {
         width: 300px;
         height: 300px;
-        max-width:100%;
+        max-width: 100%;
     }
 
     .mx-170 {
