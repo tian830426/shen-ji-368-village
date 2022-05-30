@@ -36,13 +36,13 @@ $(function(){
         }
       }
     })
-    imgTextId.siblings('.igt_page_text').on('click','li',function(){ 
-        if (!$(this).hasClass('on')){
-            var thisI = $(this).index();
-            $(this).addClass('on').find('.adore').addClass('bg_main');
-            $(this).siblings('li').removeClass('on').find('.adore').removeClass('bg_main');
-            swiper1.slideTo(thisI, 1000, false);
-        }
+    // imgTextId.siblings('.igt_page_text').on('click','li',function(){ 
+    //     if (!$(this).hasClass('on')){
+    //         var thisI = $(this).index();
+    //         $(this).addClass('on').find('.adore').addClass('bg_main');
+    //         $(this).siblings('li').removeClass('on').find('.adore').removeClass('bg_main');
+    //         swiper1.slideTo(thisI, 1000, false);
+    //     }
         
-    });
+    // });
 })
