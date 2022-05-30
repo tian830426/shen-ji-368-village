@@ -39,7 +39,6 @@ body{
   backface-visibility: hidden;
   text-align: center;
   color: black;
-  /* font-size: 30px; */
 }
 
 /* 小卡正面標題大小 */
@@ -62,6 +61,7 @@ body{
 
 .container:hover  .back .inner p{
   display: block;
+  color:black;
 }
 
 .container:hover .front .inner{

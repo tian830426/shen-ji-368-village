@@ -12,8 +12,12 @@ var swiper = new Swiper(".mySwiper", {
         },
         // when window width is >= 480px
         769: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 30,
+        },
+        1400: {
+            slidesPerView: 4,
+            spaceBetween: 20,
         },
 
     },

@@ -5,12 +5,12 @@
     height: 100%;
     left: 0%;
     top: 0%;
-    background-color: #fff;
+    background-color: #fff3cf;
     z-index: 9999;
 }
 
-#status {
-    /*   這是中間loading的gif坐標css,我們盡量讓他畫面置中  */
+  /*   這是中間loading的gif坐標css,我們盡量讓他畫面置中  */
+/* #status {
     position: fixed;
     width: 218px;
     height: 419px;
@@ -18,4 +18,17 @@
     margin-top: -160px;
     left: 50%;
     top: 50%;
+} */
+
+#status {
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+#status img{
+    max-width: 100%;
+    height: auto;
 }
