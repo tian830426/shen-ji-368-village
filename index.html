@@ -53,11 +53,11 @@
 
 <body>
 
-<!--loading-->
-<div id="preloader">
-    <div id="status"><img src="./img/loading/people.gif" /></div>
-</div>
-<!--end-->
+    <!--loading-->
+    <div id="preloader">
+        <div id="status"><img src="./img/loading/people.gif" /></div>
+    </div>
+    <!--end-->
     <!--navbar-->
     <nav class="navbar  navbar-dark  justify-content_r pl-2 bg_navbar fixed-top">
         <div class="nav_height_r pt-2 pr-2 burger">
@@ -144,7 +144,7 @@
     <div class="actGotop"><a href="javascript:;" title="回到頂部"></a></div>
     <ul id="menu" class="mfb-component--br mfb-zoomin" data-mfb-toggle="hover">
         <li class="mfb-component__wrap">
-            <a href="javascript:;" class="mfb-component__button--main" >
+            <a href="javascript:;" class="mfb-component__button--main">
                 <img src="./img/suspend/top_icon.png" width="50" height="50">
             </a>
             <ul class="mfb-component__list">
@@ -523,6 +523,41 @@
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
         <script src="./js/loading/loading.js"></script>
 
+        <script>
+            let flyid = '';
+            let posx = 0;
+            const fly = document.querySelector('.fly');
+            fly.addEventListener('click', function () {
+                clearInterval(flyid);
+                posx = 480;
+                fly.style.left = "480px"
+                fly.style.top = 20 + '%';
+                fly.style.animation = "none";
+                //  console.log(fly)
+                // console.log('--------------------')
+                flyid = setInterval(frame, 5);
+                function frame() {
+                    if (posx > -130) {
+                        fly.style.display = "block";
+                    }
+                    if (posx == 2100) {
+                        posx = -300;
+                        fly.style.display = "none";
+                    }
+                    else {
+                        posx++;
+                        // console.log(fly)
+                        console.log(fly.style.left);
+                        fly.style.left = posx + 'px';
+                    }
+                    if (posx == 479) {
+                        clearInterval(flyid);
+                    }
+                }
+            })
+
+
+        </script>
 
 </body>
 
