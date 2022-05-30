@@ -57,6 +57,9 @@ li {
   height: 100%;
   /* background-position: center; */
 }
+
+
+
 /* 左側照片輪播 css */
 Time for the CSS*/ * {
   /* margin: 0;
@@ -142,6 +145,8 @@ On click the images will be displayed at normal size to complete the effect
 
 .container-one .box-right .box-title {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .container-one .box-right .box-title img {
@@ -529,7 +534,29 @@ On click the images will be displayed at normal size to complete the effect
     
   }
   .container-one .box-title {
+    display: flex;
     justify-content: center;
+    align-items: center;
+  }
+  .container-one  .box-title img {
+    width: 60px;
+    height: 60px;
+    margin-right: 0.5rem;
+  }
+  
+  .container-one .box-title h3 {
+    font-size: 2rem;
+    color: rgba(69, 21, 21, 1);
+    letter-spacing: 3px;
+    
+  }
+  
+  .box-right .box-title-all div p {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: rgba(69, 21, 21, 1);
+    justify-content: center; 
+    ;
   }
 
    /* 標題 副標  出現 */
@@ -541,27 +568,6 @@ On click the images will be displayed at normal size to complete the effect
   }
   .box-title-all{
       display: none;
-  }
-  .container-one .box-title {
-    display: flex;
-    
-  } 
-  .container-one  .box-title img {
-    width: 60px;
-    height: 60px;
-    margin-right: 0.5rem;
-  }
-  
-  .container-one .box-title h3 {
-    font-size: 2rem;
-    color: rgba(69, 21, 21, 1);
-    letter-spacing: 2px;
-  }
-  
-  .container-one .box-title p {
-    font-size: 1rem;
-    letter-spacing: 3px;
-    color: rgba(69, 21, 21, 1);
   }
   
   /* 左右間距 */
@@ -679,7 +685,6 @@ On click the images will be displayed at normal size to complete the effect
     z-index: 0;
 }
 }
-
 /*手機*/
 @media (max-width: 375px) {
   .container-one {
@@ -690,53 +695,155 @@ On click the images will be displayed at normal size to complete the effect
   }
   .container-one .box-left {
     position: relative;
-    width: 100vw;
+    width: 100%;
   }
   .container-one .box-right {
     position: relative;
-    width: 100vw;
+    width: 100%;
+    
   }
   .container-one .box-title {
+    display: flex;
     justify-content: center;
+    align-items: center;
   }
-
-  .box-right > p {
-    position: absolute;
-    top: -115%;
-    left: 30%;
+  .container-one  .box-title img {
+    width: 55px;
+    height: 55px;
+    margin-right: 0.5rem;
   }
+  
+  .container-one .box-title h3 {
+    font-size: 2rem;
+    color: rgba(69, 21, 21, 1);
+    letter-spacing: 3px;
+    
+  }
+  
+   .box-right .box-title-all div p {
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: rgba(69, 21, 21, 1);
+    justify-content: center; 
+    ;
+  } 
 
-  .box-list {
-    position: absolute;
-    top: -120%;
-    left: 10%;
+   /* 標題 副標  出現 */
+   .box-title-none{
+    display: block;
+    width: 100%;
+    height: 20vh;
+    flex-wrap: wrap;
+  }
+  .box-title-all{
+      display: none;
+  } 
+  
+  /* 左右間距 */
+
+  .box-list .box-list-up{
+    margin-right: 1rem;
+    letter-spacing:2px;
+    width: 80%;
+    height: 80%;
+  }
+  .container-one .box-list{
+    display: flex; 
+    position: relative;
     z-index: 2;
+    font-weight: 800;
+    flex-wrap: wrap;
+    width: 100%; 
+ 
   }
 
-  .container-one .box-right .box-shop {
-    width: 100vw;
-    height: 60%;
+  .container-one .box-list li {
+    display: flex;
+    list-style: none;
   }
 
-  .slider {
-    width: 100vw;
-    height: 100%;
-    margin-top: 30%;
+  .box-list-text {
+    width: 150%;
+    height: auto;
+    background-color: rgb(59, 45, 24);
+    opacity: 0.85;
+    display: none;
+    list-style: none;
+    text-align: center;
+    letter-spacing: 2px;
   }
-  .slider img {
+  .box-list-text li {
+    margin-top: 1.375rem;
+    text-align: center;
+  }
+  
+  .box-list-food:hover {
+    color: rgba(240, 236, 224, 1);
+    background-color: rgb(80, 50, 50);
+    margin-top: 20px;
+    text-align: center;
+  }
+  .box-list-food {
+    width: 100px;
+    height: 30px;
+    font-size: 1.25rem;
+    background-color: rgb(200, 197, 163);
+    margin-top: 30px;
+    text-align: center;
+    color: rgb(156, 91, 0);
+    box-shadow: 0 10px 20px -5px rgba(3, 2, 2, 0.5);
+    opacity: 0.9;
+  } 
+  .box-list-food:hover .box-list-text {
+    display: block;
+  }
+
+  .container-one .box-shop {
     width: 90%;
     height: 60%;
-    margin: auto;
+  }
+
+  .container-one .box-left .slider {
+    width: 100%;
+    height: 100%; 
+  }
+  .slider img {
+    width: 400px;
+    height: 400px;
+    margin-right: 50px;  
   }
   .slider label {
-    margin-top: 70px;
+    width: 115px;
+    height: 115px; 
   }
   .slider label img {
     width: 100%;
     height: 100%;
+    margin-right: 20px; 
+  }
+
+  .slider >img {
+    position: absolute;
+    width: 88vw;
+    height: 46vh;
+    left: 5%;
+    top: 5%;
+    transition: all 0.5s;
     margin: auto;
   }
 
+  .shop-pageOne .button {
+    position: absolute;
+    top: 80%;
+    left: 75%;
+  }
+
+  .shop-pageOne .button-two{
+    position: absolute;
+    top: 80%;
+    left: 75%;
+
+  }
   /* footer */
   .footer{
     background-color: #F9D195;
