@@ -16,27 +16,43 @@ body {
 .wrapper {
   margin: auto;
   width: 90%;
+  height: 100%;
 }
-
-
 
 .cols {
+  height: 100%;
   padding: 1%;
-  display: flex;
+  /* display: flex; */
 }
-
+.col{
+  height: 100%;
+  /* position: relative; */
+}
 .container {
+  height: 100%;
   transform-style: preserve-3d;
   margin: 0px;
   position: absolute;
 }
-
+.l1{
+  left: 0%;
+}
+.r1{
+  left: 20%;
+  top: 30%;
+}
+.l2{
+  left: 40%;
+}
+.r2{
+  left: 60%;
+}
+.l3{
+  left: 80%;
+}
 .front {
   width: 365px;
   height: 250px;
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
   transition: transform 2s cubic-bezier(0.4, 0.2, 0.2, 1);
   backface-visibility: hidden;
   text-align: center;
@@ -45,6 +61,8 @@ body {
 
 .bl {
   background-image: url(../../img/market/blackBlock.svg);
+  background-size: contain;background-position: center;
+  background-repeat: no-repeat;
 }
 
 .ye {
@@ -141,11 +159,7 @@ body {
   bottom: -.75rem;
 }
 
-.l1{
-  top: %;
-  left: 50%;
-  /* transform: translate(3.5%, 5%); */
-}
+
 
 .about .l2{
   top: 50%;
