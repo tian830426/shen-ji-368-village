@@ -52,10 +52,7 @@ h4 {
 }
 
 
-.burger_center a{
-  color: #000000;
-  text-decoration: none!important;
-}
+
 
 .jq22-container .wrap a {
   text-decoration: none;
@@ -415,23 +412,14 @@ h4 {
   background: #ec5700;
 }
 
-.burger_padding_disappear{
-  letter-spacing: 3px;
-  font-size: 16px;
-  font-weight: 600;
 
-}
 
 .burger_padding_disappear a{
   text-decoration:none!important;
 
 }
 
-.burger_padding_disappear .text-dark:hover {
-  color: #cfc8b4!important;
-  font-size: 18px;
-  opacity: 0.6;
-}
+
 
 @-webkit-keyframes criss-cross-left {
   0% {

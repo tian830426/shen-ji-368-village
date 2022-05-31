@@ -5,6 +5,24 @@ body {
     box-sizing: border-box;
 }
 
+.burger_center a {
+    color: #000000;
+    text-decoration: none !important;
+}
+
+.burger_padding_disappear .text-dark:hover {
+    color: #cfc8b4 !important;
+    text-decoration:none;
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+.burger_padding_disappear {
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
 
 
 
@@ -18,15 +36,16 @@ body {
 .navbar {
     padding: 0 !important;
     z-index: 2;
-  
+
 }
-.navbar-nav{
+
+.navbar-nav {
     position: relative;
 }
 
-.navbar-nav a{
-    background-color:   #ce7a56;
-    border-top: 1px solid ;
+.navbar-nav a {
+    background-color: #ce7a56;
+    border-top: 1px solid;
 }
 
 
@@ -49,7 +68,7 @@ body {
     background-color: #CE7A56 !important;
 }
 
-.navbar-nav .nav-link{
+.navbar-nav .nav-link {
     padding-left: 25px;
 }
 
