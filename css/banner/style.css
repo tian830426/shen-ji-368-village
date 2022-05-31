@@ -47,7 +47,7 @@ h4 {
 
 /*字體套用*/
 @font-face {
-  font-family:'JasonHandwr';
+  font-family: 'JasonHandwr';
   src: url('../../font/JasonHandwriting5p.ttf');
 }
 
@@ -198,7 +198,7 @@ h4 {
   -webkit-transform: rotate(360deg);
   border-style: solid;
   border-width: 0 0 0 0;
-  border-color: transparent #F2842A; 
+  border-color: transparent #F2842A;
   position: absolute;
   top: 0;
   right: 0;
@@ -211,7 +211,8 @@ h4 {
   -webkit-transform: rotate(360deg);
   border-style: solid;
   border-width: 0 0 0 0;
-  border-color: transparent transparent transparent #F2842A;;
+  border-color: transparent transparent transparent #F2842A;
+  ;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -219,7 +220,8 @@ h4 {
 
 .btn-4:before,
 .btn-4:after {
-  border-color: #F2842A;;
+  border-color: #F2842A;
+  ;
 }
 
 .btn-4 span:after {
@@ -229,7 +231,8 @@ h4 {
   -webkit-transform: rotate(360deg);
   border-style: solid;
   border-width: 0 0 0 0;
-  border-color: #F2842A; transparent transparent transparent;
+  border-color: #F2842A;
+  transparent transparent transparent;
   position: absolute;
   top: 0;
   left: 0;
@@ -242,7 +245,8 @@ h4 {
   -webkit-transform: rotate(360deg);
   border-style: solid;
   border-width: 0 0 0 0;
-  border-color: transparent transparent #F2842A; transparent;
+  border-color: transparent transparent #F2842A;
+  transparent;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -250,7 +254,8 @@ h4 {
 
 .btn-4 span:before,
 .btn-4 span:after {
-  border-color: #F2842A;;
+  border-color: #F2842A;
+  ;
 }
 
 .btn-4:hover {
@@ -274,7 +279,8 @@ h4 {
 }
 
 .btn-4:active {
-  background: #F2842A;;
+  background: #F2842A;
+  ;
 }
 
 
@@ -533,12 +539,15 @@ h4 {
   margin-right: auto;
   padding-top: 10px;
 }
-.point_1 p{
+
+.point_1 p {
   font-family: 'JasonHandwr', 'Raleway', 'Open Sans', sans-serif;
 }
+
 .point_1:nth-child(1) {
   margin-bottom: 10px;
 }
+
 .point_2 {
   width: 319px;
   height: 77px;
@@ -548,7 +557,8 @@ h4 {
   padding-top: 10px;
   margin-bottom: 10px;
 }
-.point_2 p{
+
+.point_2 p {
   font-family: 'JasonHandwr', 'Raleway', 'Open Sans', sans-serif;
 }
 
@@ -570,7 +580,7 @@ h4 {
   height: 100px;
 }
 
-.right img{
+.right img {
   padding-right: 10px;
 }
 
@@ -672,5 +682,53 @@ h4 {
     background-position: center;
     background-size: cover;
   }
+
+  .banner .centerer {
+
+    padding-top: 10px;
+  }
+
+  .point_1 {
+    width: 233px;
+    height: 60px;
+    background-image: url(../../img/29/banner/point_1_2.png);
+
+  }
+
+  .point_2 {
+    width: 207px;
+    height: 50px;
+    background-image: url(../../img/29/banner/point_2_2.png);
+
+  }
+
+
+  .jq22-container .centerer h1 p {
+    font-size: 32px;
+    text-align: center;
+    line-height: 45px;
+  }
+
+  [class^="btn-"] {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    height: 37px;
+    max-width: 122px;
+    text-transform: uppercase;
+    overflow: hidden;
+    border: 1px solid currentColor;
+  }
+
+  .jq22-container .wrap a {
+    line-height: 40px;
+  }
+
+  .right{
+    display: none;
+  }
+
+
 
 }
