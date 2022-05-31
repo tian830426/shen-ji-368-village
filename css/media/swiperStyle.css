@@ -37,6 +37,10 @@
     flex-wrap: wrap;
     padding: 0 3%;
 }
+iframe{
+    width:70%;
+    height:80%;
+}
 
 .back {
     position: absolute;
@@ -47,6 +51,10 @@
     background: linear-gradient(45deg, rgb(255, 181, 91) 0%, bisque 100%);
     backface-visibility: hidden;
     transition: transform 2s cubic-bezier(0.4, 0.2, 0.2, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
 }
 
 .mediaContainer:hover img,
