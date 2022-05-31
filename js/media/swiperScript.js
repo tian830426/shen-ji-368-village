@@ -3,8 +3,6 @@
 
 $(function () {
     var mySwiper = new Swiper("#banner", {
-        loop: true,
-        loopedSlides: 5,
         slidesPerView: 'auto',
         autoplay: true,
         centeredSlides: true,

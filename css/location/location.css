@@ -234,6 +234,7 @@ p {
         bottom: 3.5%;
         right: -20%;
         transform: scale(.7);
+        z-index: 1;
     }
 
     #location {
