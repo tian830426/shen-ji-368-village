@@ -725,10 +725,15 @@ h4 {
     line-height: 40px;
   }
 
-  .right{
+  .foter .right{
     display: none;
   }
+  .foter{
+    height: 0px;
+  }
 
-
+  .story_bg .w-imgText .swiperBox {
+    padding-top: 9vh;
+}
 
 }
