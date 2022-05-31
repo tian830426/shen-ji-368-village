@@ -576,7 +576,9 @@ On click the images will be displayed at normal size to complete the effect
     letter-spacing:2px;
     width: 80%;
     height: 80%;
+    margin: 0 auto; 
     display: flex;
+    flex-wrap: wrap;
   }
   .container-one .box-list{
     display: flex;
@@ -744,15 +746,16 @@ On click the images will be displayed at normal size to complete the effect
   .box-list .box-list-up{
     margin-right: 1rem;
     letter-spacing:2px;
+    margin: 0 auto;
     width: 80%;
     height: 80%;
+    flex-wrap: wrap;
   }
   .container-one .box-list{
     display: flex; 
     position: relative;
     z-index: 2;
     font-weight: 800;
-    flex-wrap: wrap;
     width: 100%; 
  
   }
