@@ -54,6 +54,7 @@ iframe{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     font-size: 25px;
 }
 
@@ -80,7 +81,7 @@ iframe{
 
 @media (max-width:1510px) {
     #banner{
-        max-width: 100%;
+        width: 100%;
     }
     .media-slide{
         display: flex;
@@ -91,7 +92,7 @@ iframe{
         display: flex;
     }
     .mediaContainer{
-        margin: 1% 0.5%;
+        margin:0.5%;
     }
 }
 
