@@ -43,6 +43,7 @@
     height: 330px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .text {
@@ -105,6 +106,12 @@
     }
     .text{
         width: 50%;
+    }
+    .contain{
+        display: none;
+    }
+    .topic{
+        margin-top: 15%;
     }
     
 }
