@@ -139,7 +139,7 @@ hr {
 
 .title {
     max-width: 100%;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     font-size: 36px;
     text-align: center;
