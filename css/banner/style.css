@@ -297,7 +297,7 @@ h4 {
   left: 0;
   width: 250px;
   height: 0;
-  background: #F2842A;
+  background: #f8bf91;
 }
 
 .btn-8:after {
@@ -411,6 +411,19 @@ h4 {
 .btn-10:active {
   background: #ec5700;
 }
+
+.burger_padding_disappear{
+  letter-spacing: 3px;
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+.burger_padding_disappear a{
+  text-decoration:none!impor
+
+}
+
 
 @-webkit-keyframes criss-cross-left {
   0% {
@@ -600,6 +613,7 @@ h4 {
 
 .jq22-container .centerer .wrap a {
   text-align: center;
+  border-radius: 10px;
 }
 
 .jq22-container .centerer h1 p {
