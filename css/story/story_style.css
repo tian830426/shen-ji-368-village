@@ -149,6 +149,7 @@ hr {
 
 .title p {
     font-size: 20px;
+    padding-top: 20px;
 }
 
 .w-imgText {
@@ -180,7 +181,7 @@ hr {
 .w-imgText .swiperBox {
     overflow: hidden;
     padding-right: 4%;
-    padding-top: 5vh;
+    padding-top: 8vh;
 
 }
 
