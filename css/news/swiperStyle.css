@@ -4,7 +4,7 @@
 
 .news {
     position: relative;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     color: #000;
     margin: 0;
@@ -15,8 +15,20 @@
 .newsTitle {
     width: 100%;
     height: 10%;
+    display: flex;
     margin: 0 auto;
+    justify-content: center;
     text-align:center ;
+}
+.newsTitle img{
+    margin: 15px;
+    transform: translateY(-25%);
+}
+.newsTitle h1{
+    font-size: 36px;
+}
+.newsTitle p{
+    padding-top: 17px;
 }
 
 .swiper-container {
@@ -59,7 +71,7 @@
 }
 
 .topic {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 700;
 }
 
@@ -83,7 +95,7 @@
     align-items: center;
 }
 
-@media (max-width:1510px) {
+@media (max-width:1800px) {
     .swiper-slide {
         width:100% ;
         display: block;
@@ -118,4 +130,20 @@
     .swiper-slide {
         padding: 0;
     }
+}
+
+@media (max-width:800px){
+    .topic{
+        font-size: 15px;
+        margin-top: 35%;
+        
+    }
+    .swiper-container {
+        width: 100%;
+        margin: 0;
+    }
+    .swiper-wrapper{
+        width: 100%;
+    }
+
 }
