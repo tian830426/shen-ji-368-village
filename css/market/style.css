@@ -9,7 +9,8 @@ body {
   width: 100%;
   height: 100vh;
   color: black;
-  background-image: url(../../img/market/marketBackground.svg);
+  background-size: cover;
+  background-image: url(../../img/market/Group\ 27.svg);
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -120,7 +121,7 @@ footer {
 
 .newsBack {
   top: 10%;
-  left: 105%;
+  left: 115%;
 }
 
 .aboutBack {
