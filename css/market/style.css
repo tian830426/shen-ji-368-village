@@ -232,7 +232,7 @@ footer {
   background-image: url(../../img/market/logo+bg768.svg);
   display: none;
 }
-.moTitle , .backTitle{
+.moTitle {
   font-size: 30px;
 }
 .inner span{
@@ -301,6 +301,7 @@ footer {
   .back {
     top: 0%;
     left: 0%;
+    width: 310%;
   }
 
   .back {
@@ -312,29 +313,39 @@ footer {
   .newsBack {
     top: -150%;
     left: 0%;
+    width: 345%;
   }
 
   .aboutBack {
     top: -150%;
     left: -230%;
+    width: 345%;
   }
 
   .inforBack {
     top: -150%;
     left: -130%;
+    width: 345%;
 
   }
 
   .commuBack {
     top: -255%;
     left: -40%;
+    width: 225%;
   }
 
   .timeBack {
     top: -255%;
     left: -120%;
+    width: 225%;
   }
-  
+  .moTitle , .backTitle{
+    font-size: 20px;
+  }
+  .backText{
+    font-size: 17px;
+  }
 
 }
 
@@ -345,7 +356,7 @@ footer {
     background-repeat: no-repeat;
 
   }
-
+  
   .front {
     background-image: url(../../img/market/blue375.svg);
     width: 100%;
@@ -372,6 +383,14 @@ footer {
     width: 100%;
     top: -425%;
     left: 0;
+  }
+
+  .front .inner p:after {
+    display: none;
+  }
+  
+  .front .inner p {
+    margin-bottom: 0;
   }
 
 }
