@@ -13,13 +13,16 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-footer{
+
+footer {
   background-color: bisque;
 }
-.inter{
+
+.inter {
   width: 100%;
   height: 80%
 }
+
 .wrapper {
   margin: auto;
   width: 90%;
@@ -31,39 +34,46 @@ footer{
   padding: 1%;
   /* display: flex; */
 }
-.col{
+
+.col {
   max-width: 365px;
   max-height: 250px;
   width: 100%;
   height: 100%;
   position: absolute;
 }
+
 .container {
   height: 100%;
   transform-style: preserve-3d;
   margin: 0px;
   position: absolute;
 }
-.news{
+
+.news {
   left: 4%;
 }
-.infor{
+
+.infor {
   top: 8%;
   right: 8%;
 }
-.about{
+
+.about {
   top: 40%;
   left: 3%;
-  
+
 }
-.community{
+
+.community {
   top: 45%;
   right: 11%;
 }
-.time{
+
+.time {
   top: 65%;
   left: 30%;
-  
+
 }
 
 .bl {
@@ -87,7 +97,7 @@ footer{
   backface-visibility: hidden;
   text-align: center;
   color: black;
-  
+
 }
 
 /* 小卡正面標題大小 */
@@ -96,7 +106,7 @@ footer{
 }
 
 .back {
-  
+
   position: absolute;
   width: 768px;
   height: 50vh;
@@ -105,7 +115,7 @@ footer{
   backface-visibility: hidden;
   transition: transform 2s cubic-bezier(0.4, 0.2, 0.2, 1);
   /* z-index: 5; */
-  
+
 }
 
 .newsBack {
@@ -120,7 +130,7 @@ footer{
 
 .commuBack {
   top: -125%;
-  left: -225%; 
+  left: -225%;
 }
 
 .inforBack {
@@ -131,7 +141,7 @@ footer{
 .timeBack {
   top: -200%;
   left: -15%;
-} 
+}
 
 .back .inner p {
   display: none;
@@ -152,7 +162,8 @@ footer{
   transition: transform 2s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: transform 2s cubic-bezier(0.4, 0.2, 0.2, 1),
 }
-.container:hover{
+
+.container:hover {
   /* background-color: red; */
   z-index: 100;
 }
@@ -218,70 +229,77 @@ footer{
   height: 320px;
   background-size: cover;
   background-position: center center;
-  background-image: url(../../img/market/logo+bg.svg);
+  background-image: url(../../img/market/logo+bg768.svg);
   display: none;
 }
 
 @media (max-width: 855px) {
   body {
-    width: 100%;
+    width: 100vw;
     height: 1024px;
     background-image: url(../../img/market/marketBackground_768.svg);
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .bg768{
+
+  .bg768 {
     display: block;
   }
-  .wrapper{
+
+  .wrapper {
     margin: 0 0 0 0;
     height: auto;
   }
 
-  .front{
+  .front {
     background-image: url(../../img/market/blueBlock.svg);
     background-position: center center;
     background-repeat: no-repeat;
-    width: 220px;
+    width: 210px;
     height: 160px;
   }
-  .cols{
+
+  .cols {
     display: flex;
     flex-wrap: wrap;
     transform: translateX(4%);
     padding-top: 5%;
   }
-  .col{
-    margin: 20px 0;
+
+  .col {
+    margin: 5px 0;
     width: 220px;
     height: 160px;
     top: 0;
     left: 0;
     position: relative;
   }
-  .community{
-    
+
+  .community {
+
     left: 15%;
   }
-  .container{
+
+  .container {
     position: relative;
   }
-  .back{
+
+  .back {
     top: 0%;
     left: 0%;
   }
 
-  .back{
+  .back {
     margin: auto;
     position: relative;
-    
+
   }
 
   .newsBack {
     top: -150%;
     left: 0%;
   }
-  
+
   .aboutBack {
     top: -150%;
     left: -230%;
@@ -290,35 +308,55 @@ footer{
   .inforBack {
     top: -150%;
     left: -130%;
-    
+
   }
+
   .commuBack {
     top: -255%;
-    left: -40%;  
+    left: -40%;
   }
-  
+
   .timeBack {
     top: -255%;
     left: -120%;
-  } 
-
-}
-
-/* @media screen and (max-width: 64rem) {
-  .col {
-    width: calc(33.333333% - 2rem);
   }
+
 }
 
-@media screen and (max-width: 48rem) {
-  .col {
-    width: calc(50% - 2rem);
+@media (max-width: 765px) {
+  .bg768 {
+    background-position: center center;
+    background-image: url(../../img/market/logo+ph\ 400.svg);
+    background-repeat: no-repeat;
+
   }
-}
 
-@media screen and (max-width: 32rem) {
-  .col {
+  .front {
+    background-image: url(../../img/market/blue375.svg);
     width: 100%;
-    margin: 0 0 2rem 0;
+    height: 100px;
   }
-} */
+  .col {
+    margin: 5px 0;
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+  .cols {
+    flex-direction: column;
+    align-items: center;
+    /* transform: translateX(4%); */
+    /* padding-top: 5%; */
+  }
+  .inner{
+    padding: 0%;
+  }
+  .back{
+    width: 100%;
+    top: -425%;
+    left: 0;
+  }
+
+}
