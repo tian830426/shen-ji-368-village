@@ -235,6 +235,7 @@ footer{
   }
   .wrapper{
     margin: 0 0 0 0;
+    height: auto;
   }
 
   .front{
@@ -292,16 +293,16 @@ footer{
   .inforBack {
     top: -150%;
     left: -130%;
+    
   }
   .commuBack {
-    
-    
+    top: -255%;
+    left: -40%;  
   }
   
-  
-  
   .timeBack {
-    
+    top: -255%;
+    left: -120%;
   } 
 
 }
