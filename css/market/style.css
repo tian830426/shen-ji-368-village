@@ -13,6 +13,9 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
+footer{
+  background-color: bisque;
+}
 .inter{
   width: 100%;
   height: 80%
@@ -51,6 +54,7 @@ body {
 .about{
   top: 40%;
   left: 3%;
+  
 }
 .community{
   top: 45%;
@@ -59,6 +63,7 @@ body {
 .time{
   top: 65%;
   left: 30%;
+  
 }
 
 .bl {
@@ -91,6 +96,7 @@ body {
 }
 
 .back {
+  
   position: absolute;
   width: 768px;
   height: 50vh;
@@ -98,26 +104,20 @@ body {
   font-size: 20px;
   backface-visibility: hidden;
   transition: transform 2s cubic-bezier(0.4, 0.2, 0.2, 1);
+  /* z-index: 5; */
   
 }
-.l1{
-  z-index: 2;
-}
+
 .newsBack {
   top: 10%;
   left: 105%;
-  /* z-index: 3; */
 }
-.l2{
-  z-index: 2;
-}
+
 .aboutBack {
   top: -105%;
   left: 120%;
 }
-.l3{
-  z-index: 2;
-}
+
 .commuBack {
   top: -125%;
   left: -225%; 
@@ -152,8 +152,9 @@ body {
   transition: transform 2s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: transform 2s cubic-bezier(0.4, 0.2, 0.2, 1),
 }
-.container:hover .back{
-  /* z-index: 100; */
+.container:hover{
+  /* background-color: red; */
+  z-index: 100;
 }
 
 
@@ -165,7 +166,7 @@ body {
   width: 100%;
   padding: 2rem;
   box-sizing: border-box;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .inner span {
@@ -185,6 +186,7 @@ body {
 .container:hover .back {
   transform: rotateY(0deg);
   transform-style: preserve-3d;
+  z-index: 5;
 }
 
 .container:hover .front {
@@ -245,6 +247,8 @@ body {
   .cols{
     display: flex;
     flex-wrap: wrap;
+    transform: translateX(4%);
+    padding-top: 5%;
   }
   .col{
     margin: 0;
@@ -254,37 +258,47 @@ body {
     left: 0;
     position: relative;
   }
+  .time{
+    top: -28%;
+  }
+  .community{
+    top: -28%;
+    left: 15%;
+  }
   .container{
     position: relative;
   }
+  .back{
+    top: 0%;
+    left: 0%;
+  }
+
+  .newsBack {
+    top: 10%;
+    left: 105%;
+  }
+  
+  .aboutBack {
+    top: -105%;
+    left: 120%;
+  }
+  
+  .commuBack {
+    top: -125%;
+    left: -225%; 
+  }
+  
+  .inforBack {
+    top: 10%;
+    left: -245%;
+  }
+  
+  .timeBack {
+    top: -200%;
+    left: -15%;
+  } 
 
 }
-
-/* @media (max-width: 400px) {
-  body {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../img/market/bg400.svg);
-  }
-
-  .bg768 {
-    background-image: url(../../img/market/logo+ph.svg);
-    height: 163px;
-  }
-
-  .col{
-    position: relative;
-  }
-  .container {
-    height: 100%;
-    margin: 0px;
-    position: relative;
-    /* z-index: 1; */
-  }
-
-  
-} */
-
 
 /* @media screen and (max-width: 64rem) {
   .col {
