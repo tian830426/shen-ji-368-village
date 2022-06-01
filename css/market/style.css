@@ -111,7 +111,7 @@ footer {
   width: 768px;
   height: 50vh;
   background: linear-gradient(45deg, #cedce7 0%, #e2b221de 100%);
-  font-size: 20px;
+  /* font-size: 20px; */
   backface-visibility: hidden;
   transition: transform 2s cubic-bezier(0.4, 0.2, 0.2, 1);
   /* z-index: 5; */
@@ -232,6 +232,20 @@ footer {
   background-image: url(../../img/market/logo+bg768.svg);
   display: none;
 }
+.moTitle , .backTitle{
+  font-size: 30px;
+}
+.inner span{
+  font-size: 20px;
+}
+
+.backText{
+  font-size: 20px;
+}
+.backTitle{
+  font-size: 25px;
+} 
+
 
 @media (max-width: 855px) {
   body {
@@ -320,6 +334,7 @@ footer {
     top: -255%;
     left: -120%;
   }
+  
 
 }
 
