@@ -147,12 +147,7 @@ p {
 }
 
 @keyframes man {
-<<<<<<< HEAD
     70%,90%{
-=======
-    
-    100% {
->>>>>>> 5bf9ccb7f338d3d41dc56353d9a7d7c6c85783d0
         right: 82%;
         bottom: 4.8%;
     }
