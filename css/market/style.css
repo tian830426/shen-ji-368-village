@@ -231,11 +231,31 @@ body {
   .bg768{
     display: block;
   }
+  .wrapper{
+    margin: 0 0 0 0;
+  }
 
   .front{
     background-image: url(../../img/market/blueBlock.svg);
     background-position: center center;
     background-repeat: no-repeat;
+    width: 220px;
+    height: 160px;
+  }
+  .cols{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .col{
+    margin: 0;
+    width: 220px;
+    height: 160px;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+  .container{
+    position: relative;
   }
 
 }
