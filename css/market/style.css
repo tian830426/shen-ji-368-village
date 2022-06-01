@@ -273,29 +273,33 @@ footer{
     left: 0%;
   }
 
-  .newsBack {
+  .back{
     margin: auto;
-    left: -25%;
+    position: relative;
+  }
+
+  .newsBack {
+    top: 0%;
+    left: 0%;
   }
   
   .aboutBack {
-    top: -105%;
-    left: 120%;
+    
+    
   }
   
   .commuBack {
-    top: -125%;
-    left: -225%; 
+    
+    
   }
   
   .inforBack {
-    top: 10%;
-    left: -245%;
+    
+    
   }
   
   .timeBack {
-    top: -200%;
-    left: -15%;
+    
   } 
 
 }
