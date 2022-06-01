@@ -15,21 +15,25 @@
 .newsTitle {
     width: 100%;
     height: 10%;
-    display: flex;
     margin: 0 auto;
+    display: flex;
+    text-align: center;
     justify-content: center;
-    text-align:center ;
+    text-align:center 
 }
 .newsTitle img{
-    margin: 15px;
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
     transform: translateY(-25%);
+
 }
 .newsTitle h1{
     font-size: 36px;
 }
 
 .newsTitle p{
-    padding-top: 17px;
+    /* padding-top: 17px; */
     font-size: 20px;
 }
 
