@@ -42,3 +42,42 @@ img {
     background: url(../../img/29/blog7year_gotopd.gif) no-repeat;
     outline: none;
 }
+
+
+
+.mfb-component__wrap .top_2{
+    display: none;
+}
+
+/*手機*/
+@media(max-width:375px) {
+    .mfb-component__wrap .top_1{
+        display: none;
+    }
+    .mfb-component__wrap .top_2{
+        display: flex;
+        top: -80px;
+        right: -22px;
+    }
+
+    .actGotop {
+        bottom: 0px;
+        right: -80px;
+    }
+
+
+
+    .actGotop a,
+    .actGotop a:link {
+        display: inline-block;
+        background: url(../../img/29/blog7year_gotop_2.png) no-repeat;
+        outline: none;
+    }
+
+    .actGotop a:hover {
+        background: url(../../img/29/blog7year_gotopd_2.gif) no-repeat;
+        outline: none;
+    }
+
+
+}
