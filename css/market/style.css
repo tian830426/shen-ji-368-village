@@ -10,9 +10,16 @@ body {
   height: 100vh;
   color: black;
   background-image: url(../../img/market/marketBackground.svg);
+  background-repeat: no-repeat;
   background-position: center center;
 }
-
+footer{
+  background-color: bisque;
+}
+.inter{
+  width: 100%;
+  height: 80%
+}
 .wrapper {
   margin: auto;
   width: 90%;
@@ -25,8 +32,11 @@ body {
   /* display: flex; */
 }
 .col{
+  max-width: 365px;
+  max-height: 250px;
+  width: 100%;
   height: 100%;
-  /* position: relative; */
+  position: absolute;
 }
 .container {
   height: 100%;
@@ -34,22 +44,42 @@ body {
   margin: 0px;
   position: absolute;
 }
-.l1{
-  left: 0%;
+.news{
+  left: 4%;
 }
-.r1{
-  left: 20%;
-  top: 30%;
+.infor{
+  top: 8%;
+  right: 8%;
 }
-.l2{
-  left: 40%;
+.about{
+  top: 40%;
+  left: 3%;
+  
 }
-.r2{
-  left: 60%;
+.community{
+  top: 45%;
+  right: 11%;
 }
-.l3{
-  left: 80%;
+.time{
+  top: 65%;
+  left: 30%;
+  
 }
+
+.bl {
+  background-image: url(../../img/market/blackBlock.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ye {
+  background-image: url(../../img/market/yellowBlock.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .front {
   width: 365px;
   height: 250px;
@@ -57,16 +87,7 @@ body {
   backface-visibility: hidden;
   text-align: center;
   color: black;
-}
-
-.bl {
-  background-image: url(../../img/market/blackBlock.svg);
-  background-size: contain;background-position: center;
-  background-repeat: no-repeat;
-}
-
-.ye {
-  background-image: url(../../img/market/yellowBlock.svg);
+  
 }
 
 /* 小卡正面標題大小 */
@@ -75,6 +96,7 @@ body {
 }
 
 .back {
+  
   position: absolute;
   width: 768px;
   height: 50vh;
@@ -82,8 +104,34 @@ body {
   font-size: 20px;
   backface-visibility: hidden;
   transition: transform 2s cubic-bezier(0.4, 0.2, 0.2, 1);
-  z-index: 2;
+  /* z-index: 5; */
+  
 }
+
+.newsBack {
+  top: 10%;
+  left: 105%;
+}
+
+.aboutBack {
+  top: -105%;
+  left: 120%;
+}
+
+.commuBack {
+  top: -125%;
+  left: -225%; 
+}
+
+.inforBack {
+  top: 10%;
+  left: -245%;
+}
+
+.timeBack {
+  top: -200%;
+  left: -15%;
+} 
 
 .back .inner p {
   display: none;
@@ -104,6 +152,10 @@ body {
   transition: transform 2s cubic-bezier(0.4, 0.2, 0.2, 1);
   transition: transform 2s cubic-bezier(0.4, 0.2, 0.2, 1),
 }
+.container:hover{
+  /* background-color: red; */
+  z-index: 100;
+}
 
 
 .inner {
@@ -114,7 +166,7 @@ body {
   width: 100%;
   padding: 2rem;
   box-sizing: border-box;
-  z-index: 2;
+  /* z-index: 2; */
 }
 
 .inner span {
@@ -134,6 +186,7 @@ body {
 .container:hover .back {
   transform: rotateY(0deg);
   transform-style: preserve-3d;
+  z-index: 5;
 }
 
 .container:hover .front {
@@ -160,44 +213,6 @@ body {
 }
 
 
-
-.about .l2{
-  top: 50%;
-  /* transform: translate(-0.5%, 20%); */
-}
-
-.l3{
-  top: 75%;
-}
-.community {
-  /* transform: translate(-5%, 15%); */
-}
-
-.newsBack {
-  top: 10%;
-  left: 50%;
-}
-
-.aboutBack {
-  top: -120%;
-  left: 55%;
-}
-
-.commuBack {
-  top: -115%;
-  left: -45%;
-}
-
-.inforBack {
-  top: 15%;
-  left: -50%;
-}
-
-.timeBack {
-  top: -215%;
-  left: -6.5%;
-}
-
 .bg768 {
   width: 100%;
   height: 320px;
@@ -215,149 +230,79 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
-  .bg768 {
+  .bg768{
     display: block;
   }
-
-  .wrapper {
-    padding-top: 5%;
-    margin: auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  .wrapper{
+    margin: 0 0 0 0;
+    height: auto;
   }
 
-  .bl,
-  .ye {
+  .front{
     background-image: url(../../img/market/blueBlock.svg);
-    background-size: cover;
-  }
-
-  .right {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  .front {
+    background-position: center center;
+    background-repeat: no-repeat;
     width: 220px;
     height: 160px;
   }
-
-  .cols {
-    padding: 0%;
-    flex-direction: column;
+  .cols{
+    display: flex;
+    flex-wrap: wrap;
+    transform: translateX(4%);
+    padding-top: 5%;
   }
-
-  .news {
-    transform: translate(0, 0%);
+  .col{
+    margin: 20px 0;
+    width: 220px;
+    height: 160px;
+    top: 0;
+    left: 0;
+    position: relative;
   }
-
-  .about {
-    transform: translate(0%, 0%);
+  .community{
+    
+    left: 15%;
   }
-
-  .community {
-    transform: translate(50%, 20%);
+  .container{
+    position: relative;
   }
-
-  .infor {
-    transform: translate(50%, 20%);
-  }
-
-  .newsBack {
-    top: -100%;
+  .back{
+    top: 0%;
     left: 0%;
   }
 
-  .aboutBack {
-    top: -100%;
-    left: -125%;
-  }
-
-  .commuBack {
-    top: -220%;
-    left: -180%;
-  }
-
-  .inforBack {
-    top: -220%;
-    left: -55%;
-  }
-
-  .timeBack {
-    top: -50%;
-    left: -250%;
-  }
-}
-
-@media (max-width: 400px) {
-  body {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../img/market/bg400.svg);
-  }
-
-  .bg768 {
-    background-image: url(../../img/market/logo+ph.svg);
-    height: 163px;
-  }
-
-  .wrapper {
-    padding: 5% 0;
+  .back{
     margin: auto;
-    width: 100%;
-    display: block;
-  }
-
-  .front {
-    width: 100%;
-    height: 100px;
-    margin: 2% 0;
-  }
-
-  .inner {
-    padding: 0%;
-  }
-
-  .community {
-    transform: translate(0%, 0%);
-  }
-
-  .infor {
-    transform: translate(0%, 0%);
-  }
-
-  .back {
-    width: 100%;
+    position: relative;
+    
   }
 
   .newsBack {
-    top: -100%;
+    top: -150%;
     left: 0%;
   }
-
+  
   .aboutBack {
-    top: -330%;
-    left: 0%;
-  }
-
-  .commuBack {
-    top: -380%;
-    left: 0%;
+    top: -150%;
+    left: -230%;
   }
 
   .inforBack {
-    top: -180%;
-    left: 0%;
+    top: -150%;
+    left: -130%;
+    
   }
-
+  .commuBack {
+    top: -255%;
+    left: -40%;  
+  }
+  
   .timeBack {
-    top: -480%;
-    left: 0%;
-  }
-}
+    top: -255%;
+    left: -120%;
+  } 
 
+}
 
 /* @media screen and (max-width: 64rem) {
   .col {

@@ -35,19 +35,19 @@
 
     <div class="ml-auto pr-5 burger_padding_disappear">
       <!--ml-auto 空出左邊位置-->
-      <a class="text-dark" href="#story_bg">審計由來</a>
-      <a class="text-dark pl-2" href="#news">最新活動</a>
-      <a class="text-dark pl-2" href="#media">媒體報導</a>
-      <a class="text-dark pl-2" href="./shop.html">店家介紹</a>
-      <a class="text-dark pl-2" href="./market.html">暮暮市集</a>
-      <a class="text-dark pl-2" href="#location">地理位置</a>
-      <a class="text-dark pl-2" href="./Surround.html">周邊環境</a>
+      <a class="text-dark" href="/index.html#story_bg">審計由來</a>
+      <a class="text-dark pl-2" href="/index.html#news">最新活動</a>
+      <a class="text-dark pl-2" href="/index.html#media">媒體報導</a>
+      <a class="text-dark pl-2" href="/shop.html">店家介紹</a>
+      <a class="text-dark pl-2" href="/market.html">暮暮市集</a>
+      <a class="text-dark pl-2" href="/index.html#location">地理位置</a>
+      <a class="text-dark pl-2" href="/Surround.html">周邊環境</a>
   </div>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
       <div class="navbar-nav">
         <a class="nav-link" href="/index.html#story_bg">審計由來 <span class="sr-only">(current)</span></a>
         <a class="nav-link" href="/index.html#news">最新活動</a>
-        <a class="nav-link" href="#">媒體報導</a>
+        <a class="nav-link" href="/index.html#media">媒體報導</a>
         <a class="nav-link" href="/shop.html">店家介紹</a>
         <a class="nav-link" href="/market.html">暮暮市集</a>
         <a class="nav-link" href="/index.html#location">地理位置</a>
@@ -274,12 +274,9 @@
                 <p>Follow us.</p>
               </div>
               <div class="socia">
-               
                 <a href="" class="right-box-house"><img src="./img/shop/shopDesign/house.svg" alt=""  /></a>
-                <div class="right-box-fb">
-                <a href="https://www.facebook.com/twoday0401">
+                <a href="" class="right-box-fb">
                   <img src="./img/shop/shopDesign/fb.svg" alt="" /></a>
-                  </div>
                 <a href="" class="right-box-ig"><img src="./img/shop/shopDesign/ig.svg" alt="" /></a>
               </div>
             </div>
@@ -433,9 +430,9 @@
       right_box_p1.innerHTML = real_data2[menu_index].p1;
       right_box_p2.innerHTML = real_data2[menu_index].p2;
       right_box_p3.innerHTML = real_data2[menu_index].p3;
-      right_box_house.innerHTML = real_data2[menu_index].house;
-      right_box_fb.innerHTML = real_data2[menu_index].fb;
-      right_box_ig.innerHTML = real_data2[menu_index].ig;
+      right_box_house.href = real_data2[menu_index].house;
+      right_box_fb.hrefL = real_data2[menu_index].fb;
+      right_box_ig.href = real_data2[menu_index].ig;
     }
 
   </script>

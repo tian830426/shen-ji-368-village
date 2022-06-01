@@ -10,11 +10,20 @@ body {
     text-decoration: none !important;
 }
 
+.burger_center a:hover{
+    color: #c04646;
+    font-size: 17px;
+    transition: 0.5s;
+}
+
+
+
 .burger_padding_disappear .text-dark:hover {
     color: #cfc8b4 !important;
     text-decoration:none;
     font-size: 18px;
     opacity: 0.6;
+    transition: 0.5s;
 }
 
 .burger_padding_disappear {
@@ -24,6 +33,10 @@ body {
 
 }
 
+.burger_padding_disappear a{
+    text-decoration:none!important;
+  
+  }
 
 
 /*初始化設定*/
@@ -72,7 +85,7 @@ body {
     padding-left: 25px;
 }
 
-@media(max-width:960px) {
+@media(max-width:980px) {
     .nav_height_r a {
         font-size: 13px;
         /* font-size: 5vw; */
@@ -108,7 +121,10 @@ body {
 }
 
 /*手機*/
-@media(max-width:375px) {}
+@media(max-width:375px) {
+
+    
+}
 
 
 
