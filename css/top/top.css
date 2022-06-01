@@ -50,7 +50,7 @@ img {
 }
 
 /*手機*/
-@media(max-width:375px) {
+@media(max-width:376px) {
     .mfb-component__wrap .top_1 {
         display: none;
     }
