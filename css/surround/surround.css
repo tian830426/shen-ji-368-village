@@ -143,6 +143,7 @@ p {
 }
 
 @keyframes man {
+    
     100% {
         right: 82%;
         bottom: 4.8%;
@@ -171,7 +172,7 @@ p {
     z-index: 1;
 }
 
-@media(max-width:1366px) {
+/* @media(max-width:1366px) {
     #surround{
         background-image: url(../../img/surround/bg-1366-768.svg);
         background-size: cover;
@@ -232,7 +233,7 @@ p {
     p {
         font-size: 1rem;
     }
-}
+} */
 
 @media (max-width:768px) {
     .girl {
