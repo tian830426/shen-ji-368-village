@@ -274,8 +274,8 @@ footer{
   }
 
   .newsBack {
-    top: 10%;
-    left: 105%;
+    margin: auto;
+    left: -25%;
   }
   
   .aboutBack {
