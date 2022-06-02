@@ -373,7 +373,7 @@ margin-top: 20px;
 
 .container-one .box-right .box-shop .shop-pageTwo .shop-cat {
   position: absolute;
-  top: 120%;
+  top: 110%;
   left: 4%;
 }
 
@@ -461,8 +461,8 @@ margin-top: 20px;
 
 .shop-pageTwo .button-two {
   position: absolute;
-  top: 130%;
-  left: 8%;
+  top: 123%;
+  left:80%;
 }
 
 .button-two {
@@ -585,7 +585,7 @@ margin-top: 20px;
   .container-one .box-left .slider {
     width: 100%;
     height: 100%;
-    padding-top: 540px; 
+    padding-top: 460px; 
     
   }
 
@@ -629,7 +629,7 @@ margin-top: 20px;
   .container-one .box-left .slider {
     width: 100%;
     height: 100%;
-    padding-top: 540px; 
+    padding-top: 450px; 
     
   }
 }
@@ -671,7 +671,7 @@ margin-top: 20px;
   .container-one .box-left .slider {
     width: 100%;
     height: 100%;
-    padding-top: 540px; 
+    padding-top: 450px; 
     
   }
 }
@@ -691,8 +691,8 @@ margin-top: 20px;
     margin-right: 45px;  
   }
   .slider label {
-    width: 92px;
-    height: 92px; 
+    width: 90px;
+    height: 90px; 
   }
   .slider label img {
     width: 100%;
@@ -702,7 +702,7 @@ margin-top: 20px;
 
   .slider >img {
     position: absolute;
-    width: 34vw;
+    width: 33vw;
     height: 45vh;
     left: 5%;
     top: 5%;
@@ -713,7 +713,7 @@ margin-top: 20px;
   .container-one .box-left .slider {
     width: 100%;
     height: 100%;
-    padding-top: 540px; 
+    padding-top: 460px; 
     
   }
 }
