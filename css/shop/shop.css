@@ -2,11 +2,11 @@
 * {
   box-sizing: border-box;
 }
-
+/* ./img/shop/shopDesign/background.svg */
 body {
   padding: 0px;
   margin: 0px;
-  background-image: url(/../ img/shop/shopDesign/background.svg);
+  background-image: url(../../img/shop/shopDesign/background.svg);
   background-size: cover;
 }
 
