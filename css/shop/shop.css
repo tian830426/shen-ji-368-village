@@ -71,7 +71,7 @@ Time for the CSS*/ * {
   /*Same as width of the large image*/
   position: relative;
   /*Instead of height we will use padding*/
-  padding-top:32rem;
+  padding-top:28rem;
 
   /*That helps bring the labels down*/
 
