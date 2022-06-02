@@ -2,11 +2,11 @@
 * {
   box-sizing: border-box;
 }
-
+/* ./img/shop/shopDesign/background.svg */
 body {
   padding: 0px;
   margin: 0px;
-  background-image: url(/img/shop/shopDesign/background.svg);
+  background-image: url(../../img/shop/shopDesign/background.svg);
   background-size: cover;
 }
 
@@ -188,6 +188,7 @@ On click the images will be displayed at normal size to complete the effect
   list-style: none;
 }
 
+
 .box-list-food{
 margin-top: 20px;
   margin-right: 40px
@@ -345,8 +346,8 @@ margin-top: 20px;
   text-indent: 32px;
   font-weight: 900;
   color: rgba(96, 94, 90, 1);
-  letter-spacing: 1px;
-  padding: 10px 30px;
+  letter-spacing: 3px;
+  padding: 25px 70px;
 }
 
 .box-shop .shop-pageTwo {
@@ -372,7 +373,7 @@ margin-top: 20px;
 
 .container-one .box-right .box-shop .shop-pageTwo .shop-cat {
   position: absolute;
-  top: 100%;
+  top: 110%;
   left: 4%;
 }
 
@@ -460,8 +461,8 @@ margin-top: 20px;
 
 .shop-pageTwo .button-two {
   position: absolute;
-  top: 90%;
-  left: 80%;
+  top: 123%;
+  left:80%;
 }
 
 .button-two {
@@ -547,6 +548,177 @@ margin-top: 20px;
   z-index: 0;
 }
 
+@media (max-width: 1600px) {
+  .box-list .box-list-up{
+    letter-spacing:2px;
+    width: 80%;
+    height: 80%;
+    margin: 20px auto 40px auto; 
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .slider img {
+    width: 400px;
+    height: 400px;
+    margin-right: 45px;  
+  }
+  .slider label {
+    width: 120px;
+    height: 120px; 
+  }
+  .slider label img {
+    width: 100%;
+    height: 100%;
+    margin-right: 20px; 
+  }
+
+  .slider >img {
+    position: absolute;
+    width: 34vw;
+    height: 46vh;
+    left: 5%;
+    top: 5%;
+    transition: all 0.5s;
+    margin: auto;
+  }
+
+  .container-one .box-left .slider {
+    width: 100%;
+    height: 100%;
+    padding-top: 460px; 
+    
+  }
+
+}
+
+
+@media (max-width: 1540px) {
+  .box-list .box-list-up{
+    letter-spacing:2px;
+    width: 80%;
+    height: 80%;
+    margin: 20px auto 40px auto; 
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .slider img {
+    width: 400px;
+    height: 400px;
+    margin-right: 45px;  
+  }
+  .slider label {
+    width: 115px;
+    height: 115px; 
+  }
+  .slider label img {
+    width: 100%;
+    height: 100%;
+    margin-right: 20px; 
+  }
+
+  .slider >img {
+    position: absolute;
+    width: 34vw;
+    height: 45vh;
+    left: 5%;
+    top: 5%;
+    transition: all 0.5s;
+    margin: auto;
+  }
+
+  .container-one .box-left .slider {
+    width: 100%;
+    height: 100%;
+    padding-top: 450px; 
+    
+  }
+}
+
+@media (max-width: 1490px) {
+  .box-list .box-list-up{
+    letter-spacing:2px;
+    width: 80%;
+    height: 80%;
+    margin: 20px auto 40px auto; 
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .slider img {
+    width: 400px;
+    height: 400px;
+    margin-right: 45px;  
+  }
+  .slider label {
+    width: 105px;
+    height: 105px; 
+  }
+  .slider label img {
+    width: 100%;
+    height: 100%;
+    margin-right: 20px; 
+  }
+
+  .slider >img {
+    position: absolute;
+    width: 34vw;
+    height: 45vh;
+    left: 5%;
+    top: 5%;
+    transition: all 0.5s;
+    margin: auto;
+  }
+
+  .container-one .box-left .slider {
+    width: 100%;
+    height: 100%;
+    padding-top: 450px; 
+    
+  }
+}
+
+@media (max-width: 1390px) {
+  .box-list .box-list-up{
+    letter-spacing:2px;
+    width: 80%;
+    height: 80%;
+    margin: 20px auto 40px auto; 
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .slider img {
+    width: 400px;
+    height: 400px;
+    margin-right: 45px;  
+  }
+  .slider label {
+    width: 90px;
+    height: 90px; 
+  }
+  .slider label img {
+    width: 100%;
+    height: 100%;
+    margin-right: 20px; 
+  }
+
+  .slider >img {
+    position: absolute;
+    width: 33vw;
+    height: 45vh;
+    left: 5%;
+    top: 5%;
+    transition: all 0.5s;
+    margin: auto;
+  }
+
+  .container-one .box-left .slider {
+    width: 100%;
+    height: 100%;
+    padding-top: 460px; 
+    
+  }
+}
+
+
 
 /* 店家介紹變版 */
 /*平板*/
@@ -604,10 +776,13 @@ margin-top: 20px;
   .box-title-all{
       display: none;
   }
+
+  .container-one .box-title-none .box-second-title{
+    padding-right: 10px;
+  }
   
   /* 左右間距 */
 .box-list .box-list-up{
-
     letter-spacing:2px;
     width: 80%;
     height: 80%;
@@ -669,7 +844,6 @@ margin-top: 20px;
   .slider label img {
     width: 100%;
     height: 100%;
-
     margin-right: 20px; 
   }
 
@@ -813,16 +987,16 @@ margin-top: 20px;
   .container-one .box-left .slider {
     width: 100%;
     height: 100%; 
-    margin-top: 130px;
+    margin-top: 50px;
   }
   .slider img {
-    width: 400px;
-    height: 400px;
+    width: 350px;
+    height: 350px;
     margin-right: 50px;  
   }
   .slider label {
-    width: 115px;
-    height: 115px; 
+    width: 120px;
+    height: 120px; 
   }
   .slider label img {
     width: 100%;
@@ -833,7 +1007,7 @@ margin-top: 20px;
   .slider >img {
     position: absolute;
     width: 88vw;
-    height: 46vh;
+    height: 40vh;
     left: 5%;
     top: 5%;
     transition: all 0.5s;
